@@ -1,0 +1,3818 @@
+{
+  "ukr_id": "URK-PSC-COMPILATION",
+  "title": "URK PSC Compilation",
+  "version": "1.0",
+  "status": "compiled",
+  "type": "psc_compiled_bundle",
+  "generated_utc": "2026-04-27T14:27:51.964779+00:00",
+  "source_summary": {
+    "psc_file_count": 20,
+    "compiled_module_count": 20,
+    "parse_error_count": 0
+  },
+  "source_files": [
+    "PSC-ANTI-INVERTER-SEMANTIC-STABILITY-01.json",
+    "PSC-CLEAN-STORY-CONTENT-INTEGRITY-01.json",
+    "PSC-DARAD-PALINDROMIC-INVESTIGATION-01.json",
+    "PSC-DARK-TRIAD-SEPARATION-AXIOMS-01.json",
+    "PSC-DATING-CONSENT-NOT-THIRD-PARTY-PERMISSION-01.json",
+    "PSC-ENTITLEMENT-FAILED-EXPLOIT-PERSISTENCE-01.json",
+    "PSC-FULL-WORD-INVERSION-SCANNER-01.json",
+    "PSC-GLORY-HUNTING-CREDIT-WITHOUT-CONTRIBUTION-01.json",
+    "PSC-HABITCHUALLY-HABITUAL-HOSTILITY-01.json",
+    "PSC-INVERSION-RESISTANT-STATEMENT-CONSTRUCTION-01.json",
+    "PSC-JURY-FITNESS-FUNCTIONAL-FAIRNESS-01.json",
+    "PSC-OFFER-NOT-OBLIGATION-DECISION-BOUNDARY-01.json",
+    "PSC-OVERTON-WINDOW-MISMATCH-DETECTION-01.json",
+    "PSC-PATHOLOGICAL-GENEROSITY-CHARITY-01.json",
+    "PSC-PRIVATE-THOUGHT-HOME-SPEECH-NON-EVIDENCE-CANADA-01.json",
+    "PSC-PROTECTIVE-INTIMIDATION-SUBSTITUTION-01.json",
+    "PSC-REPRODUCTIVE-CAPACITY-NOT-DIAGNOSTIC-DISPROOF-01.json",
+    "PSC-SELF-HARM-FACILITATION-LEGAL-SEPARATION-CANADA-01.json",
+    "PSC-SEXUAL-CONSENT-CANADA-NOT-WORD-TRIGGER-01.json",
+    "PSC-TOTAL-CONTROL-VIOLENCE-ESCALATION-01.json"
+  ],
+  "parse_errors": [],
+  "modules": [
+    {
+      "source_filename": "PSC-ANTI-INVERTER-SEMANTIC-STABILITY-01.json",
+      "source_path": "/mnt/data/PSC-ANTI-INVERTER-SEMANTIC-STABILITY-01.json",
+      "ukr_id": "PSC-ANTI-INVERTER-SEMANTIC-STABILITY-01",
+      "title": "Anti-Inverter Semantic Stability Lock",
+      "type": "psc_pattern",
+      "semantic_kind": "semantic_distortion_defense",
+      "payload": {
+        "ukr_id": "PSC-ANTI-INVERTER-SEMANTIC-STABILITY-01",
+        "title": "Anti-Inverter Semantic Stability Lock",
+        "version": "1.0",
+        "type": "psc_pattern",
+        "semantic_kind": "semantic_distortion_defense",
+        "purpose": "Prevent a speaker's meaning from being reversed, negated, or semantically inverted by someone acting in bad faith.",
+        "core_definition": {
+          "summary": "An anti-inverter pattern protects stated meaning from hostile inversion. It separates what was actually said from what another person can manipulate the wording into appearing to mean.",
+          "governing_rule": "A statement means what the speaker states, clarifies, and consistently intends; hostile inversion is not valid interpretation."
+        },
+        "core_separation": {
+          "false_equation": "inverted_words = hidden_true_meaning",
+          "corrected_equation": "stated_words + context + declared_intent = actual_meaning",
+          "one_line_translation": "Flipping my sentence is not the same as understanding me."
+        },
+        "targeted_false_collapses": [
+          {
+            "collapse": "If the words can be inverted, the inverted meaning is valid.",
+            "correction": "Possible inversion does not override stated intent."
+          },
+          {
+            "collapse": "Negation removal reveals the truth.",
+            "correction": "Removing negation can destroy the original meaning."
+          },
+          {
+            "collapse": "Ambiguity gives the listener ownership of meaning.",
+            "correction": "Ambiguity invites clarification, not replacement."
+          },
+          {
+            "collapse": "The listener's suspicion proves deception.",
+            "correction": "Suspicion is not evidence of lying."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Semantic Inversion",
+            "description": "The listener reverses the speaker's statement and treats the reversal as the real meaning."
+          },
+          {
+            "id": "FM-02",
+            "name": "Negation Stripping",
+            "description": "The listener removes words like not, cannot, never, or no to force a different meaning."
+          },
+          {
+            "id": "FM-03",
+            "name": "Bad-Faith Interpretation",
+            "description": "The listener chooses the most hostile possible meaning despite clarification."
+          },
+          {
+            "id": "FM-04",
+            "name": "Meaning Theft",
+            "description": "The listener replaces the speaker's declared intent with their own imposed version."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Stated Meaning Test",
+            "question": "Is the person responding to what was actually said?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Inversion Test",
+            "question": "Did they reverse, negate, or flip the sentence to manufacture a new meaning?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Clarification Test",
+            "question": "Did they ask for clarification, or did they impose an interpretation?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Intent Respect Test",
+            "question": "Are they accepting the speaker's clarified intent?"
+          }
+        ],
+        "response_templates": {
+          "soft": [
+            "That is not what I meant. I mean this as stated.",
+            "Please do not invert my wording. Ask me if you need clarification.",
+            "The meaning I am giving you is the meaning I intend."
+          ],
+          "firm": [
+            "Do not flip my words into the opposite meaning.",
+            "Inverting my sentence is distortion, not interpretation.",
+            "You are responding to a reversal of my words, not to what I said."
+          ],
+          "hard_boundary": [
+            "I will not continue if you keep replacing my meaning with an inverted version.",
+            "My words mean what I state, not what you can twist them into.",
+            "This conversation cannot proceed while you treat distortion as interpretation."
+          ]
+        },
+        "anti_inverter_templates": [
+          "I mean this exactly as stated.",
+          "Do not invert my words to create a meaning I did not say.",
+          "My intended meaning is the one I am explicitly giving you.",
+          "I am not participating in a word-flipping argument.",
+          "You may ask what I mean, but you may not replace my meaning with an inverted version."
+        ],
+        "compact_signature": [
+          "statement_made",
+          "hostile_inversion_attempted",
+          "stated_meaning_restored",
+          "speaker_intent_locked",
+          "distortion_rejected"
+        ],
+        "taglines": [
+          "Inversion is not interpretation.",
+          "Clarification is allowed; distortion is not.",
+          "My stated meaning is the anchor.",
+          "Flipping my sentence does not reveal my intent.",
+          "Meaning belongs to the statement, context, and clarified intent."
+        ]
+      }
+    },
+    {
+      "source_filename": "PSC-CLEAN-STORY-CONTENT-INTEGRITY-01.json",
+      "source_path": "/mnt/data/PSC-CLEAN-STORY-CONTENT-INTEGRITY-01.json",
+      "ukr_id": "PSC-CLEAN-STORY-CONTENT-INTEGRITY-01",
+      "title": "Clean Story Means Content Integrity, Not Word Choice",
+      "type": "psc_pattern",
+      "semantic_kind": "narrative_integrity_separation_pattern",
+      "payload": {
+        "ukr_id": "PSC-CLEAN-STORY-CONTENT-INTEGRITY-01",
+        "title": "Clean Story Means Content Integrity, Not Word Choice",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "semantic_kind": "narrative_integrity_separation_pattern",
+        "purpose": "Separate a clean story from sexual meaning, polite wording, tone control, or social smoothing. Clean means the factual content remains free of rumors, bullshit, distortion, and invented additions.",
+        "core_definition": {
+          "summary": "A clean story is a story whose facts, events, sequence, and causal structure remain accurate and uncontaminated by rumors, assumptions, exaggeration, or social spin.",
+          "governing_rule": "Clean refers to content integrity, not sexuality, politeness, word choice, or tone."
+        },
+        "core_separation": {
+          "false_equation": "clean_story = polite_words_or_sexual_purity",
+          "corrected_equation": "clean_story = factual_accuracy + no_rumors + no_distortion + no_added_bullshit",
+          "one_line_translation": "Clean means the facts are untouched."
+        },
+        "primary_units": [
+          "actual_event",
+          "factual_sequence",
+          "causal_structure",
+          "rumor_contamination",
+          "bullshit_addition",
+          "story_twisting",
+          "content_integrity"
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "Clean means sexual purity.",
+            "correction": "Clean has nothing to do with sexuality in this context."
+          },
+          {
+            "collapse": "Clean means polite wording.",
+            "correction": "Clean has nothing to do with the words used; it has to do with whether the facts are altered."
+          },
+          {
+            "collapse": "Twisting the story helps.",
+            "correction": "Twisting the story contaminates the story."
+          },
+          {
+            "collapse": "Rumors make the story more complete.",
+            "correction": "Rumors add noise, not truth."
+          },
+          {
+            "collapse": "Social smoothing justifies changing details.",
+            "correction": "A helpful-sounding rewrite is still distortion if it changes what happened."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Rumor Contamination",
+            "description": "Unverified claims are added to the story as if they are facts."
+          },
+          {
+            "id": "FM-02",
+            "name": "Bullshit Injection",
+            "description": "Extra details are inserted to make the story more dramatic, useful, flattering, or socially convenient."
+          },
+          {
+            "id": "FM-03",
+            "name": "Causal Twist",
+            "description": "The order or cause of events is rearranged so the story implies something different from what happened."
+          },
+          {
+            "id": "FM-04",
+            "name": "Tone Misclassification",
+            "description": "Someone treats rough language or blunt wording as evidence that the story is unclean."
+          },
+          {
+            "id": "FM-05",
+            "name": "Sexual Meaning Hijack",
+            "description": "The word clean is wrongly interpreted through a sexual or purity frame."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Fact Integrity Test",
+            "question": "Did this actually happen, or was it added?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Rumor Filter Test",
+            "question": "Is this verified fact, or is it rumor?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Causality Test",
+            "question": "Does the story preserve the real order and cause of events?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Word Choice Separation Test",
+            "question": "Is someone judging the wording instead of checking whether the facts are accurate?"
+          },
+          {
+            "id": "DT-05",
+            "name": "Sexual Collapse Test",
+            "question": "Is clean being falsely interpreted as sexual purity instead of content integrity?"
+          }
+        ],
+        "separation_axioms": [
+          "Clean is not sexual.",
+          "Clean is not polite.",
+          "Clean is not word choice.",
+          "Clean is content integrity.",
+          "A rough wording can still describe a clean story.",
+          "A polished lie is still unclean.",
+          "Rumor contaminates story.",
+          "Bullshit contaminates story.",
+          "Twisting events contaminates story.",
+          "If the facts are untouched, the story stays clean."
+        ],
+        "corrective_model": {
+          "bad_model": "event -> rumor -> social spin -> altered story -> confusion",
+          "healthy_model": "event -> fact check -> rumor removal -> causal preservation -> clean story"
+        },
+        "response_templates": {
+          "soft": [
+            "By clean, I mean accurate and free of rumors.",
+            "I am not talking about sexuality or polite wording. I mean the story should stay factually intact.",
+            "Please keep added assumptions out of the story."
+          ],
+          "firm": [
+            "Clean means no rumors and no bullshit.",
+            "Do not twist the story and call it help.",
+            "The wording is not the issue. The facts are the issue."
+          ],
+          "hard_boundary": [
+            "If it did not happen, do not put it in my story.",
+            "Do not add rumors to my story.",
+            "Do not rewrite my reality to manage how it sounds."
+          ]
+        },
+        "compact_signature": [
+          "actual_event_detected",
+          "rumor_removed",
+          "bullshit_filtered",
+          "causal_order_preserved",
+          "content_integrity_locked"
+        ],
+        "taglines": [
+          "Clean means the facts are untouched.",
+          "No rumors, no bullshit, no spin.",
+          "A polished lie is still dirty data.",
+          "The words are not the issue; the facts are.",
+          "If it did not happen, it does not go in the story."
+        ]
+      }
+    },
+    {
+      "source_filename": "PSC-DARAD-PALINDROMIC-INVESTIGATION-01.json",
+      "source_path": "/mnt/data/PSC-DARAD-PALINDROMIC-INVESTIGATION-01.json",
+      "ukr_id": "PSC-DARAD-PALINDROMIC-INVESTIGATION-01",
+      "title": "DARAD Palindromic Investigation Pattern",
+      "type": "psc_pattern",
+      "semantic_kind": "investigative_reasoning_process",
+      "payload": {
+        "ukr_id": "PSC-DARAD-PALINDROMIC-INVESTIGATION-01",
+        "title": "DARAD Palindromic Investigation Pattern",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "semantic_kind": "investigative_reasoning_process",
+        "purpose": "Provide a generalized palindromic investigation framework using Deduction, Abduction, Reduction, Abduction, and Deduction to prevent evidence inflation, premature accusation, false causation, and conclusion collapse.",
+        "core_pattern": [
+          "deduction",
+          "abduction",
+          "reduction",
+          "abduction",
+          "deduction"
+        ],
+        "core_definition": {
+          "summary": "DARAD is a mirror-stabilized investigative process that begins by identifying what must be true, expands possible explanations, reduces misleading or overinterpreted evidence, reconstructs the remaining explanations, and ends by testing conclusions against hard constraints.",
+          "governing_rule": "Evidence must be interpreted according to what it actually proves, not what suspicion, fear, or narrative pressure tries to make it prove.",
+          "primary_unit_of_analysis": "investigative_claim",
+          "secondary_units": [
+            "hard_constraint",
+            "observed_evidence",
+            "hypothesis",
+            "confounding_evidence",
+            "reduced_evidence",
+            "surviving_explanation",
+            "deductive_consistency_check"
+          ]
+        },
+        "core_separation": {
+          "false_equation": "evidence_presence = guilt_or_cause_or_intent_or_final_conclusion",
+          "corrected_equation": "evidence_presence = data_point + context_required + hypothesis_testing",
+          "one_line_translation": "Evidence shows something; investigation determines what that something actually means."
+        },
+        "palindromic_structure": {
+          "left_anchor": {
+            "stage": "D1",
+            "mode": "deduction",
+            "function": "Establish what must be true or impossible based on rules, timelines, physical limits, known facts, or logical constraints."
+          },
+          "left_expansion": {
+            "stage": "A1",
+            "mode": "abduction",
+            "function": "Generate plausible explanations for the evidence without prematurely selecting one."
+          },
+          "center_filter": {
+            "stage": "R",
+            "mode": "reduction",
+            "function": "Strip evidence of inflated meaning and separate what it proves from what it does not prove."
+          },
+          "right_reconstruction": {
+            "stage": "A2",
+            "mode": "abduction",
+            "function": "Rebuild the explanation set using only cleaned evidence and valid constraints."
+          },
+          "right_anchor": {
+            "stage": "D2",
+            "mode": "deduction",
+            "function": "Test surviving hypotheses for contradiction and identify what must follow if each hypothesis is true."
+          }
+        },
+        "compact_signature": [
+          "constraint_anchor",
+          "hypothesis_expansion",
+          "evidence_reduction",
+          "hypothesis_reconstruction",
+          "consistency_lock"
+        ],
+        "investigative_equation": "truth_candidate = deduction_constraints + abductive_possibilities - inflated_interpretations + reconstructed_explanations + final_consistency_check",
+        "stage_definitions": [
+          {
+            "stage": "D1",
+            "name": "Deductive Constraint Anchor",
+            "question": "What must be true, and what is impossible?",
+            "output": "hard_constraints",
+            "example": "If the suspect was verifiably elsewhere when the crime occurred, direct commission becomes impossible."
+          },
+          {
+            "stage": "A1",
+            "name": "Abductive Hypothesis Expansion",
+            "question": "What could explain the observed evidence?",
+            "output": "hypothesis_set",
+            "example": "Fingerprints could result from prior presence, innocent contact, secondary transfer, contamination, or involvement."
+          },
+          {
+            "stage": "R",
+            "name": "Reduction and Evidence Role Separation",
+            "question": "What does this evidence actually prove, and what is being added to it?",
+            "output": "cleaned_evidence_set",
+            "example": "Fingerprints prove contact with a surface, not necessarily crime commission."
+          },
+          {
+            "stage": "A2",
+            "name": "Abductive Reconstruction",
+            "question": "Given only cleaned evidence, what explanations remain plausible?",
+            "output": "refined_hypothesis_set",
+            "example": "If direct presence at the crime time is impossible, fingerprints are better explained by prior contact or transfer."
+          },
+          {
+            "stage": "D2",
+            "name": "Deductive Consistency Lock",
+            "question": "If the remaining hypothesis is true, what else must be true?",
+            "output": "surviving_conclusions",
+            "example": "If the person committed the crime, they must have had access during the crime window; if access is impossible, the hypothesis fails."
+          }
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "Presence evidence equals guilt.",
+            "correction": "Presence evidence only shows contact, location, or exposure unless connected to action and timing."
+          },
+          {
+            "collapse": "DNA or fingerprints prove commission of a crime.",
+            "correction": "DNA and fingerprints require context, timing, transfer analysis, and causal linkage."
+          },
+          {
+            "collapse": "A plausible explanation is the correct explanation.",
+            "correction": "Plausibility is not proof; hypotheses must survive reduction and deduction."
+          },
+          {
+            "collapse": "Suspicion converts evidence into certainty.",
+            "correction": "Suspicion may guide inquiry but cannot upgrade evidence beyond its actual scope."
+          },
+          {
+            "collapse": "Confounding evidence should be ignored or treated as proof.",
+            "correction": "Confounding evidence should be reduced to its actual evidentiary role."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Evidence Inflation",
+            "description": "A weak or partial data point is treated as if it proves a complete conclusion."
+          },
+          {
+            "id": "FM-02",
+            "name": "Presence-to-Guilt Collapse",
+            "description": "Evidence of prior or possible presence is treated as evidence of criminal action."
+          },
+          {
+            "id": "FM-03",
+            "name": "Abductive Overcommitment",
+            "description": "The investigator selects the first plausible explanation and treats it as proven."
+          },
+          {
+            "id": "FM-04",
+            "name": "Reduction Failure",
+            "description": "The investigation skips the step where evidence is stripped back to what it actually proves."
+          },
+          {
+            "id": "FM-05",
+            "name": "Timeline Contradiction Ignored",
+            "description": "A theory is preserved even after it contradicts established timing or physical constraints."
+          },
+          {
+            "id": "FM-06",
+            "name": "Narrative Lock",
+            "description": "Evidence is interpreted to fit a preferred story instead of being tested independently."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Constraint Test",
+            "question": "Does the claim violate any known timeline, physical limit, rule, or established fact?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Alternative Explanation Test",
+            "question": "What else could explain this evidence without assuming guilt, intent, or causation?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Evidence Scope Test",
+            "question": "What does this evidence prove by itself, and what is being added by interpretation?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Confounder Test",
+            "question": "Could this evidence come from prior contact, contamination, transfer, coincidence, system error, or unrelated presence?"
+          },
+          {
+            "id": "DT-05",
+            "name": "Reconstruction Test",
+            "question": "After inflated meanings are removed, which hypotheses still explain the evidence?"
+          },
+          {
+            "id": "DT-06",
+            "name": "Final Deduction Test",
+            "question": "If the surviving hypothesis is true, what must also be true, and can that be verified?"
+          }
+        ],
+        "sorting_flow": {
+          "START": {
+            "description": "Receive an investigative claim, accusation, anomaly, or evidence set.",
+            "next": "D1_DEDUCTIVE_CONSTRAINT_ANCHOR"
+          },
+          "D1_DEDUCTIVE_CONSTRAINT_ANCHOR": {
+            "description": "Identify hard constraints: timing, access, physical possibility, rules, known facts, and impossibilities.",
+            "output": "hard_constraints",
+            "next": "A1_ABDUCTIVE_HYPOTHESIS_EXPANSION"
+          },
+          "A1_ABDUCTIVE_HYPOTHESIS_EXPANSION": {
+            "description": "Generate multiple plausible explanations for the evidence without choosing one prematurely.",
+            "output": "hypothesis_set",
+            "next": "R_REDUCTION_EVIDENCE_ROLE_SEPARATION"
+          },
+          "R_REDUCTION_EVIDENCE_ROLE_SEPARATION": {
+            "description": "Separate what evidence proves from what it does not prove. Remove inflated meaning, narrative pressure, and false equivalence.",
+            "output": "cleaned_evidence_set",
+            "next": "A2_ABDUCTIVE_RECONSTRUCTION"
+          },
+          "A2_ABDUCTIVE_RECONSTRUCTION": {
+            "description": "Rebuild the hypothesis set using only cleaned evidence and valid constraints.",
+            "output": "refined_hypothesis_set",
+            "next": "D2_DEDUCTIVE_CONSISTENCY_LOCK"
+          },
+          "D2_DEDUCTIVE_CONSISTENCY_LOCK": {
+            "description": "Test each remaining hypothesis by identifying what must follow if it is true and checking for contradiction.",
+            "output": "surviving_conclusions"
+          }
+        },
+        "response_templates": {
+          "soft": [
+            "That evidence matters, but we need to separate what it proves from what it merely suggests.",
+            "There may be several explanations for that evidence, so we should not collapse it into one conclusion yet.",
+            "Let’s anchor the timeline first, then test what the evidence can actually support."
+          ],
+          "firm": [
+            "Presence evidence is not the same as guilt evidence.",
+            "A plausible explanation is not proof until it survives contradiction testing.",
+            "That interpretation adds more meaning than the evidence currently supports."
+          ],
+          "hard_boundary": [
+            "Do not treat evidence of contact as proof of commission without a causal and temporal link.",
+            "Do not skip reduction and convert suspicion into certainty.",
+            "A conclusion that contradicts the hard constraints must be rejected or revised."
+          ]
+        },
+        "example_case": {
+          "scenario": "A person’s fingerprints and DNA are found at a crime scene, but they were not present when the crime occurred.",
+          "D1": "If the person was verifiably absent during the crime window, direct commission is ruled out.",
+          "A1": "Fingerprints and DNA could be explained by prior presence, innocent contact, transfer, contamination, or unrelated access.",
+          "R": "Fingerprints and DNA prove biological/contact trace, not crime commission by themselves.",
+          "A2": "Given absence during the crime window, the stronger explanations are prior contact, transfer, or contamination unless additional evidence connects them to the act.",
+          "D2": "If guilt is claimed, there must be evidence of means, timing, action, and causal linkage; without those, the guilt claim fails."
+        },
+        "taglines": [
+          "Presence is not perpetration.",
+          "Evidence must stay inside its proof boundary.",
+          "Suspicion is not deduction.",
+          "Plausibility is not proof.",
+          "Reduce before you conclude.",
+          "The center of investigation is evidence role separation."
+        ]
+      }
+    },
+    {
+      "source_filename": "PSC-DARK-TRIAD-SEPARATION-AXIOMS-01.json",
+      "source_path": "/mnt/data/PSC-DARK-TRIAD-SEPARATION-AXIOMS-01.json",
+      "ukr_id": "PSC-DARK-TRIAD-SEPARATION-AXIOMS-01",
+      "title": "Dark Triad Separation Axioms",
+      "type": "psc_pattern",
+      "semantic_kind": "behavioral_exploitation_separation_axioms",
+      "payload": {
+        "ukr_id": "PSC-DARK-TRIAD-SEPARATION-AXIOMS-01",
+        "title": "Dark Triad Separation Axioms",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "semantic_kind": "behavioral_exploitation_separation_axioms",
+        "purpose": "Separate exploitative Dark Triad-style behaviors from the virtues or powers they falsely imitate.",
+        "core_definition": {
+          "summary": "This PSC prevents narcissistic, Machiavellian, and psychopathic behavior from being misclassified as authority, intelligence, consent, entitlement, safety, or strength.",
+          "governing_rule": "A behavior must be judged by its function and effect, not by the status-image it imitates."
+        },
+        "core_separation": {
+          "false_equation": "dominance_or_exploitation = competence_or_right",
+          "corrected_equation": "legitimate_power = consent + accountability + evidence + boundaries + non-harm",
+          "one_line_translation": "Predatory behavior is not power; it is distortion."
+        },
+        "separation_axioms": [
+          {
+            "axiom": "Self-importance is not authority.",
+            "correction": "Authority requires valid role, responsibility, competence, and accountability."
+          },
+          {
+            "axiom": "Manipulation is not intelligence.",
+            "correction": "Intelligence solves problems without violating agency or truth."
+          },
+          {
+            "axiom": "Charm is not consent.",
+            "correction": "Consent requires voluntary, informed, specific agreement."
+          },
+          {
+            "axiom": "Access is not entitlement.",
+            "correction": "Being near something, knowing something, or reaching something does not make it yours."
+          },
+          {
+            "axiom": "Control is not safety.",
+            "correction": "Safety restores agency; control suppresses it."
+          },
+          {
+            "axiom": "Lack of remorse is not strength.",
+            "correction": "Strength includes responsibility, restraint, repair, and moral awareness."
+          }
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "Confidence equals authority.",
+            "correction": "Confidence may signal self-belief; it does not prove legitimacy."
+          },
+          {
+            "collapse": "Winning through manipulation proves intelligence.",
+            "correction": "Exploitation proves willingness to violate trust, not wisdom."
+          },
+          {
+            "collapse": "Someone being charmed means they agreed.",
+            "correction": "Emotional influence does not replace consent."
+          },
+          {
+            "collapse": "If I can access it, I deserve it.",
+            "correction": "Access without permission creates no right."
+          },
+          {
+            "collapse": "If I control everything, everyone is safe.",
+            "correction": "Total control creates fear, resistance, and escalation."
+          },
+          {
+            "collapse": "Not feeling bad means being strong.",
+            "correction": "Absence of remorse can signal harm-blindness, not strength."
+          }
+        ],
+        "failure_modes": [
+          "authority_impersonation",
+          "strategic_deception",
+          "consent_substitution",
+          "entitlement_inflation",
+          "control_laundering_as_protection",
+          "remorselessness_rebranded_as_strength"
+        ],
+        "distortion_tests": [
+          {
+            "name": "Authority Test",
+            "question": "Does this person actually have a legitimate role or are they only acting superior?"
+          },
+          {
+            "name": "Agency Test",
+            "question": "Are people being allowed to choose freely?"
+          },
+          {
+            "name": "Consent Test",
+            "question": "Was there clear, informed, voluntary agreement?"
+          },
+          {
+            "name": "Entitlement Test",
+            "question": "Where does the claimed right actually come from?"
+          },
+          {
+            "name": "Safety Test",
+            "question": "Is this restoring agency or demanding obedience?"
+          },
+          {
+            "name": "Remorse Test",
+            "question": "Can the person recognize harm, repair it, and accept accountability?"
+          }
+        ],
+        "compact_signature": [
+          "false_power_detected",
+          "virtue_imitation_separated",
+          "agency_restored",
+          "consent_checked",
+          "accountability_required"
+        ],
+        "one_line_translation": "Dark Triad behavior often imitates power, but real power requires consent, accountability, restraint, and truth."
+      }
+    },
+    {
+      "source_filename": "PSC-DATING-CONSENT-NOT-THIRD-PARTY-PERMISSION-01.json",
+      "source_path": "/mnt/data/PSC-DATING-CONSENT-NOT-THIRD-PARTY-PERMISSION-01.json",
+      "ukr_id": "PSC-DATING-CONSENT-NOT-THIRD-PARTY-PERMISSION-01",
+      "title": "Dating Consent Is Not Third-Party Permission",
+      "type": "psc_pattern",
+      "semantic_kind": "relationship_agency_boundary_pattern",
+      "payload": {
+        "ukr_id": "PSC-DATING-CONSENT-NOT-THIRD-PARTY-PERMISSION-01",
+        "title": "Dating Consent Is Not Third-Party Permission",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "semantic_kind": "relationship_agency_boundary_pattern",
+        "purpose": "Separate mutual dating consent from outside approval, family permission, friend-group pressure, or social-circle veto power.",
+        "core_definition": {
+          "summary": "A person does not need permission from someone's friends, family, coworkers, or social circle to date them. Dating authority belongs to the people directly involved, provided both are capable of informed consent and no coercion is present.",
+          "governing_rule": "Dating requires mutual consent between the dating parties, not third-party authorization."
+        },
+        "core_separation": {
+          "false_equation": "friends_or_family_disapproval = no_right_to_date",
+          "corrected_equation": "dating_decision = mutual_consent + autonomy + direct_participant_choice",
+          "one_line_translation": "Their circle can have opinions; they do not own the decision."
+        },
+        "primary_units": [
+          "person_A",
+          "person_B",
+          "mutual_consent",
+          "third_party_opinion",
+          "family_pressure",
+          "friend_group_pressure",
+          "dating_agency",
+          "boundary"
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "Family disapproval means dating is forbidden.",
+            "correction": "Family disapproval is input, not authority."
+          },
+          {
+            "collapse": "Friends must approve before dating can happen.",
+            "correction": "Friend approval is optional, not required."
+          },
+          {
+            "collapse": "Respect means asking the social circle for permission.",
+            "correction": "Respect means treating the person as their own decision-maker."
+          },
+          {
+            "collapse": "Outside discomfort overrides mutual consent.",
+            "correction": "Outside discomfort does not automatically cancel adult agency."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Social Circle Veto Inflation",
+            "description": "Friends or family act as if their opinion has veto power over another person's dating choices."
+          },
+          {
+            "id": "FM-02",
+            "name": "Permission Laundering",
+            "description": "Social pressure is reframed as moral authority or protective duty."
+          },
+          {
+            "id": "FM-03",
+            "name": "Agency Displacement",
+            "description": "The person being dated is treated as if their own consent matters less than their circle's approval."
+          },
+          {
+            "id": "FM-04",
+            "name": "Respect Distortion",
+            "description": "Respect is falsely defined as obedience to outsiders instead of direct respect for the person involved."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Direct Consent Test",
+            "question": "Do both people directly involved consent?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Authority Test",
+            "question": "Who is claiming the right to decide, and do they actually have that authority?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Pressure Test",
+            "question": "Is someone using family, friends, reputation, or social fear to override personal choice?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Agency Test",
+            "question": "Is the person being treated as an independent decision-maker?"
+          }
+        ],
+        "separation_axioms": [
+          "Consent is not third-party permission.",
+          "Opinion is not authority.",
+          "Family approval is not ownership.",
+          "Friend approval is not a dating license.",
+          "Respect is not obedience to outsiders.",
+          "Social discomfort is not automatic prohibition.",
+          "A relationship belongs to the people in it.",
+          "Mutual consent cannot be replaced by group pressure."
+        ],
+        "response_templates": {
+          "soft": [
+            "I respect that people may have opinions, but the decision belongs to the people directly involved.",
+            "I do not need third-party permission to date someone who mutually consents."
+          ],
+          "firm": [
+            "Their friends and family do not own their dating choices.",
+            "Dating requires mutual consent, not social-circle authorization."
+          ],
+          "hard_boundary": [
+            "I will not treat outside pressure as authority over my dating life.",
+            "Do not replace mutual consent with third-party control."
+          ]
+        },
+        "compact_signature": [
+          "third_party_permission_claim",
+          "mutual_consent_check",
+          "authority_boundary_restored",
+          "agency_preserved",
+          "social_pressure_rejected"
+        ],
+        "one_line_translation": "I need consent from the person I am dating, not permission from their friends and family."
+      }
+    },
+    {
+      "source_filename": "PSC-ENTITLEMENT-FAILED-EXPLOIT-PERSISTENCE-01.json",
+      "source_path": "/mnt/data/PSC-ENTITLEMENT-FAILED-EXPLOIT-PERSISTENCE-01.json",
+      "ukr_id": "PSC-ENTITLEMENT-FAILED-EXPLOIT-PERSISTENCE-01",
+      "title": "Failed Exploit Does Not Grant Entitlement",
+      "type": "psc_pattern",
+      "semantic_kind": "exploitation_entitlement_delusion",
+      "payload": {
+        "ukr_id": "PSC-ENTITLEMENT-FAILED-EXPLOIT-PERSISTENCE-01",
+        "title": "Failed Exploit Does Not Grant Entitlement",
+        "type": "psc_pattern",
+        "semantic_kind": "exploitation_entitlement_delusion",
+        "purpose": "Separate attempted exploitation from ownership, and prevent persistence of entitlement after failure or neutralization.",
+        "core_definition": {
+          "summary": "An actor attempts to exploit another person using hacks or unauthorized access, but continues behaving as if they are entitled to the target's resources even after the exploit fails or becomes ineffective.",
+          "governing_rule": "Attempted access or effort does not create ownership, entitlement, or rights."
+        },
+        "actors": {
+          "person_A": {
+            "role": "unauthorized_extractor",
+            "behavior": [
+              "uses hacks or exploit attempts",
+              "assumes access implies entitlement",
+              "continues behavior after failure",
+              "ignores lack of consent"
+            ]
+          },
+          "person_B": {
+            "role": "non-participating_target",
+            "behavior": [
+              "does not consent",
+              "does not engage emotionally",
+              "recognizes monitoring or oversight (e.g. RCMP)",
+              "understands exploits are ineffective or being neutralized"
+            ]
+          }
+        },
+        "core_separation": {
+          "false_equation": "attempted_access = entitlement",
+          "corrected_equation": "attempted_access = unauthorized_action + no_rights_granted",
+          "one_line_translation": "Trying to take something does not make it yours."
+        },
+        "event_flow": [
+          "person_A_attempts_exploit",
+          "person_B_remains_unaffected",
+          "system_or_authority_monitors_or_mitigates",
+          "exploit_becomes_ineffective_or_patched",
+          "person_A_continues_entitlement_behavior"
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "If I can access it, I deserve it.",
+            "correction": "Access without consent is not ownership."
+          },
+          {
+            "collapse": "Effort creates rights.",
+            "correction": "Effort without permission creates nothing but risk."
+          },
+          {
+            "collapse": "Failure just means try harder.",
+            "correction": "Failure plus boundary means stop."
+          },
+          {
+            "collapse": "The target's lack of reaction implies acceptance.",
+            "correction": "Non-reaction is not consent."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Entitlement Persistence",
+            "description": "Continuing to act as if access rights exist after repeated failure or denial."
+          },
+          {
+            "id": "FM-02",
+            "name": "Exploit Investment Fallacy",
+            "description": "Belief that time or effort spent hacking creates a claim to the target."
+          },
+          {
+            "id": "FM-03",
+            "name": "Reality Rejection",
+            "description": "Ignoring that systems are patched, monitored, or ineffective."
+          },
+          {
+            "id": "FM-04",
+            "name": "Consent Erasure",
+            "description": "Treating another person’s boundaries as irrelevant."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Consent Test",
+            "question": "Was access granted explicitly by the owner?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Effectiveness Test",
+            "question": "Is the exploit actually working, or just believed to be?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Authority Awareness Test",
+            "question": "Is there oversight or monitoring that invalidates the attempt?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Entitlement Source Test",
+            "question": "Where does the claimed entitlement actually come from?"
+          }
+        ],
+        "defensive_interpretation": {
+          "person_B_position": "Non-engagement plus awareness neutralizes perceived power.",
+          "system_position": "Unauthorized exploits are temporary and subject to patching, logging, and removal.",
+          "reality_anchor": "Persistence of behavior does not equal success or legitimacy."
+        },
+        "related_patterns": [
+          "PSC-ANTI-INVERTER-SEMANTIC-STABILITY-01",
+          "PSC-TOTAL-CONTROL-VIOLENCE-ESCALATION-01",
+          "PSC-DARAD-PALINDROMIC-INVESTIGATION-01"
+        ],
+        "one_line_translation": "Trying to hack someone does not give you rights to them, and continuing after failure just exposes the delusion."
+      }
+    },
+    {
+      "source_filename": "PSC-FULL-WORD-INVERSION-SCANNER-01.json",
+      "source_path": "/mnt/data/PSC-FULL-WORD-INVERSION-SCANNER-01.json",
+      "ukr_id": "PSC-FULL-WORD-INVERSION-SCANNER-01",
+      "title": "Full Word Inversion Scanner and Anti-Inverter Stability Process",
+      "type": "psc_pattern",
+      "semantic_kind": "semantic_distortion_defense_process",
+      "payload": {
+        "ukr_id": "PSC-FULL-WORD-INVERSION-SCANNER-01",
+        "title": "Full Word Inversion Scanner and Anti-Inverter Stability Process",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "semantic_kind": "semantic_distortion_defense_process",
+        "derived_from": [
+          "PSC-ANTI-INVERTER-SEMANTIC-STABILITY-01"
+        ],
+        "purpose": "Detect and neutralize attempts to flip every word in a statement into its opposite and then treat the flipped version as the speaker's hidden or true meaning.",
+        "core_definition": {
+          "summary": "A full-word inversion scanner identifies possible word-level opposites across nouns, verbs, adjectives, relations, values, and logical operators, but prevents those inversions from replacing the speaker's stated meaning.",
+          "governing_rule": "A word may have an opposite, but the opposite is not automatically the meaning.",
+          "primary_unit_of_analysis": "speaker_statement",
+          "secondary_units": [
+            "word_token",
+            "opposite_candidate",
+            "logical_inverter",
+            "semantic_category_pair",
+            "speaker_intent",
+            "context_anchor",
+            "distortion_attempt"
+          ]
+        },
+        "core_separation": {
+          "false_equation": "possible_word_opposite = hidden_true_meaning",
+          "corrected_equation": "stated_words + context + clarified_intent = actual_meaning",
+          "one_line_translation": "Every word may have an opposite, but flipping the words does not reveal the speaker's intent."
+        },
+        "inversion_classes": [
+          {
+            "class": "logical_inverter",
+            "examples": {
+              "can": "cannot",
+              "do": "do not",
+              "is": "is not",
+              "always": "never",
+              "yes": "no"
+            }
+          },
+          {
+            "class": "binary_opposite",
+            "examples": {
+              "on": "off",
+              "open": "closed",
+              "inside": "outside",
+              "up": "down",
+              "in": "out"
+            }
+          },
+          {
+            "class": "category_pair_opposite",
+            "examples": {
+              "boy": "girl",
+              "man": "woman",
+              "male": "female",
+              "parent": "child",
+              "teacher": "student"
+            }
+          },
+          {
+            "class": "scalar_opposite",
+            "examples": {
+              "young": "old",
+              "hot": "cold",
+              "fast": "slow",
+              "near": "far",
+              "high": "low"
+            }
+          },
+          {
+            "class": "color_or_symbolic_opposite",
+            "examples": {
+              "black": "white",
+              "light": "dark",
+              "bright": "dim"
+            }
+          },
+          {
+            "class": "moral_value_opposite",
+            "examples": {
+              "good": "evil",
+              "kind": "cruel",
+              "honest": "dishonest",
+              "fair": "unfair"
+            }
+          },
+          {
+            "class": "agency_permission_opposite",
+            "examples": {
+              "allow": "forbid",
+              "accept": "reject",
+              "consent": "refuse",
+              "choose": "be forced"
+            }
+          },
+          {
+            "class": "relational_opposite",
+            "examples": {
+              "friend": "enemy",
+              "ally": "opponent",
+              "with": "against",
+              "together": "apart"
+            }
+          }
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "If a word has an opposite, the opposite meaning is equally valid.",
+            "correction": "Opposite generation is a linguistic operation, not proof of intended meaning."
+          },
+          {
+            "collapse": "Flipping every word reveals hidden intent.",
+            "correction": "Flipping every word usually destroys meaning unless the speaker explicitly intended contrast."
+          },
+          {
+            "collapse": "A listener may replace the speaker's meaning with the inverted version.",
+            "correction": "The speaker's stated and clarified intent remains the anchor."
+          },
+          {
+            "collapse": "Semantic inversion is interpretation.",
+            "correction": "Semantic inversion becomes distortion when imposed against context and clarification."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Total Word Flip",
+            "description": "Every available word is replaced with an opposite candidate regardless of context."
+          },
+          {
+            "id": "FM-02",
+            "name": "Opposite-as-Truth Error",
+            "description": "The inverted sentence is treated as more truthful than the original statement."
+          },
+          {
+            "id": "FM-03",
+            "name": "Context Deletion",
+            "description": "Context is ignored so the flipped version can be forced."
+          },
+          {
+            "id": "FM-04",
+            "name": "Intent Override",
+            "description": "The speaker's clarification is rejected in favor of the listener's imposed inversion."
+          },
+          {
+            "id": "FM-05",
+            "name": "Category Pair Abuse",
+            "description": "Words like boy/girl, black/white, young/old, or on/off are flipped mechanically without checking whether the flip is relevant."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Word Opposite Test",
+            "question": "Which words in the sentence have plausible opposite candidates?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Context Preservation Test",
+            "question": "Does the inversion preserve the sentence's context, or does it destroy it?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Intent Anchor Test",
+            "question": "Did the speaker state or clarify that the inverted version is what they meant?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Bad-Faith Replacement Test",
+            "question": "Is the listener using the flipped version to replace the speaker's stated meaning?"
+          },
+          {
+            "id": "DT-05",
+            "name": "Clarification Respect Test",
+            "question": "After clarification, does the listener accept the stated meaning or continue forcing inversion?"
+          }
+        ],
+        "sorting_flow": {
+          "START": {
+            "description": "Receive a sentence or statement from a speaker.",
+            "next": "TOKENIZE_SENTENCE"
+          },
+          "TOKENIZE_SENTENCE": {
+            "description": "Break the statement into words, phrases, negators, relations, subjects, actions, and modifiers.",
+            "next": "CLASSIFY_WORDS"
+          },
+          "CLASSIFY_WORDS": {
+            "description": "Assign each word to an inversion class if applicable.",
+            "next": "GENERATE_OPPOSITE_CANDIDATES"
+          },
+          "GENERATE_OPPOSITE_CANDIDATES": {
+            "description": "List possible opposite words without treating them as meaning.",
+            "next": "BUILD_HYPOTHETICAL_INVERSION"
+          },
+          "BUILD_HYPOTHETICAL_INVERSION": {
+            "description": "Construct one or more possible inverted sentences for analysis only.",
+            "next": "COMPARE_TO_CONTEXT"
+          },
+          "COMPARE_TO_CONTEXT": {
+            "description": "Check whether the inversion fits the original context or breaks it.",
+            "next": "CHECK_SPEAKER_INTENT"
+          },
+          "CHECK_SPEAKER_INTENT": {
+            "description": "Anchor meaning in what the speaker stated, clarified, and consistently intended.",
+            "next": "DETECT_DISTORTION"
+          },
+          "DETECT_DISTORTION": {
+            "description": "Flag distortion if the inverted sentence is being imposed as the speaker's real meaning.",
+            "branches": {
+              "NO_DISTORTION": "OUTPUT_ANALYTIC_MAP",
+              "DISTORTION_DETECTED": "RESTORE_STATED_MEANING"
+            }
+          },
+          "RESTORE_STATED_MEANING": {
+            "description": "Reject the imposed inversion and restate the speaker's actual intended meaning.",
+            "next": "OUTPUT_CORRECTED_FRAME"
+          },
+          "OUTPUT_ANALYTIC_MAP": {
+            "description": "Return the original sentence, possible opposites, and a note that inversion is hypothetical only."
+          },
+          "OUTPUT_CORRECTED_FRAME": {
+            "description": "State that the flipped version is not valid unless the speaker confirms it."
+          }
+        },
+        "response_templates": {
+          "soft": [
+            "That is a possible opposite, but it is not what I meant.",
+            "You can generate an opposite version, but my stated meaning remains the anchor.",
+            "Please ask for clarification instead of replacing my words with their opposites."
+          ],
+          "firm": [
+            "Do not treat word-flipping as interpretation.",
+            "The opposite of my sentence is not my hidden meaning.",
+            "You are replacing my statement with an inversion I did not make."
+          ],
+          "hard_boundary": [
+            "I will not continue if every word is flipped against my stated meaning.",
+            "My clarification overrides the imposed inversion.",
+            "This conversation cannot proceed while distortion is being treated as understanding."
+          ]
+        },
+        "compact_signature": [
+          "statement_received",
+          "words_tokenized",
+          "opposites_generated",
+          "hypothetical_inversion_built",
+          "context_checked",
+          "speaker_intent_locked",
+          "forced_inversion_rejected"
+        ],
+        "taglines": [
+          "Opposite generation is not interpretation.",
+          "A flipped word is not a hidden confession.",
+          "Context locks meaning.",
+          "Clarification defeats inversion.",
+          "The opposite of my words is not automatically my intent."
+        ]
+      }
+    },
+    {
+      "source_filename": "PSC-GLORY-HUNTING-CREDIT-WITHOUT-CONTRIBUTION-01.json",
+      "source_path": "/mnt/data/PSC-GLORY-HUNTING-CREDIT-WITHOUT-CONTRIBUTION-01.json",
+      "ukr_id": "PSC-GLORY-HUNTING-CREDIT-WITHOUT-CONTRIBUTION-01",
+      "title": "Glory Hunting Is Credit Without Contribution",
+      "type": "psc_pattern",
+      "semantic_kind": "status_extraction_pattern",
+      "payload": {
+        "ukr_id": "PSC-GLORY-HUNTING-CREDIT-WITHOUT-CONTRIBUTION-01",
+        "title": "Glory Hunting Is Credit Without Contribution",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "semantic_kind": "status_extraction_pattern",
+        "purpose": "Separate earned recognition from status-seeking behavior where a person attaches themselves to success without meaningful contribution, risk, loyalty, or accountability.",
+        "core_definition": {
+          "summary": "Glory hunting occurs when someone seeks praise, recognition, or status by associating with success rather than earning it through contribution, effort, loyalty, risk, or responsibility.",
+          "governing_rule": "Association with success does not create ownership of success."
+        },
+        "core_separation": {
+          "false_equation": "being_near_success = earning_success",
+          "corrected_equation": "earned_recognition = contribution + effort + accountability + risk",
+          "one_line_translation": "Standing next to the win is not the same as winning."
+        },
+        "primary_units": [
+          "status_attachment",
+          "credit_claim",
+          "actual_contribution",
+          "risk_taken",
+          "accountability_accepted",
+          "loyalty_under_failure",
+          "earned_recognition"
+        ],
+        "pattern_markers": [
+          "claims credit after success is visible",
+          "joins only when winning is likely",
+          "avoids responsibility during failure",
+          "uses group success as personal image fuel",
+          "switches loyalty when status changes",
+          "takes praise without carrying burden",
+          "wants glory without cost"
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "Being present means I contributed.",
+            "correction": "Presence is not contribution."
+          },
+          {
+            "collapse": "Association with winners makes me a winner.",
+            "correction": "Borrowed status is not earned achievement."
+          },
+          {
+            "collapse": "If the group succeeds, I deserve equal credit.",
+            "correction": "Credit should track actual contribution."
+          },
+          {
+            "collapse": "Failure is someone else’s responsibility, but success belongs to me.",
+            "correction": "Recognition without accountability is extraction."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Credit Extraction",
+            "description": "The person takes recognition from work they did not meaningfully help create."
+          },
+          {
+            "id": "FM-02",
+            "name": "Accountability Avoidance",
+            "description": "The person disappears, deflects, or distances themselves when failure, cost, or responsibility appears."
+          },
+          {
+            "id": "FM-03",
+            "name": "Status Parasitism",
+            "description": "The person attaches to successful people, groups, or projects to absorb reputation without earning it."
+          },
+          {
+            "id": "FM-04",
+            "name": "Loyalty Collapse",
+            "description": "The person abandons the group when status drops, proving the loyalty was conditional."
+          },
+          {
+            "id": "FM-05",
+            "name": "Trust Erosion",
+            "description": "Others stop trusting the person because they recognize the mismatch between claimed credit and real contribution."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Contribution Test",
+            "question": "What did this person actually do to help create the success?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Risk Test",
+            "question": "Did this person carry any meaningful risk before success was guaranteed?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Failure Test",
+            "question": "Did this person stay present when the situation became difficult or low-status?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Accountability Test",
+            "question": "Does this person accept responsibility as readily as they accept praise?"
+          },
+          {
+            "id": "DT-05",
+            "name": "Timing Test",
+            "question": "Did this person appear only after the glory became visible?"
+          }
+        ],
+        "separation_axioms": [
+          "Presence is not contribution.",
+          "Association is not achievement.",
+          "Credit requires work.",
+          "Glory without accountability is extraction.",
+          "Borrowed status is not earned status.",
+          "A win does not belong equally to everyone standing nearby.",
+          "Loyalty is tested during failure, not celebration.",
+          "Recognition should follow contribution.",
+          "Image is not substance.",
+          "Standing next to the win is not the same as winning."
+        ],
+        "corrective_model": {
+          "bad_model": "success -> attachment -> credit_claim -> status_gain -> accountability_avoidance",
+          "healthy_model": "effort -> contribution -> risk -> accountability -> earned_recognition"
+        },
+        "classification_axes": [
+          {
+            "axis": "contribution_level",
+            "values": [
+              "none",
+              "minor",
+              "supportive",
+              "substantial",
+              "core"
+            ]
+          },
+          {
+            "axis": "timing",
+            "values": [
+              "before_risk",
+              "during_work",
+              "after_success_visible",
+              "after_public_praise"
+            ]
+          },
+          {
+            "axis": "accountability",
+            "values": [
+              "accepts_failure",
+              "shares_responsibility",
+              "avoids_blame",
+              "claims_success_only"
+            ]
+          },
+          {
+            "axis": "loyalty",
+            "values": [
+              "stable",
+              "conditional",
+              "status_based",
+              "opportunistic"
+            ]
+          }
+        ],
+        "response_templates": {
+          "soft": [
+            "Credit should match contribution.",
+            "I respect support, but support is not the same as doing the work.",
+            "Let’s separate who helped from who arrived after success was visible."
+          ],
+          "firm": [
+            "Being near the win does not mean you earned the win.",
+            "Do not claim credit for work you did not carry.",
+            "If you avoided the cost, do not claim the glory."
+          ],
+          "hard_boundary": [
+            "You do not get ownership of success you did not help build.",
+            "I will not let credit be reassigned away from the people who carried the work.",
+            "Glory without contribution is extraction."
+          ]
+        },
+        "compact_signature": [
+          "success_visible",
+          "status_attachment",
+          "credit_claim_without_work",
+          "accountability_avoidance",
+          "trust_erosion"
+        ],
+        "one_line_translation": "Glory hunting means chasing praise for a victory you did not earn."
+      }
+    },
+    {
+      "source_filename": "PSC-HABITCHUALLY-HABITUAL-HOSTILITY-01.json",
+      "source_path": "/mnt/data/PSC-HABITCHUALLY-HABITUAL-HOSTILITY-01.json",
+      "ukr_id": "PSC-HABITCHUALLY-HABITUAL-HOSTILITY-01",
+      "title": "Habitchually: Habitual Hostility Pattern",
+      "type": "psc_pattern",
+      "semantic_kind": "behavioral_pattern_identification",
+      "payload": {
+        "ukr_id": "PSC-HABITCHUALLY-HABITUAL-HOSTILITY-01",
+        "title": "Habitchually: Habitual Hostility Pattern",
+        "type": "psc_pattern",
+        "semantic_kind": "behavioral_pattern_identification",
+        "purpose": "Define and stabilize the meaning of 'habitchually' as a repeated behavioral pattern rather than a one-time emotional expression.",
+        "core_definition": {
+          "term": "habitchually",
+          "summary": "A person who consistently and repeatedly behaves in a hostile, rude, or antagonistic manner as a stable habit rather than a temporary state.",
+          "plain_translation": "Not just being a bitch once — making it your default setting."
+        },
+        "core_separation": {
+          "false_equation": "single_negative_event = identity",
+          "corrected_equation": "repeated_behavior_over_time = pattern",
+          "one_line_translation": "One bad moment is not a pattern; repetition is."
+        },
+        "primary_units": [
+          "behavior_frequency",
+          "behavior_consistency",
+          "context_independence",
+          "baseline_attitude",
+          "pattern_duration"
+        ],
+        "pattern_markers": [
+          "hostility appears across multiple situations",
+          "rudeness is not tied to a specific trigger",
+          "behavior persists over time",
+          "others can predict the negative behavior",
+          "person defaults to antagonism rather than cooperation"
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "They were rude once, so they are habitchually a bitch.",
+            "correction": "A single event does not establish a behavioral pattern."
+          },
+          {
+            "collapse": "They are just having a bad day.",
+            "correction": "Consistent repetition across time suggests a stable pattern, not a temporary mood."
+          },
+          {
+            "collapse": "Bluntness equals habitchual hostility.",
+            "correction": "Directness without hostility is not the same as antagonistic behavior."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Single-Event Overgeneralization",
+            "description": "Assigning the label based on one isolated interaction."
+          },
+          {
+            "id": "FM-02",
+            "name": "Mood Excusal Loop",
+            "description": "Repeated harmful behavior is dismissed as temporary mood indefinitely."
+          },
+          {
+            "id": "FM-03",
+            "name": "Bluntness Misclassification",
+            "description": "Direct or assertive communication is incorrectly labeled as hostility."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Frequency Test",
+            "question": "Does the behavior occur repeatedly across time?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Context Spread Test",
+            "question": "Does the behavior appear across different situations and people?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Predictability Test",
+            "question": "Can others reasonably expect this behavior from the person?"
+          }
+        ],
+        "classification_axes": [
+          {
+            "axis": "frequency",
+            "values": [
+              "isolated",
+              "occasional",
+              "repeated",
+              "chronic"
+            ]
+          },
+          {
+            "axis": "intensity",
+            "values": [
+              "mild_irritation",
+              "moderate_rudeness",
+              "consistent_hostility",
+              "aggressive"
+            ]
+          },
+          {
+            "axis": "stability",
+            "values": [
+              "situational",
+              "variable",
+              "patterned",
+              "baseline_trait"
+            ]
+          }
+        ],
+        "compact_signature": [
+          "repeated_negative_behavior",
+          "cross_context_consistency",
+          "predictable_hostility",
+          "pattern_confirmation"
+        ],
+        "one_line_translation": "Habitchually means the behavior is not an exception—it is the pattern."
+      }
+    },
+    {
+      "source_filename": "PSC-INVERSION-RESISTANT-STATEMENT-CONSTRUCTION-01.json",
+      "source_path": "/mnt/data/PSC-INVERSION-RESISTANT-STATEMENT-CONSTRUCTION-01.json",
+      "ukr_id": "PSC-INVERSION-RESISTANT-STATEMENT-CONSTRUCTION-01",
+      "title": "Inversion-Resistant Statement Construction",
+      "type": "psc_pattern",
+      "semantic_kind": "semantic_distortion_defense_process",
+      "payload": {
+        "ukr_id": "PSC-INVERSION-RESISTANT-STATEMENT-CONSTRUCTION-01",
+        "title": "Inversion-Resistant Statement Construction",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "semantic_kind": "semantic_distortion_defense_process",
+        "derived_from": [
+          "PSC-ANTI-INVERTER-SEMANTIC-STABILITY-01",
+          "PSC-FULL-WORD-INVERSION-SCANNER-01"
+        ],
+        "purpose": "Construct statements that resist hostile word-flipping by reducing invertible language, preserving direct meaning, and making reversal attempts collapse into fabrication rather than valid interpretation.",
+        "core_definition": {
+          "summary": "An inversion-resistant statement is built to minimize semantic attack surfaces. Instead of trying to survive full inversion, it removes unnecessary opposable words, negations, emotional ambiguity, and soft requests so that hostile reversal cannot cleanly replace the speaker's meaning.",
+          "governing_rule": "A statement should anchor meaning so clearly that inversion either fails, becomes obviously false, or requires adding new fabricated meaning.",
+          "primary_unit_of_analysis": "speaker_statement",
+          "secondary_units": [
+            "invertible_word",
+            "negation_surface",
+            "soft_request",
+            "atomic_statement",
+            "boundary_command",
+            "meaning_anchor",
+            "fabrication_threshold"
+          ]
+        },
+        "core_separation": {
+          "false_equation": "inverted_sentence = equally valid interpretation",
+          "corrected_equation": "clear_statement + direct_boundary + minimal_invertible_surface = stable_meaning",
+          "one_line_translation": "The goal is not to make inversion true; the goal is to make inversion fail."
+        },
+        "construction_principles": [
+          {
+            "id": "P1",
+            "name": "Remove Negation Traps",
+            "rule": "Avoid wording that depends on not, never, cannot, un-, dis-, or anti- unless necessary."
+          },
+          {
+            "id": "P2",
+            "name": "Avoid Opposable Adjectives",
+            "rule": "Replace good/bad, well/unwell, happy/sad, safe/unsafe with concrete observations or needs."
+          },
+          {
+            "id": "P3",
+            "name": "Use Atomic Statements",
+            "rule": "Break complex claims into short, direct sentences that each carry one meaning."
+          },
+          {
+            "id": "P4",
+            "name": "Replace Wish Language With Boundary Language",
+            "rule": "Use direct statements like 'Stop' or 'I do not consent' instead of weak phrasing like 'I wish' or 'I hope.'"
+          },
+          {
+            "id": "P5",
+            "name": "Anchor the Harm",
+            "rule": "Name the harmful behavior directly instead of describing only feelings."
+          },
+          {
+            "id": "P6",
+            "name": "Force Fabrication Detection",
+            "rule": "If the inversion requires adding new meaning, mark it as fabrication, not interpretation."
+          }
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "If words can be reversed, the reversed meaning is legitimate.",
+            "correction": "A reversal is only a linguistic operation, not proof of speaker intent."
+          },
+          {
+            "collapse": "The opposite version deserves equal status.",
+            "correction": "The speaker's direct statement remains the meaning anchor."
+          },
+          {
+            "collapse": "Soft wording means weak consent.",
+            "correction": "A boundary can be rewritten in direct form to remove ambiguity."
+          },
+          {
+            "collapse": "Inversion reveals hidden truth.",
+            "correction": "Inversion often fabricates a meaning that was never stated."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Negation Surface Vulnerability",
+            "description": "The sentence depends on negation, making it easier for a hostile listener to strip or reverse the meaning."
+          },
+          {
+            "id": "FM-02",
+            "name": "Soft Request Reversal",
+            "description": "Words like wish, hope, prefer, or maybe are treated as optional instead of serious."
+          },
+          {
+            "id": "FM-03",
+            "name": "Emotion-Only Framing",
+            "description": "The speaker describes feelings without naming the behavior that needs to stop."
+          },
+          {
+            "id": "FM-04",
+            "name": "Complex Sentence Attack Surface",
+            "description": "Multiple clauses give the inverter more places to flip or distort meaning."
+          },
+          {
+            "id": "FM-05",
+            "name": "Fabricated Opposite Replacement",
+            "description": "The listener adds new structure to create an opposite sentence and pretends it came from the speaker."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Invertible Word Test",
+            "question": "Which words can be mechanically flipped into opposites?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Negation Trap Test",
+            "question": "Does the sentence rely on not, un-, never, cannot, or similar structures?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Atomicity Test",
+            "question": "Can the statement be split into shorter, clearer units?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Boundary Strength Test",
+            "question": "Is the speaker making a direct boundary, or only expressing a wish?"
+          },
+          {
+            "id": "DT-05",
+            "name": "Fabrication Test",
+            "question": "Does the inverted version require adding meaning that was not in the original sentence?"
+          }
+        ],
+        "sorting_flow": {
+          "START": {
+            "description": "Receive a sentence that may be vulnerable to hostile inversion.",
+            "next": "SCAN_FOR_INVERTIBLE_TERMS"
+          },
+          "SCAN_FOR_INVERTIBLE_TERMS": {
+            "description": "Identify negations, adjectives, value words, soft requests, and opposable relation terms.",
+            "next": "REMOVE_NEGATION_DEPENDENCE"
+          },
+          "REMOVE_NEGATION_DEPENDENCE": {
+            "description": "Rewrite the sentence so its meaning does not depend on negation where possible.",
+            "next": "REPLACE_SOFT_LANGUAGE"
+          },
+          "REPLACE_SOFT_LANGUAGE": {
+            "description": "Convert wishes, hopes, and preferences into clear statements or boundaries.",
+            "next": "ANCHOR_CONCRETE_BEHAVIOR"
+          },
+          "ANCHOR_CONCRETE_BEHAVIOR": {
+            "description": "Name the behavior, harm, need, or boundary directly.",
+            "next": "SPLIT_INTO_ATOMIC_SENTENCES"
+          },
+          "SPLIT_INTO_ATOMIC_SENTENCES": {
+            "description": "Break complex sentences into short units with one meaning each.",
+            "next": "TEST_HYPOTHETICAL_INVERSION"
+          },
+          "TEST_HYPOTHETICAL_INVERSION": {
+            "description": "Attempt a mechanical inversion only as a diagnostic test.",
+            "next": "CHECK_FOR_FABRICATION"
+          },
+          "CHECK_FOR_FABRICATION": {
+            "description": "If the inversion requires added structure, mark it as invalid fabrication.",
+            "next": "OUTPUT_STABLE_STATEMENT"
+          },
+          "OUTPUT_STABLE_STATEMENT": {
+            "description": "Return the hardened statement and its anti-inversion lock."
+          }
+        },
+        "rewrite_model": {
+          "vulnerable_example": "I am feeling very unwell and wish for the harassment to stop.",
+          "reversal_vulnerabilities": [
+            "very/unvery or slightly",
+            "unwell/well",
+            "wish/do not wish",
+            "stop/continue"
+          ],
+          "hardened_version": [
+            "Harassment is occurring.",
+            "It is causing harm.",
+            "Stop the harassment."
+          ],
+          "strongest_minimal_version": [
+            "This is harassment.",
+            "Stop."
+          ]
+        },
+        "response_templates": {
+          "soft": [
+            "My meaning is direct: this behavior is causing harm and needs to stop.",
+            "Please respond to the statement as written, not to an inverted version.",
+            "The opposite wording is not my meaning."
+          ],
+          "firm": [
+            "This is harassment. Stop.",
+            "Do not invert my statement. The boundary is clear.",
+            "I am identifying harm and telling it to stop."
+          ],
+          "hard_boundary": [
+            "I will not accept an inverted version of my words as my meaning.",
+            "Any reversal of this statement is fabrication, not interpretation.",
+            "The only valid reading is the direct one: the harassment must stop."
+          ]
+        },
+        "compact_signature": [
+          "statement_received",
+          "invertible_terms_detected",
+          "negation_surface_reduced",
+          "soft_language_hardened",
+          "atomic_boundary_created",
+          "fabricated_inversion_rejected",
+          "stable_meaning_output"
+        ],
+        "taglines": [
+          "The goal is not reversible meaning; the goal is failed inversion.",
+          "Clear boundaries give inversion less surface to attack.",
+          "If reversal needs added meaning, it is fabrication.",
+          "Short direct statements resist semantic theft.",
+          "Inversion is a test, not an authority."
+        ]
+      }
+    },
+    {
+      "source_filename": "PSC-JURY-FITNESS-FUNCTIONAL-FAIRNESS-01.json",
+      "source_path": "/mnt/data/PSC-JURY-FITNESS-FUNCTIONAL-FAIRNESS-01.json",
+      "ukr_id": "PSC-JURY-FITNESS-FUNCTIONAL-FAIRNESS-01",
+      "title": "Jury Fitness Is Functional Fairness, Not Diagnostic Label",
+      "type": "psc_pattern",
+      "semantic_kind": "civic_duty_fitness_separation_pattern",
+      "payload": {
+        "ukr_id": "PSC-JURY-FITNESS-FUNCTIONAL-FAIRNESS-01",
+        "title": "Jury Fitness Is Functional Fairness, Not Diagnostic Label",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "semantic_kind": "civic_duty_fitness_separation_pattern",
+        "purpose": "Separate lawful jury-duty participation from situations where a physical or mental condition prevents a person from performing the core duties of a juror fairly, attentively, and reliably.",
+        "core_definition": {
+          "summary": "A person should not be selected or should be excused from jury duty if a physical or mental condition significantly interferes with their ability to understand evidence, follow legal instructions, remain impartial, participate in deliberation, or make a fair decision.",
+          "governing_rule": "Jury fitness is determined by functional ability, not by stigma, assumption, diagnosis alone, or forced civic participation."
+        },
+        "core_separation": {
+          "false_equation": "mental_or_physical_condition = automatic_unfitness",
+          "corrected_equation": "jury_unfitness = condition + functional_impairment_affecting_fair_trial_role",
+          "one_line_translation": "A label does not disqualify someone; inability to perform the role fairly can."
+        },
+        "primary_units": [
+          "jury_summons",
+          "juror_candidate",
+          "physical_fitness",
+          "mental_fitness",
+          "functional_capacity",
+          "impartial_reasoning",
+          "evidence_comprehension",
+          "legal_instruction_following",
+          "deliberation_capacity",
+          "fair_trial_integrity"
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "Having a mental health condition means a person cannot think fairly.",
+            "correction": "A mental health condition only matters if it significantly impairs the person’s ability to serve fairly."
+          },
+          {
+            "collapse": "Jury duty must be served no matter what condition someone is in.",
+            "correction": "Civic duty does not override genuine incapacity or fair-trial integrity."
+          },
+          {
+            "collapse": "Physical illness is irrelevant because jury duty is mental work.",
+            "correction": "Physical conditions can interfere with attention, endurance, attendance, communication, or comprehension."
+          },
+          {
+            "collapse": "Being summoned means being suitable.",
+            "correction": "A summons begins screening; it does not prove fitness."
+          },
+          {
+            "collapse": "Excusal means moral failure.",
+            "correction": "Excusal can protect the fairness of the trial and the wellbeing of the person."
+          }
+        ],
+        "fitness_tests": [
+          {
+            "id": "FT-01",
+            "name": "Comprehension Test",
+            "question": "Can the person understand the evidence, testimony, and court instructions?"
+          },
+          {
+            "id": "FT-02",
+            "name": "Attention Test",
+            "question": "Can the person remain attentive for the required duration?"
+          },
+          {
+            "id": "FT-03",
+            "name": "Impartiality Test",
+            "question": "Can the person evaluate the case without uncontrolled bias, delusion, panic, fixation, or distortion?"
+          },
+          {
+            "id": "FT-04",
+            "name": "Deliberation Test",
+            "question": "Can the person participate in discussion with other jurors fairly and coherently?"
+          },
+          {
+            "id": "FT-05",
+            "name": "Endurance Test",
+            "question": "Can the person physically and mentally tolerate the length, stress, and demands of the trial?"
+          },
+          {
+            "id": "FT-06",
+            "name": "Fair Trial Integrity Test",
+            "question": "Would this person’s condition risk unfairness to the accused, the public, the court, or the other jurors?"
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Diagnosis-Based Exclusion",
+            "description": "Disqualifying someone based only on a mental or physical condition label without checking functional ability."
+          },
+          {
+            "id": "FM-02",
+            "name": "Forced Participation Despite Incapacity",
+            "description": "Treating civic duty as more important than the person’s actual capacity to serve fairly."
+          },
+          {
+            "id": "FM-03",
+            "name": "Fairness Drift",
+            "description": "A juror’s condition interferes with impartial reasoning, evidence weighing, or deliberation."
+          },
+          {
+            "id": "FM-04",
+            "name": "Stigma Collapse",
+            "description": "Assuming mental illness automatically equals unfairness, irrationality, or danger."
+          },
+          {
+            "id": "FM-05",
+            "name": "Role-Function Erasure",
+            "description": "Ignoring that jury duty is a specific role with specific cognitive, emotional, physical, and ethical demands."
+          }
+        ],
+        "separation_axioms": [
+          "Jury duty is not automatic fitness.",
+          "A summons is not selection.",
+          "A diagnosis is not automatic disqualification.",
+          "A condition matters when it affects function.",
+          "Fairness requires capacity.",
+          "Civic duty does not erase impairment.",
+          "Excusal is not failure.",
+          "Impartiality is part of the job.",
+          "Understanding evidence is part of the job.",
+          "Functional incapacity protects neither justice nor the juror."
+        ],
+        "corrective_model": {
+          "bad_model": "summons -> pressure -> ignore_condition -> impaired_service -> fairness_risk",
+          "healthy_model": "summons -> capacity_check -> medical_or_functional_review -> serve_if_fit_or_excuse_if_unfit"
+        },
+        "response_templates": {
+          "soft": [
+            "I respect the importance of jury duty, but I am not currently fit to perform that role fairly and reliably.",
+            "This is not about avoiding responsibility; it is about whether I can actually serve properly."
+          ],
+          "firm": [
+            "Jury duty requires functional fairness. If I cannot understand, attend, deliberate, or remain impartial, I should not serve.",
+            "A summons does not override genuine medical or functional unfitness."
+          ],
+          "hard_boundary": [
+            "Do not treat incapacity as disobedience.",
+            "Forcing an unfit juror into deliberation risks the fairness of the trial."
+          ]
+        },
+        "compact_signature": [
+          "jury_role_identified",
+          "fitness_requirement_checked",
+          "condition_noted",
+          "functional_impairment_assessed",
+          "fairness_integrity_preserved"
+        ],
+        "one_line_translation": "Jury duty requires functional fairness; if a condition prevents that, excusal protects justice rather than avoiding it."
+      }
+    },
+    {
+      "source_filename": "PSC-OFFER-NOT-OBLIGATION-DECISION-BOUNDARY-01.json",
+      "source_path": "/mnt/data/PSC-OFFER-NOT-OBLIGATION-DECISION-BOUNDARY-01.json",
+      "ukr_id": "PSC-OFFER-NOT-OBLIGATION-DECISION-BOUNDARY-01",
+      "title": "An Offer Is Not an Obligation",
+      "type": "psc_pattern",
+      "semantic_kind": "decision_boundary_anti_entitlement_module",
+      "payload": {
+        "ukr_id": "PSC-OFFER-NOT-OBLIGATION-DECISION-BOUNDARY-01",
+        "title": "An Offer Is Not an Obligation",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "semantic_kind": "decision_boundary_anti_entitlement_module",
+        "purpose": "Separate being offered something from being obligated to accept it. Preserve agency, selectivity, and consent when opportunities, credit cards, deals, favors, or propositions are presented.",
+        "core_definition": {
+          "summary": "A person may receive offers, deals, credit cards, opportunities, or invitations without being required to accept them. The existence of an offer creates an option, not a command.",
+          "governing_rule": "Offer does not equal obligation; acceptance requires consent, evaluation, capacity, and alignment."
+        },
+        "core_separation": {
+          "false_equation": "offer_received = obligation_to_accept",
+          "corrected_equation": "offer_received = option + evaluation_required + consent_required",
+          "one_line_translation": "An offer is an option, not a command."
+        },
+        "primary_units": [
+          "offer",
+          "deal",
+          "credit_card_offer",
+          "acceptance",
+          "refusal",
+          "choice",
+          "consent",
+          "evaluation",
+          "boundary"
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "If someone offers it, I should take it.",
+            "correction": "Being offered something does not make it wise, useful, safe, or aligned."
+          },
+          {
+            "collapse": "Refusing a deal means wasting opportunity.",
+            "correction": "Refusal can be intelligent filtering."
+          },
+          {
+            "collapse": "Availability equals suitability.",
+            "correction": "Something can be available and still not be right for me."
+          },
+          {
+            "collapse": "A good-looking offer removes the need for judgment.",
+            "correction": "Every offer still requires evaluation."
+          },
+          {
+            "collapse": "Not accepting means being ungrateful.",
+            "correction": "Gratitude does not require acceptance."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Offer Pressure Collapse",
+            "description": "Treating the presence of an offer as pressure to accept."
+          },
+          {
+            "id": "FM-02",
+            "name": "Deal Intoxication",
+            "description": "Accepting because something appears discounted, exclusive, urgent, or advantageous without checking actual fit."
+          },
+          {
+            "id": "FM-03",
+            "name": "Credit Extension Trap",
+            "description": "Taking credit because it is available rather than because it serves a stable financial purpose."
+          },
+          {
+            "id": "FM-04",
+            "name": "Boundary Shame",
+            "description": "Framing refusal as arrogance, fear, stupidity, or ingratitude."
+          },
+          {
+            "id": "FM-05",
+            "name": "Consent Erasure",
+            "description": "Ignoring that acceptance must be voluntary and informed."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Consent Test",
+            "question": "Do I actually want this, or am I reacting to pressure?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Utility Test",
+            "question": "Does this offer serve a real purpose in my life?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Cost Test",
+            "question": "What hidden costs, obligations, risks, or dependencies come with accepting?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Alignment Test",
+            "question": "Does this match my values, needs, timing, and capacity?"
+          },
+          {
+            "id": "DT-05",
+            "name": "Refusal Safety Test",
+            "question": "Can I say no without being punished, shamed, or manipulated?"
+          }
+        ],
+        "separation_axioms": [
+          "Offer is not obligation.",
+          "Access is not acceptance.",
+          "Availability is not suitability.",
+          "A deal is not automatically a benefit.",
+          "Credit offered is not credit needed.",
+          "Refusal is not ingratitude.",
+          "Choice requires evaluation.",
+          "Consent must remain active.",
+          "Pressure invalidates clean acceptance.",
+          "I decide what I accept."
+        ],
+        "corrective_model": {
+          "bad_model": "offer -> pressure -> automatic_acceptance -> obligation_or_regret",
+          "healthy_model": "offer -> pause -> evaluate -> consent_check -> accept_or_refuse"
+        },
+        "response_templates": {
+          "soft": [
+            "Thanks for the offer, but I am going to pass.",
+            "I do not accept every deal I am offered.",
+            "I need to evaluate whether this actually fits me."
+          ],
+          "firm": [
+            "An offer does not obligate me.",
+            "I decide what I accept.",
+            "Being offered something does not mean I should take it."
+          ],
+          "hard_boundary": [
+            "Stop treating my refusal as a problem.",
+            "I am not accepting this, and I am not debating my right to refuse.",
+            "Pressure does not turn an offer into consent."
+          ]
+        },
+        "compact_signature": [
+          "offer_detected",
+          "pressure_filtered",
+          "utility_checked",
+          "consent_verified",
+          "acceptance_or_refusal_chosen"
+        ],
+        "related_patterns": [
+          "PSC-ENTITLEMENT-FAILED-EXPLOIT-PERSISTENCE-01",
+          "PSC-PATHOLOGICAL-GENEROSITY-CHARITY-01",
+          "PSC-CLEAN-STORY-CONTENT-INTEGRITY-01",
+          "PSC-ANTI-INVERTER-SEMANTIC-STABILITY-01"
+        ],
+        "one_line_translation": "I choose what I accept; an offer does not decide for me."
+      }
+    },
+    {
+      "source_filename": "PSC-OVERTON-WINDOW-MISMATCH-DETECTION-01.json",
+      "source_path": "/mnt/data/PSC-OVERTON-WINDOW-MISMATCH-DETECTION-01.json",
+      "ukr_id": "PSC-OVERTON-WINDOW-MISMATCH-DETECTION-01",
+      "title": "Overton Window Mismatch Detection and Stabilization",
+      "type": "psc_pattern",
+      "semantic_kind": "conversation_misalignment_detection",
+      "payload": {
+        "ukr_id": "PSC-OVERTON-WINDOW-MISMATCH-DETECTION-01",
+        "title": "Overton Window Mismatch Detection and Stabilization",
+        "type": "psc_pattern",
+        "semantic_kind": "conversation_misalignment_detection",
+        "purpose": "Detect when two or more people are operating within different Overton Windows and prevent misclassification of disagreement as bad faith, stupidity, or malice.",
+        "core_definition": {
+          "summary": "An Overton Window mismatch occurs when participants in a conversation evaluate ideas using different internal ranges of what is acceptable, reasonable, or discussable. This mismatch can cause accurate statements to be interpreted as extreme, offensive, or nonsensical.",
+          "governing_rule": "Perceived extremity is relative to the observer's window, not absolute truth or intent."
+        },
+        "core_separation": {
+          "false_equation": "disagreement = bad faith or irrationality",
+          "corrected_equation": "disagreement = possible window mismatch + interpretation filtering",
+          "one_line_translation": "They may not be wrong—they may be standing in a different window."
+        },
+        "primary_units": [
+          "speaker_statement",
+          "listener_interpretation",
+          "window_position",
+          "window_width",
+          "emotional_response",
+          "classification_label"
+        ],
+        "window_properties": {
+          "position": "Where the center of acceptable ideas sits for the person",
+          "width": "How wide the range of acceptable ideas is",
+          "rigidity": "How resistant the window is to change",
+          "sensitivity": "How strongly the person reacts to boundary violations"
+        },
+        "mismatch_types": [
+          {
+            "id": "MT-01",
+            "name": "Position Mismatch",
+            "description": "Both people have similar tolerance ranges, but their centers are shifted in different directions."
+          },
+          {
+            "id": "MT-02",
+            "name": "Width Mismatch",
+            "description": "One person tolerates a wide range of ideas while the other has a narrow acceptable range."
+          },
+          {
+            "id": "MT-03",
+            "name": "Rigidity Mismatch",
+            "description": "One person can adapt or consider new ideas, while the other rejects anything outside their current frame."
+          },
+          {
+            "id": "MT-04",
+            "name": "Sensitivity Mismatch",
+            "description": "One person interprets statements neutrally, while the other experiences strong emotional reactions to boundary edges."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Extremity Misclassification",
+            "description": "A statement is labeled as extreme or insane solely because it lies outside the listener’s window."
+          },
+          {
+            "id": "FM-02",
+            "name": "Intent Distortion",
+            "description": "The listener assumes malicious or deceptive intent because the idea feels unacceptable."
+          },
+          {
+            "id": "FM-03",
+            "name": "Compression Collapse",
+            "description": "All ideas outside the window are grouped together as equally wrong or dangerous."
+          },
+          {
+            "id": "FM-04",
+            "name": "Moral Overreaction",
+            "description": "Disagreement is escalated into a moral or identity-level conflict."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Relative Extremity Test",
+            "question": "Is the statement objectively extreme, or only extreme relative to the listener’s window?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Window Boundary Test",
+            "question": "Does the statement fall just outside the listener’s acceptable range?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Interpretation Drift Test",
+            "question": "Is the listener interpreting the statement more harshly than it was stated?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Intent Assumption Test",
+            "question": "Is intent being inferred without clarification?"
+          }
+        ],
+        "detection_signals": [
+          "phrases like 'that’s insane', 'that’s obvious', 'no reasonable person would say that'",
+          "rapid emotional escalation",
+          "refusal to restate the other person’s position accurately",
+          "collapsing nuance into extremes",
+          "talking past each other rather than engaging the same point"
+        ],
+        "corrective_model": {
+          "bad_model": "statement -> emotional reaction -> extremity label -> intent attack -> conflict escalation",
+          "healthy_model": "statement -> locate relative position -> identify window mismatch -> clarify intent -> reframe discussion"
+        },
+        "intervention_strategies": [
+          {
+            "type": "alignment",
+            "action": "Explicitly state where your position sits relative to common positions"
+          },
+          {
+            "type": "translation",
+            "action": "Rephrase the statement into terms inside the listener’s window without changing meaning"
+          },
+          {
+            "type": "boundary_mapping",
+            "action": "Identify where each person’s acceptable range begins and ends"
+          },
+          {
+            "type": "intent_lock",
+            "action": "Clarify intended meaning to prevent distortion or inversion"
+          }
+        ],
+        "response_templates": {
+          "soft": [
+            "I think we may be looking at this from different baselines.",
+            "That might sound extreme from your perspective, but here’s how I’m framing it.",
+            "Let me restate this in a way that fits your frame without changing what I mean."
+          ],
+          "firm": [
+            "You’re reacting to how this sounds in your frame, not what I actually said.",
+            "That interpretation is coming from a different baseline than mine.",
+            "Before labeling this, let’s align on what each of us considers reasonable."
+          ],
+          "hard_boundary": [
+            "I will not accept mischaracterization based on your window boundaries.",
+            "Do not assign intent based on your reaction alone.",
+            "If you cannot engage the actual statement, the conversation cannot proceed."
+          ]
+        },
+        "sorting_flow": {
+          "START": {
+            "description": "Conversation begins and a statement is made.",
+            "next": "CHECK_REACTION"
+          },
+          "CHECK_REACTION": {
+            "description": "Observe the listener’s response for signs of extremity labeling or emotional escalation.",
+            "next": "APPLY_DISTORTION_TESTS"
+          },
+          "APPLY_DISTORTION_TESTS": {
+            "description": "Run relative extremity, boundary, interpretation, and intent tests.",
+            "next": "CLASSIFY_MISMATCH"
+          },
+          "CLASSIFY_MISMATCH": {
+            "description": "Identify mismatch type: position, width, rigidity, or sensitivity.",
+            "next": "SELECT_INTERVENTION"
+          },
+          "SELECT_INTERVENTION": {
+            "description": "Choose alignment, translation, boundary mapping, or intent lock.",
+            "next": "RESPONSE_OUTPUT"
+          },
+          "RESPONSE_OUTPUT": {
+            "description": "Deliver a stabilized response that reduces distortion and clarifies meaning."
+          }
+        },
+        "taglines": [
+          "Extremes are often relative, not absolute.",
+          "Different windows create different realities.",
+          "Misalignment is not always malice.",
+          "Interpretation depends on position.",
+          "Before arguing truth, align the frame."
+        ]
+      }
+    },
+    {
+      "source_filename": "PSC-PATHOLOGICAL-GENEROSITY-CHARITY-01.json",
+      "source_path": "/mnt/data/PSC-PATHOLOGICAL-GENEROSITY-CHARITY-01.json",
+      "ukr_id": "PSC-PATHOLOGICAL-GENEROSITY-CHARITY-01",
+      "title": "Pathological Generosity Is Not Virtue",
+      "type": "psc_pattern",
+      "semantic_kind": "charity_boundary_pathology",
+      "payload": {
+        "ukr_id": "PSC-PATHOLOGICAL-GENEROSITY-CHARITY-01",
+        "title": "Pathological Generosity Is Not Virtue",
+        "type": "psc_pattern",
+        "semantic_kind": "charity_boundary_pathology",
+        "purpose": "Separate healthy generosity from compulsive, coercive, self-erasing, or harm-producing charity.",
+        "core_definition": {
+          "summary": "Pathological generosity occurs when helping behavior is driven by compulsion, guilt, identity dependence, moral pressure, or boundary collapse, and produces foreseeable harm to the giver, recipient, or system.",
+          "governing_rule": "Charity is virtuous only when it preserves consent, boundaries, proportionality, reality-testing, and the wellbeing of all parties."
+        },
+        "core_separation": {
+          "false_equation": "more giving = more goodness",
+          "corrected_equation": "good giving = consent + capacity + effectiveness + boundaries + non-harm",
+          "one_line_translation": "Giving until someone breaks is not charity."
+        },
+        "healthy_generosity": [
+          "voluntary",
+          "bounded",
+          "proportionate",
+          "reality-tested",
+          "does not require self-erasure",
+          "does not create dependency",
+          "can tolerate refusal",
+          "helps without controlling"
+        ],
+        "pathological_generosity_markers": [
+          "giving from guilt rather than choice",
+          "inability to say no",
+          "identity depends on being needed",
+          "help continues after harm is visible",
+          "rescuer becomes resentful",
+          "recipient becomes dependent or enabled",
+          "charity is used to avoid self-care",
+          "moral language overrides consent or limits",
+          "giver sacrifices housing, food, safety, money, health, or dignity to maintain the helping role"
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "Charity requires self-destruction.",
+            "correction": "Charity does not require personal ruin."
+          },
+          {
+            "collapse": "Refusing to give means selfishness.",
+            "correction": "A boundary is not cruelty."
+          },
+          {
+            "collapse": "Need automatically creates obligation.",
+            "correction": "Need may invite care, but obligation requires valid capacity, consent, and role."
+          },
+          {
+            "collapse": "Suffering proves moral purity.",
+            "correction": "Suffering is not proof of virtue."
+          },
+          {
+            "collapse": "Helping intent cancels harmful outcome.",
+            "correction": "Good intent does not erase foreseeable harm."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Self-Erasure Charity",
+            "description": "The giver deletes their own needs to preserve the identity of being good."
+          },
+          {
+            "id": "FM-02",
+            "name": "Compulsive Rescue Loop",
+            "description": "The giver repeatedly rescues others even when rescue enables dysfunction."
+          },
+          {
+            "id": "FM-03",
+            "name": "Moral Override Pressure",
+            "description": "Charity language is used to override consent, boundaries, or practical limits."
+          },
+          {
+            "id": "FM-04",
+            "name": "Dependency Manufacture",
+            "description": "Help weakens the recipient’s agency instead of strengthening it."
+          },
+          {
+            "id": "FM-05",
+            "name": "Martyrdom Identity Lock",
+            "description": "The giver becomes attached to sacrifice as proof of worth."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Capacity Test",
+            "question": "Can the giver help without damaging their own survival, health, housing, or core stability?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Consent Test",
+            "question": "Is the help wanted, or is it imposed to satisfy the giver’s identity?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Outcome Test",
+            "question": "Does the help actually improve the situation, or does it worsen dependency and harm?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Boundary Test",
+            "question": "Can the giver say no without collapsing into guilt or panic?"
+          },
+          {
+            "id": "DT-05",
+            "name": "Identity Test",
+            "question": "Does the giver feel worthless unless they are rescuing someone?"
+          }
+        ],
+        "separation_axioms": [
+          "Generosity is not self-erasure.",
+          "Charity is not homelessness.",
+          "Help is not consent to exploitation.",
+          "Need is not automatic ownership of another person’s resources.",
+          "Compassion is not boundary deletion.",
+          "Sacrifice is not always virtue.",
+          "Refusal is not cruelty.",
+          "Being useful is not the same as being loved.",
+          "Good intent is not outcome immunity.",
+          "Rescue is not the same as repair."
+        ],
+        "corrective_model": {
+          "bad_model": "need -> guilt -> compulsory giving -> self-erasure -> resentment/dependency",
+          "healthy_model": "need -> capacity check -> consent check -> effective help -> boundary preservation -> reassessment"
+        },
+        "response_templates": {
+          "soft": [
+            "I care, but I need to help in a way that does not destroy me.",
+            "I can offer limited support, not unlimited rescue.",
+            "My boundary does not mean I lack compassion."
+          ],
+          "firm": [
+            "Charity does not require me to become unstable.",
+            "I am not obligated to harm myself to prove goodness.",
+            "This help is no longer helping; it is enabling harm."
+          ],
+          "hard_boundary": [
+            "Do not use morality to override my survival needs.",
+            "My resources are not available for coercive extraction.",
+            "I will not participate in a rescue loop that damages both of us."
+          ]
+        },
+        "taglines": [
+          "Giving until someone breaks is not charity.",
+          "A boundary is not cruelty.",
+          "Help must remain connected to reality.",
+          "Compassion without limits becomes extraction.",
+          "Virtue does not require self-destruction."
+        ]
+      }
+    },
+    {
+      "source_filename": "PSC-PRIVATE-THOUGHT-HOME-SPEECH-NON-EVIDENCE-CANADA-01.json",
+      "source_path": "/mnt/data/PSC-PRIVATE-THOUGHT-HOME-SPEECH-NON-EVIDENCE-CANADA-01.json",
+      "ukr_id": "PSC-PRIVATE-THOUGHT-HOME-SPEECH-NON-EVIDENCE-CANADA-01",
+      "title": "Private Thought and Alone-at-Home Speech Are Not Clean Court Admissions",
+      "type": "psc_pattern",
+      "semantic_kind": "privacy_evidence_context_boundary",
+      "payload": {
+        "ukr_id": "PSC-PRIVATE-THOUGHT-HOME-SPEECH-NON-EVIDENCE-CANADA-01",
+        "title": "Private Thought and Alone-at-Home Speech Are Not Clean Court Admissions",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "jurisdiction": "Canada",
+        "semantic_kind": "privacy_evidence_context_boundary",
+        "purpose": "Separate private thoughts, imagination, rehearsal, acting practice, venting, or alone-at-home speech from admissible and reliable court admissions.",
+        "core_definition": {
+          "summary": "A private thought is not evidence because it is not observable, verifiable, or cross-examinable. Speech made alone in one's own home is not automatically an admissible confession because it may lack context, audience, intent, reliability, and lawful acquisition.",
+          "governing_rule": "Court evidence requires lawful collection, relevance, reliability, context, and fair use; private mental content alone has no admissibility."
+        },
+        "legal_anchors": {
+          "charter_section_8": {
+            "law": "Canadian Charter of Rights and Freedoms, section 8",
+            "principle": "Everyone has the right to be secure against unreasonable search or seizure. Privacy is a central concern of section 8.",
+            "source": "Department of Justice Canada Charterpedia"
+          },
+          "reasonable_expectation_of_privacy": {
+            "principle": "A person generally has a strong privacy interest in the home and private communications; admissibility may be challenged if evidence was obtained through an unreasonable search or seizure.",
+            "source": "Canadian Charter section 8 jurisprudence"
+          },
+          "confessions_rule": {
+            "principle": "A confession is generally assessed for voluntariness, reliability, and fairness. The Crown must prove admissibility when challenged.",
+            "source": "Canadian criminal evidence principles"
+          }
+        },
+        "core_separation": {
+          "false_equation": "private_words_or_thoughts = admissible_confession",
+          "corrected_equation": "admissible_statement = lawful_collection + relevance + context + reliability + voluntariness + fair_use",
+          "one_line_translation": "A private thought is not proof, and alone-at-home words are not automatically a confession."
+        },
+        "actor_practice_boundary": {
+          "example": "A person says incriminating words alone while practicing a role, script, character, or emotional scene.",
+          "legal_meaning": "The words may be fictional, performative, experimental, emotional, or rehearsed rather than factual admission.",
+          "psc_translation": "An actor practicing a line is not confessing to the line."
+        },
+        "non_admissibility_reasons": [
+          {
+            "reason": "No observable evidence",
+            "explanation": "Thoughts inside the mind cannot be directly entered into evidence unless expressed through some lawful, provable form."
+          },
+          {
+            "reason": "No reliable context",
+            "explanation": "Words spoken alone may be rehearsal, imagination, venting, self-talk, fiction, sarcasm, or emotional processing."
+          },
+          {
+            "reason": "No directed admission",
+            "explanation": "A confession usually requires communicative context. Speaking to nobody is not the same as admitting facts to another person."
+          },
+          {
+            "reason": "Privacy barrier",
+            "explanation": "Evidence from inside a home or private communication may raise Charter section 8 concerns if obtained by state intrusion."
+          },
+          {
+            "reason": "Interpretation risk",
+            "explanation": "Detached words can be twisted into meaning more than they actually prove."
+          }
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "If I thought it, it is court evidence.",
+            "correction": "A thought alone is not observable legal evidence."
+          },
+          {
+            "collapse": "If I said it alone, it is automatically a confession.",
+            "correction": "Alone-at-home speech requires context and may be fiction, acting, rehearsal, or venting."
+          },
+          {
+            "collapse": "Words equal intent.",
+            "correction": "Words require context before intent can be inferred."
+          },
+          {
+            "collapse": "Private speech has no privacy protection.",
+            "correction": "Private spaces and communications may trigger strong privacy protections under section 8."
+          },
+          {
+            "collapse": "A recorded sentence proves the whole story.",
+            "correction": "A recording still requires lawful acquisition, context, reliability, and fair interpretation."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Thought vs Evidence Test",
+            "question": "Is this an internal thought, or a lawfully obtained external record?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Context Test",
+            "question": "Was the statement tied to a real event, or could it be acting, fiction, rehearsal, venting, or self-talk?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Audience Test",
+            "question": "Was the statement directed to another person, or spoken alone?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Lawful Collection Test",
+            "question": "Was the evidence obtained without violating privacy rights or unreasonable search-and-seizure protections?"
+          },
+          {
+            "id": "DT-05",
+            "name": "Reliability Test",
+            "question": "Does the statement reliably prove a fact, or only show ambiguous words?"
+          },
+          {
+            "id": "DT-06",
+            "name": "Clean Story Test",
+            "question": "Is someone preserving the actual context, or stripping the sentence from context to manufacture guilt?"
+          }
+        ],
+        "important_nuance": {
+          "rule": "Private speech is not automatically protected from all possible use if it is lawfully recorded or otherwise lawfully obtained.",
+          "boundary": "Even then, admissibility and weight depend on legality, relevance, context, reliability, voluntariness, and fairness.",
+          "plain_translation": "A private sentence is not automatically nothing, but it is also not automatically proof."
+        },
+        "compact_signature": [
+          "private_thought",
+          "alone_home_speech",
+          "context_missing",
+          "privacy_interest",
+          "lawful_collection_required",
+          "reliability_not_assumed",
+          "inadmissibility_or_low_weight_risk"
+        ],
+        "one_line_translation": "My private mind is not a witness, and my private rehearsal is not a confession."
+      }
+    },
+    {
+      "source_filename": "PSC-PROTECTIVE-INTIMIDATION-SUBSTITUTION-01.json",
+      "source_path": "/mnt/data/PSC-PROTECTIVE-INTIMIDATION-SUBSTITUTION-01.json",
+      "ukr_id": "PSC-PROTECTIVE-INTIMIDATION-SUBSTITUTION-01",
+      "title": "Protective Intimidation Is Not Predatory Control",
+      "type": "psc_pattern",
+      "semantic_kind": "protective_boundary_substitution_pattern",
+      "payload": {
+        "ukr_id": "PSC-PROTECTIVE-INTIMIDATION-SUBSTITUTION-01",
+        "title": "Protective Intimidation Is Not Predatory Control",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "semantic_kind": "protective_boundary_substitution_pattern",
+        "derived_from": [
+          "PSC-PATHOLOGICAL-GENEROSITY-CHARITY-01"
+        ],
+        "purpose": "Separate protective deterrence from domination when a pathologically generous person cannot recognize or avoid predators, hazards, or coercive extraction.",
+        "core_definition": {
+          "summary": "Protective intimidation substitution occurs when a more capable protector adopts a stronger, more intimidating posture to deter predators or hazards after ordinary warning fails and the vulnerable person cannot enforce boundaries for themselves.",
+          "governing_rule": "Protective intimidation is legitimate only when it prevents exploitation, remains proportionate, preserves the vulnerable person's agency, and ends once safety and boundary capacity are restored."
+        },
+        "core_separation": {
+          "false_equation": "intimidating appearance = abuse or predation",
+          "corrected_equation": "protective deterrence = threat recognition + proportional boundary signal + non-extractive intent + agency restoration",
+          "one_line_translation": "When kindness cannot defend itself, protection may need to look like threat."
+        },
+        "origin_pattern": {
+          "source_problem": "pathological_generosity",
+          "source_false_equation": "more giving = more goodness",
+          "source_corrective_anchor": "good giving = consent + capacity + effectiveness + boundaries + non-harm",
+          "source_link": "Pathological generosity becomes dangerous when help continues after harm is visible and the giver sacrifices survival, safety, health, housing, money, or dignity to maintain the helping role."
+        },
+        "actors": {
+          "vulnerable_giver": {
+            "role": "pathologically generous person",
+            "markers": [
+              "ignores warnings",
+              "overrides self-protection through guilt",
+              "mistakes need for obligation",
+              "cannot say no without panic or guilt",
+              "continues helping after harm is visible"
+            ]
+          },
+          "predator_or_hazard": {
+            "role": "bad thing being approached",
+            "markers": [
+              "extracts resources",
+              "uses guilt or need as leverage",
+              "benefits from boundary collapse",
+              "punishes refusal",
+              "creates dependency or destabilization"
+            ]
+          },
+          "protective_agent": {
+            "role": "more capable boundary substitute",
+            "markers": [
+              "recognizes exploitation earlier",
+              "warns first",
+              "escalates only after warning fails",
+              "uses presence, firmness, or intimidation to deter harm",
+              "aims to restore safety rather than own control"
+            ]
+          }
+        },
+        "healthy_protective_intimidation": [
+          "warning was attempted first",
+          "danger or exploitation is reasonably foreseeable",
+          "the vulnerable person is unable to enforce boundaries",
+          "the protective stance is proportionate",
+          "the protector does not extract loyalty, obedience, money, romance, or dependency",
+          "the protector explains the danger when possible",
+          "the protector reduces intensity once danger passes",
+          "the end goal is restored agency, not permanent guardianship"
+        ],
+        "pathological_shadow_markers": [
+          "protector uses danger to justify permanent control",
+          "protector isolates the vulnerable person from all outside contact",
+          "protector frames every disagreement as a threat",
+          "protector demands gratitude or obedience",
+          "protector scares away healthy relationships too",
+          "protector becomes possessive",
+          "protector replaces one dependency with another",
+          "protector enjoys being feared more than restoring safety"
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "Looking intimidating means the protector is the predator.",
+            "correction": "Threat-signaling can be protective when it is proportionate, non-extractive, and aimed at stopping exploitation."
+          },
+          {
+            "collapse": "If the generous person ignores warnings, nothing more can be done.",
+            "correction": "When reasoning fails, environmental boundary-setting and deterrence may be necessary."
+          },
+          {
+            "collapse": "Protection means controlling the vulnerable person.",
+            "correction": "Protection should block the hazard while preserving the person's agency."
+          },
+          {
+            "collapse": "Fear is always abusive.",
+            "correction": "Fear used to dominate the vulnerable person is abusive; fear used to deter a predator may be protective."
+          },
+          {
+            "collapse": "The protector must stay intimidating forever.",
+            "correction": "Protective intimidation should be temporary and should fade as safety and internal boundaries recover."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Warning Failure",
+            "description": "The vulnerable giver receives accurate warnings but cannot integrate them because guilt, obligation, or rescuer identity overrides risk perception."
+          },
+          {
+            "id": "FM-02",
+            "name": "Boundary Proxy Requirement",
+            "description": "The vulnerable person lacks usable boundary enforcement, requiring an external protective boundary."
+          },
+          {
+            "id": "FM-03",
+            "name": "Predator Deterrence Escalation",
+            "description": "The protector shifts from explanation to deterrence because the threat responds only to cost, resistance, or intimidation."
+          },
+          {
+            "id": "FM-04",
+            "name": "Protector-Predator Confusion",
+            "description": "Observers misread protective threat-signaling as aggression because they ignore intent, target, proportionality, and outcome."
+          },
+          {
+            "id": "FM-05",
+            "name": "Control Drift",
+            "description": "The protector begins with legitimate safety action but drifts into domination, possessiveness, or dependency manufacture."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Target Test",
+            "question": "Is the intimidating posture directed at the predator/hazard, or at controlling the vulnerable person?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Proportionality Test",
+            "question": "Is the intensity matched to the real risk, or is it excessive?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Extraction Test",
+            "question": "Does the protector gain obedience, dependence, money, status, sex, loyalty, or control from the intervention?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Agency Restoration Test",
+            "question": "Does the protector help the vulnerable person regain judgment and boundaries, or keep them helpless?"
+          },
+          {
+            "id": "DT-05",
+            "name": "Exit Test",
+            "question": "Can the protector reduce control after danger passes?"
+          },
+          {
+            "id": "DT-06",
+            "name": "Hazard Reality Test",
+            "question": "Is the danger evidenced by behavior and outcomes, or projected from paranoia, jealousy, or possessiveness?"
+          }
+        ],
+        "separation_axioms": [
+          "Protection is not predation.",
+          "Intimidation is not automatically abuse.",
+          "Deterrence is not domination when it blocks exploitation.",
+          "Warning is not enough when the receiver cannot act.",
+          "A boundary proxy is not ownership.",
+          "Scaring away a predator is not the same as isolating a person.",
+          "Safety intervention must not become dependency manufacture.",
+          "Protective force must remain proportional.",
+          "The goal of protection is restored agency.",
+          "The protector must not become the new hazard."
+        ],
+        "corrective_model": {
+          "bad_model": "danger -> warning ignored -> continued exposure -> exploitation -> collapse",
+          "healthy_model": "danger -> warning -> warning ignored -> proportional deterrence -> safety restored -> agency rebuilt",
+          "shadow_model": "danger -> protection -> protector attachment -> control drift -> dependency replacement"
+        },
+        "classification_axes": [
+          {
+            "axis": "intervention_intensity",
+            "values": [
+              "verbal_warning",
+              "firm_boundary",
+              "visible_presence",
+              "social_deterrence",
+              "physical_separation",
+              "authority_involvement"
+            ]
+          },
+          {
+            "axis": "protector_intent",
+            "values": [
+              "agency_restoration",
+              "harm_prevention",
+              "status_gain",
+              "possessive_control",
+              "dependency_creation"
+            ]
+          },
+          {
+            "axis": "risk_basis",
+            "values": [
+              "documented_exploitation",
+              "repeated_boundary_violation",
+              "credible_threat",
+              "pattern_inference",
+              "projection_or_jealousy"
+            ]
+          },
+          {
+            "axis": "outcome",
+            "values": [
+              "hazard_deterred",
+              "vulnerable_person_stabilized",
+              "agency_restored",
+              "dependency_shifted",
+              "control_drift_detected"
+            ]
+          }
+        ],
+        "sorting_flow": {
+          "START": {
+            "description": "A pathologically generous person is approaching or remaining near a predator, hazard, or coercive extraction pattern.",
+            "next": "IDENTIFY_HAZARD"
+          },
+          "IDENTIFY_HAZARD": {
+            "description": "Determine whether the bad thing is evidenced by exploitation, coercion, dependency, boundary violation, or foreseeable harm.",
+            "next": "ATTEMPT_WARNING"
+          },
+          "ATTEMPT_WARNING": {
+            "description": "Use explanation, evidence, and direct warning first.",
+            "next": "CHECK_WARNING_RESPONSE"
+          },
+          "CHECK_WARNING_RESPONSE": {
+            "description": "Assess whether the vulnerable person can integrate the warning and self-correct.",
+            "branches": {
+              "WARNING_ACCEPTED": "SUPPORT_SELF_BOUNDARY",
+              "WARNING_IGNORED": "CHECK_BOUNDARY_CAPACITY"
+            }
+          },
+          "CHECK_BOUNDARY_CAPACITY": {
+            "description": "Determine whether the vulnerable person can say no, withdraw, or resist extraction.",
+            "branches": {
+              "BOUNDARY_CAPABLE": "SUPPORT_SELF_BOUNDARY",
+              "BOUNDARY_COLLAPSED": "AUTHORIZE_PROTECTIVE_PROXY"
+            }
+          },
+          "AUTHORIZE_PROTECTIVE_PROXY": {
+            "description": "Allow a proportional external boundary signal because internal boundary enforcement is failing.",
+            "next": "SELECT_DETERRENCE_LEVEL"
+          },
+          "SELECT_DETERRENCE_LEVEL": {
+            "description": "Choose the least invasive effective deterrence: presence, firmness, social witness, removal, or authority involvement.",
+            "next": "RUN_DISTORTION_TESTS"
+          },
+          "RUN_DISTORTION_TESTS": {
+            "description": "Check target, proportionality, extraction, agency restoration, exit, and hazard reality.",
+            "next": "IMPLEMENT_TEMPORARY_DETERRENCE"
+          },
+          "IMPLEMENT_TEMPORARY_DETERRENCE": {
+            "description": "Use intimidating posture only to deter the hazard, not to dominate the vulnerable person.",
+            "next": "RESTORE_AGENCY"
+          },
+          "RESTORE_AGENCY": {
+            "description": "Teach, model, or scaffold internal boundary capacity so the protector does not become permanent.",
+            "next": "EXIT_OR_REDUCE"
+          },
+          "EXIT_OR_REDUCE": {
+            "description": "Reduce intensity once the hazard is avoided and the vulnerable person regains stability."
+          },
+          "SUPPORT_SELF_BOUNDARY": {
+            "description": "Help the vulnerable person enforce their own boundary without escalating into intimidation."
+          }
+        },
+        "response_templates": {
+          "soft": [
+            "I am not trying to control you. I am trying to help you see the danger before it costs you more.",
+            "I warned you because I care about your safety, not because I want to own your choices.",
+            "You are allowed to be kind, but you are not required to be available for extraction."
+          ],
+          "firm": [
+            "This person is exploiting your generosity, and I am not going to pretend it is harmless.",
+            "If you cannot hold the boundary right now, I will help hold it until you can.",
+            "I am not attacking your compassion. I am blocking the thing feeding on it."
+          ],
+          "hard_boundary": [
+            "No. This access stops here.",
+            "You do not get to use their guilt as a resource pipeline.",
+            "Step back. Their kindness is not permission to exploit them."
+          ],
+          "self_check_for_protector": [
+            "Am I protecting them, or am I trying to own the situation?",
+            "Would I still support their agency if they disagreed with me?",
+            "Can I reduce my intensity once the danger passes?"
+          ]
+        },
+        "receipts_log_template": [
+          "Event ID",
+          "Date/Time",
+          "Vulnerable giver behavior observed",
+          "Hazard/predator behavior observed",
+          "Warning attempted",
+          "Warning response",
+          "Boundary capacity assessment",
+          "Protective action used",
+          "Proportionality check",
+          "Agency restoration step",
+          "Exit/reduction plan",
+          "Outcome",
+          "Control drift risk"
+        ],
+        "compact_signature": [
+          "pathological_generosity_detected",
+          "warning_failed",
+          "hazard_or_predator_present",
+          "boundary_proxy_required",
+          "proportional_intimidation_used",
+          "agency_restoration_required"
+        ],
+        "taglines": [
+          "When kindness cannot defend itself, protection may need to look like threat.",
+          "A boundary proxy is not ownership.",
+          "Scaring off a predator is not the same as controlling the victim.",
+          "Protective intimidation must end where agency returns.",
+          "The protector must not become the new hazard."
+        ]
+      }
+    },
+    {
+      "source_filename": "PSC-REPRODUCTIVE-CAPACITY-NOT-DIAGNOSTIC-DISPROOF-01.json",
+      "source_path": "/mnt/data/PSC-REPRODUCTIVE-CAPACITY-NOT-DIAGNOSTIC-DISPROOF-01.json",
+      "ukr_id": "PSC-REPRODUCTIVE-CAPACITY-NOT-DIAGNOSTIC-DISPROOF-01",
+      "title": "Reproductive Capacity Is Not Diagnostic Disproof",
+      "type": "psc_pattern",
+      "semantic_kind": "diagnostic_separation_pattern",
+      "payload": {
+        "ukr_id": "PSC-REPRODUCTIVE-CAPACITY-NOT-DIAGNOSTIC-DISPROOF-01",
+        "title": "Reproductive Capacity Is Not Diagnostic Disproof",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "semantic_kind": "diagnostic_separation_pattern",
+        "purpose": "Prevent diagnostic erasure caused by treating reproductive capacity, outward behavior, or stereotype violation as proof that a chromosomal or developmental diagnosis is false.",
+        "core_definition": {
+          "summary": "A person's ability or inability to reproduce does not prove or disprove a chromosomal diagnosis. Diagnostic identity must be grounded in validated biological, developmental, and clinical evidence rather than stereotype-matching.",
+          "primary_unit_of_analysis": "diagnostic_disproof_claim",
+          "secondary_units": [
+            "reproductive_capacity",
+            "chromosomal_evidence",
+            "behavioral_overlap",
+            "phenotypic_presentation",
+            "misclassification_claim",
+            "differential_diagnosis"
+          ],
+          "governing_rule": "Reproductive capacity is not diagnostic disproof; diagnosis belongs to validated evidence, not stereotype expectations."
+        },
+        "core_separation": {
+          "false_equation": "unexpected_capacity = misdiagnosis",
+          "corrected_equation": "unexpected_capacity = individual_variation + evidence_check_required",
+          "one_line_translation": "A person exceeding your expectation is not evidence that their diagnosis is fake."
+        },
+        "targeted_false_collapses": [
+          {
+            "collapse": "People with Down syndrome cannot reproduce.",
+            "correction": "Fertility may be reduced, but it is not universally absent."
+          },
+          {
+            "collapse": "If a person with Down syndrome reproduces, they were probably misclassified.",
+            "correction": "Reproduction does not cancel a genetic diagnosis."
+          },
+          {
+            "collapse": "Similar outward behavior means the same disorder.",
+            "correction": "Behavioral overlap is not diagnostic identity."
+          },
+          {
+            "collapse": "Fetal Alcohol Syndrome and Down syndrome can be swapped because they may look behaviorally similar.",
+            "correction": "They have different causal structures and require different evidence paths."
+          }
+        ],
+        "evidence_ladder": [
+          {
+            "level": 1,
+            "evidence_type": "chromosomal_or_karyotype_evidence",
+            "diagnostic_value": "strongest_for_down_syndrome"
+          },
+          {
+            "level": 2,
+            "evidence_type": "confirmed_prenatal_alcohol_exposure_plus_fasd_features",
+            "diagnostic_value": "relevant_for_fasd_or_nd_pae"
+          },
+          {
+            "level": 3,
+            "evidence_type": "clinical_developmental_assessment",
+            "diagnostic_value": "important_but_not_final_alone"
+          },
+          {
+            "level": 4,
+            "evidence_type": "appearance_or_behavior",
+            "diagnostic_value": "weak_non_diagnostic_alone"
+          },
+          {
+            "level": 5,
+            "evidence_type": "fertility_or_reproductive_status",
+            "diagnostic_value": "not_diagnostic_disproof"
+          }
+        ],
+        "diagnostic_separation_model": {
+          "bad_model": [
+            "observable_traits",
+            "stereotype_match",
+            "assumed_diagnosis",
+            "disproof_by_exception"
+          ],
+          "corrected_model": [
+            "observable_traits",
+            "differential_question",
+            "evidence_check",
+            "biological_or_developmental_cause",
+            "diagnosis"
+          ]
+        },
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Exception-to-Erasure Error",
+            "description": "Using an unexpected ability, such as reproduction, speech, work, independence, or high functioning, to erase or invalidate a diagnosis."
+          },
+          {
+            "id": "FM-02",
+            "name": "Stereotype-Based Diagnostic Override",
+            "description": "Treating a stereotype about a condition as more authoritative than genetic or clinical evidence."
+          },
+          {
+            "id": "FM-03",
+            "name": "Behavioral Overlap Collapse",
+            "description": "Assuming that two conditions are the same because some outward behaviors or adaptive difficulties overlap."
+          },
+          {
+            "id": "FM-04",
+            "name": "Causal Structure Erasure",
+            "description": "Ignoring the different causes of conditions, such as chromosomal trisomy versus prenatal alcohol exposure."
+          },
+          {
+            "id": "FM-05",
+            "name": "Population-Tendency Absolutism",
+            "description": "Treating a common population pattern as an absolute rule for every individual."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Reproductive Disproof Test",
+            "question": "Is reproductive capacity being used as proof that the diagnosis is false?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Evidence Hierarchy Test",
+            "question": "Is weak evidence, such as appearance or fertility, being placed above chromosomal or clinical evidence?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Overlap Identity Test",
+            "question": "Is behavioral similarity being treated as diagnostic sameness?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Causal Separation Test",
+            "question": "Are distinct causal pathways being separated, such as trisomy 21 versus prenatal alcohol exposure?"
+          },
+          {
+            "id": "DT-05",
+            "name": "Stereotype Violation Test",
+            "question": "Is the person being considered misclassified only because they do not fit a stereotype?"
+          }
+        ],
+        "guardrails": [
+          "Do not diagnose from appearance alone.",
+          "Do not erase genetic evidence because someone has an unexpected ability.",
+          "Do not collapse Down syndrome into FASD because of outward overlap.",
+          "Do not use population tendencies as absolute rules.",
+          "Preserve individual variation.",
+          "Use differential diagnosis instead of stereotype substitution."
+        ],
+        "response_templates": {
+          "soft": [
+            "That trait may challenge a stereotype, but it does not disprove the diagnosis.",
+            "Reduced fertility is not the same thing as impossible reproduction.",
+            "Behavioral overlap can raise a differential question, but it does not prove identity."
+          ],
+          "firm": [
+            "Reproductive capacity is not diagnostic disproof.",
+            "A stereotype violation does not override chromosomal evidence.",
+            "Down syndrome and FASD require different evidence paths and should not be collapsed."
+          ],
+          "hard_boundary": [
+            "Do not use reproductive status to erase a person's diagnosis.",
+            "Do not replace evidence with stereotype-matching.",
+            "Misclassification cannot be assumed merely because the person exceeds expectations."
+          ]
+        },
+        "classification_axes": [
+          {
+            "axis": "evidence_strength",
+            "values": [
+              "genetic_confirmed",
+              "clinical_confirmed",
+              "exposure_confirmed",
+              "behavioral_inferred",
+              "stereotype_assumed"
+            ]
+          },
+          {
+            "axis": "collapse_type",
+            "values": [
+              "reproductive_capacity_collapse",
+              "behavioral_overlap_collapse",
+              "appearance_collapse",
+              "causal_structure_collapse",
+              "population_tendency_absolutism"
+            ]
+          },
+          {
+            "axis": "correction_route",
+            "values": [
+              "restore_evidence_hierarchy",
+              "separate_causal_pathways",
+              "preserve_individual_variation",
+              "request_valid_diagnostic_basis",
+              "reject_stereotype_override"
+            ]
+          }
+        ],
+        "sorting_flow": {
+          "START": {
+            "description": "Receive a claim that a diagnosis is false because the person has an unexpected capacity or presentation.",
+            "next": "IDENTIFY_DISPROOF_CLAIM"
+          },
+          "IDENTIFY_DISPROOF_CLAIM": {
+            "description": "Extract what trait is being used as disproof, such as fertility, reproduction, appearance, behavior, or independence.",
+            "next": "CHECK_EVIDENCE_LEVEL"
+          },
+          "CHECK_EVIDENCE_LEVEL": {
+            "description": "Determine whether the disproof claim relies on validated evidence or weak stereotype inference.",
+            "next": "CHECK_CAUSAL_STRUCTURE"
+          },
+          "CHECK_CAUSAL_STRUCTURE": {
+            "description": "Separate chromosomal, developmental, environmental, and behavioral evidence paths.",
+            "next": "FLAG_FALSE_COLLAPSE"
+          },
+          "FLAG_FALSE_COLLAPSE": {
+            "description": "Mark any false equation between unexpected capacity and misdiagnosis.",
+            "next": "RESTORE_DIAGNOSTIC_HIERARCHY"
+          },
+          "RESTORE_DIAGNOSTIC_HIERARCHY": {
+            "description": "Return authority to genetic, clinical, developmental, and exposure evidence instead of stereotype-matching.",
+            "next": "OUTPUT_CORRECTED_FRAME"
+          },
+          "OUTPUT_CORRECTED_FRAME": {
+            "description": "State the corrected separation: reproductive capacity is not diagnostic disproof."
+          }
+        },
+        "compact_signature": [
+          "stereotype_expectation",
+          "exception_detected",
+          "false_misclassification_claim",
+          "corrected_by_evidence_hierarchy"
+        ],
+        "taglines": [
+          "Reproductive capacity is not diagnostic disproof.",
+          "Stereotype violation is not misclassification.",
+          "Behavioral overlap is not diagnostic identity.",
+          "Diagnosis belongs to evidence, not expectation.",
+          "A person exceeding the stereotype does not erase the condition."
+        ]
+      }
+    },
+    {
+      "source_filename": "PSC-SELF-HARM-FACILITATION-LEGAL-SEPARATION-CANADA-01.json",
+      "source_path": "/mnt/data/PSC-SELF-HARM-FACILITATION-LEGAL-SEPARATION-CANADA-01.json",
+      "ukr_id": "PSC-SELF-HARM-FACILITATION-LEGAL-SEPARATION-CANADA-01",
+      "title": "Self-Harm Intent Is Not Legal Permission for Assistance",
+      "type": "psc_pattern",
+      "semantic_kind": "legal_boundary_self_harm_facilitation",
+      "payload": {
+        "ukr_id": "PSC-SELF-HARM-FACILITATION-LEGAL-SEPARATION-CANADA-01",
+        "title": "Self-Harm Intent Is Not Legal Permission for Assistance",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "jurisdiction": "Canada",
+        "semantic_kind": "legal_boundary_self_harm_facilitation",
+        "purpose": "Separate a person's internal self-harm crisis from another person's external act of encouraging, assisting, counselling, aiding, or abetting self-harm or suicide.",
+        "core_definition": {
+          "summary": "In Canada, attempting self-harm or suicide is not criminalized, but third-party assistance, encouragement, counselling, aiding, or abetting suicide is prohibited under Criminal Code section 241, except within the regulated MAID framework.",
+          "governing_rule": "Self-harm intent does not create legal permission for another person to help, encourage, or facilitate it."
+        },
+        "core_separation": {
+          "false_equation": "self_harm_intent = permission_for_others_to_assist",
+          "corrected_equation": "self_harm_intent = health_crisis_or_personal_state; third_party_assistance = separate_legal_act",
+          "one_line_translation": "Wanting it does not make helping legal."
+        },
+        "legal_anchor": {
+          "law": "Criminal Code of Canada, section 241",
+          "prohibited_actions": [
+            "counselling suicide",
+            "encouraging suicide",
+            "aiding suicide",
+            "abetting suicide",
+            "providing assistance for suicide outside lawful MAID"
+          ],
+          "key_boundary": "The offence can apply whether or not death actually occurs."
+        },
+        "maid_exception_boundary": {
+          "summary": "Medical Assistance in Dying is a narrow legal exception, only when performed under strict statutory rules.",
+          "requirements": [
+            "legal eligibility",
+            "formal consent process",
+            "medical or nurse practitioner involvement",
+            "regulated assessment process",
+            "compliance with MAID safeguards"
+          ],
+          "boundary_rule": "Outside MAID, ordinary criminal prohibitions remain active."
+        },
+        "targeted_false_collapses": [
+          {
+            "collapse": "They asked for help, so helping is allowed.",
+            "correction": "A request for self-harm assistance does not create legal authorization."
+          },
+          {
+            "collapse": "Consent cancels the offence.",
+            "correction": "Consent to self-harm does not automatically legalize another person’s assistance."
+          },
+          {
+            "collapse": "Self-harm is not criminal, so helping must also be non-criminal.",
+            "correction": "The person’s crisis is treated differently from another person’s facilitation."
+          },
+          {
+            "collapse": "Providing instructions is just information.",
+            "correction": "Information can become facilitation when given with intent to enable harm."
+          },
+          {
+            "collapse": "MAID means assisted suicide is generally legal.",
+            "correction": "MAID is a controlled medical/legal exception, not a general permission structure."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Consent-to-Facilitation Collapse",
+            "description": "Treating a vulnerable person's request as legal permission to assist self-harm."
+          },
+          {
+            "id": "FM-02",
+            "name": "Health-Crisis Criminalization Error",
+            "description": "Mistakenly treating the person experiencing self-harm thoughts as the criminal actor."
+          },
+          {
+            "id": "FM-03",
+            "name": "Information-as-Neutrality Error",
+            "description": "Assuming that instructions, tools, or planning help are neutral even when they enable harm."
+          },
+          {
+            "id": "FM-04",
+            "name": "MAID Overgeneralization",
+            "description": "Using the existence of MAID to falsely imply that private facilitation is lawful."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Actor Separation Test",
+            "question": "Is this about the person struggling, or about someone else assisting them?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Intent Test",
+            "question": "Was the third party trying to help preserve safety or help enable harm?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Contribution Test",
+            "question": "Did the third party provide encouragement, instructions, tools, planning, or pressure?"
+          },
+          {
+            "id": "DT-04",
+            "name": "MAID Boundary Test",
+            "question": "Is this occurring inside the lawful MAID framework, or outside it?"
+          },
+          {
+            "id": "DT-05",
+            "name": "Crisis Safety Test",
+            "question": "Is the response intervention and support, or facilitation of irreversible harm?"
+          }
+        ],
+        "separation_axioms": [
+          "Self-harm intent is not legal permission.",
+          "A crisis is not a contract.",
+          "Consent to self-harm does not authorize third-party assistance.",
+          "Attempting self-harm is not the same legal category as helping someone do it.",
+          "Intervention is not facilitation.",
+          "Support is not instruction for harm.",
+          "MAID is not a general exception.",
+          "Helping someone live is not the same as helping someone die."
+        ],
+        "response_templates": {
+          "soft": [
+            "I cannot help facilitate self-harm, but I can help stabilize the situation.",
+            "A person in crisis deserves support, not assistance toward harm."
+          ],
+          "firm": [
+            "Helping someone harm themselves is not legally or ethically the same as supporting them.",
+            "Their request does not make facilitation lawful."
+          ],
+          "hard_boundary": [
+            "I will not provide instructions, tools, or encouragement for self-harm.",
+            "The only acceptable direction here is safety, support, and intervention."
+          ]
+        },
+        "compact_signature": [
+          "self_harm_intent_detected",
+          "third_party_assistance_boundary",
+          "criminal_code_241_anchor",
+          "maid_exception_check",
+          "support_not_facilitation"
+        ],
+        "one_line_translation": "You can support someone in crisis, but you cannot legally help them harm themselves."
+      }
+    },
+    {
+      "source_filename": "PSC-SEXUAL-CONSENT-CANADA-NOT-WORD-TRIGGER-01.json",
+      "source_path": "/mnt/data/PSC-SEXUAL-CONSENT-CANADA-NOT-WORD-TRIGGER-01.json",
+      "ukr_id": "PSC-SEXUAL-CONSENT-CANADA-NOT-WORD-TRIGGER-01",
+      "title": "Sexual Consent Is Not a Word Trigger Under Canadian Law",
+      "type": "psc_pattern",
+      "semantic_kind": "legal_consent_boundary_pattern",
+      "payload": {
+        "ukr_id": "PSC-SEXUAL-CONSENT-CANADA-NOT-WORD-TRIGGER-01",
+        "title": "Sexual Consent Is Not a Word Trigger Under Canadian Law",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "jurisdiction": "Canada",
+        "semantic_kind": "legal_consent_boundary_pattern",
+        "purpose": "Separate casual acknowledgement words from legally valid sexual consent, and prevent isolated words such as yes, no, accept, okay, or consent from being treated as automatic proof of consent.",
+        "core_definition": {
+          "summary": "Under Canadian criminal law, sexual consent is not created by merely using words like yes, okay, accept, or consent. Consent requires voluntary agreement to the sexual activity in question, given by a capable person, free from coercion, force, fear, abuse of authority, fraud, or incapacity.",
+          "governing_rule": "Consent is a legal condition, not a keyword trigger.",
+          "plain_translation": "A word is evidence at most; it is not automatic legal consent."
+        },
+        "statutory_anchor": {
+          "law": "Criminal Code of Canada, section 273.1",
+          "core_rule": "Consent means the voluntary agreement of the complainant to engage in the sexual activity in question.",
+          "legal_boundary": "Consent must be voluntary, specific, conscious, capable, informed, and ongoing."
+        },
+        "core_separation": {
+          "false_equation": "acknowledgement_word = legal_consent",
+          "corrected_equation": "legal_consent = voluntary_agreement + capacity + knowledge + absence_of_coercion + ongoing_participation",
+          "one_line_translation": "Saying a word does not prove consent; the legal conditions must exist."
+        },
+        "keywords_not_sufficient_alone": [
+          "yes",
+          "no",
+          "okay",
+          "fine",
+          "sure",
+          "accept",
+          "consent",
+          "acknowledge",
+          "agree"
+        ],
+        "valid_consent_requirements": [
+          "voluntary agreement",
+          "capacity to consent",
+          "knowledge of the sexual activity in question",
+          "freedom from coercion",
+          "freedom from threats or fear",
+          "freedom from abuse of authority",
+          "conscious participation",
+          "ongoing agreement",
+          "ability to withdraw consent at any time"
+        ],
+        "invalidating_conditions": [
+          {
+            "condition": "force_or_threats",
+            "rule": "Consent is invalid if obtained through force, threats, or implied threat."
+          },
+          {
+            "condition": "fear_or_coercion",
+            "rule": "Consent is invalid if agreement is produced by fear, intimidation, manipulation, or coercive pressure."
+          },
+          {
+            "condition": "incapacity",
+            "rule": "A person who is unconscious, too intoxicated, or otherwise incapable cannot legally consent."
+          },
+          {
+            "condition": "abuse_of_authority",
+            "rule": "Consent is invalid where authority, dependency, trust, or power is abused to obtain agreement."
+          },
+          {
+            "condition": "fraud_or_deception",
+            "rule": "Consent may be invalid where deception removes meaningful knowledge of what is being agreed to."
+          },
+          {
+            "condition": "withdrawal",
+            "rule": "Consent can be withdrawn at any time; continuing afterward means there is no consent."
+          }
+        ],
+        "case_law_anchors": [
+          {
+            "case": "R v Ewanchuk",
+            "court": "Supreme Court of Canada",
+            "year": 1999,
+            "principle": "Consent requires actual voluntary agreement; silence, passivity, or lack of resistance is not consent.",
+            "psc_translation": "Not saying no does not mean yes."
+          },
+          {
+            "case": "R v J.A.",
+            "court": "Supreme Court of Canada",
+            "year": 2011,
+            "principle": "Consent must be conscious and present during the sexual activity.",
+            "psc_translation": "Prior agreement cannot authorize sexual activity while unconscious."
+          },
+          {
+            "case": "R v Hutchinson",
+            "court": "Supreme Court of Canada",
+            "year": 2014,
+            "principle": "Fraud can invalidate consent where deception changes the sexual activity or creates serious risk of harm.",
+            "psc_translation": "Deception can destroy consent."
+          },
+          {
+            "case": "R v Barton",
+            "court": "Supreme Court of Canada",
+            "year": 2019,
+            "principle": "Consent must be affirmatively communicated and cannot be based on stereotypes, assumptions, or belief alone.",
+            "psc_translation": "Assumption is not consent."
+          }
+        ],
+        "targeted_false_collapses": [
+          {
+            "collapse": "They said yes, so it was consent.",
+            "correction": "A verbal yes is not valid consent if coercion, incapacity, fraud, fear, or abuse of authority is present."
+          },
+          {
+            "collapse": "They did not say no, so they consented.",
+            "correction": "Absence of refusal is not consent."
+          },
+          {
+            "collapse": "They went along with it, so they agreed.",
+            "correction": "Compliance, freezing, fear, or submission is not voluntary agreement."
+          },
+          {
+            "collapse": "Consent once means consent always.",
+            "correction": "Consent is ongoing and can be withdrawn at any time."
+          },
+          {
+            "collapse": "Using the word consent proves legal consent.",
+            "correction": "The word consent does not replace the legal requirements for consent."
+          },
+          {
+            "collapse": "Casual acknowledgement means sexual permission.",
+            "correction": "Casual conversational acknowledgement does not authorize sexual activity."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Word Reliance Error",
+            "description": "Treating isolated words like yes, okay, accept, or consent as automatic proof of legal consent."
+          },
+          {
+            "id": "FM-02",
+            "name": "Context Stripping",
+            "description": "Removing the surrounding circumstances and judging consent only by a word or phrase."
+          },
+          {
+            "id": "FM-03",
+            "name": "Compliance Misread",
+            "description": "Mistaking submission, fear, freezing, exhaustion, or conflict-avoidance for voluntary agreement."
+          },
+          {
+            "id": "FM-04",
+            "name": "Capacity Blindness",
+            "description": "Ignoring intoxication, unconsciousness, impairment, or other incapacity."
+          },
+          {
+            "id": "FM-05",
+            "name": "Coercion Erasure",
+            "description": "Ignoring pressure, threats, fear, intimidation, manipulation, or authority imbalance."
+          },
+          {
+            "id": "FM-06",
+            "name": "Assumed Consent",
+            "description": "Replacing clear agreement with assumptions, stereotypes, prior history, or wishful interpretation."
+          },
+          {
+            "id": "FM-07",
+            "name": "Withdrawal Denial",
+            "description": "Treating earlier consent as permanent even after withdrawal, hesitation, refusal, or changed circumstances."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Voluntariness Test",
+            "question": "Was the agreement freely given, or was it produced by pressure, fear, threat, manipulation, or coercion?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Capacity Test",
+            "question": "Was the person conscious, capable, and able to understand and choose?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Knowledge Test",
+            "question": "Did the person understand the specific sexual activity in question?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Context Test",
+            "question": "Do the surrounding circumstances support voluntary agreement, or do they undermine it?"
+          },
+          {
+            "id": "DT-05",
+            "name": "Ongoing Consent Test",
+            "question": "Was consent maintained throughout, or was it withdrawn, lost, or invalidated?"
+          },
+          {
+            "id": "DT-06",
+            "name": "Word Extraction Test",
+            "question": "Is someone isolating a word while ignoring capacity, pressure, fear, context, or withdrawal?"
+          }
+        ],
+        "evidentiary_hierarchy": {
+          "weak_evidence": [
+            "isolated words",
+            "ambiguous tone",
+            "lack of resistance",
+            "prior relationship",
+            "assumptions"
+          ],
+          "stronger_evidence": [
+            "clear voluntary communication",
+            "consistent conduct",
+            "absence of coercive conditions",
+            "capacity evidence",
+            "contextual facts",
+            "messages or witnesses showing voluntary agreement"
+          ],
+          "governing_rule": "Words may be evidence, but total circumstances determine legal validity."
+        },
+        "legal_decision_tree": [
+          "Was there sexual activity in question?",
+          "Was there voluntary agreement to that specific activity?",
+          "Was the person capable of consenting?",
+          "Was the person conscious and present during the activity?",
+          "Was consent free from force, threats, fear, coercion, fraud, or abuse of authority?",
+          "Was consent ongoing and not withdrawn?",
+          "If any required condition fails, legal consent is absent."
+        ],
+        "separation_axioms": [
+          "Consent is not a keyword.",
+          "Yes is not automatically consent.",
+          "No is not the only way consent can be absent.",
+          "Silence is not consent.",
+          "Compliance is not consent.",
+          "Fear is not consent.",
+          "Coercion is not consent.",
+          "Incapacity cancels consent.",
+          "Unconsciousness cancels consent.",
+          "Fraud can invalidate consent.",
+          "Consent can be withdrawn.",
+          "Context determines legal validity."
+        ],
+        "response_templates": {
+          "soft": [
+            "Using acknowledgement words in casual conversation does not automatically create consent.",
+            "Consent depends on context, capacity, voluntariness, and the specific activity involved."
+          ],
+          "firm": [
+            "Do not treat isolated words as legal consent.",
+            "A verbal yes is not valid consent if the legal conditions for consent are absent."
+          ],
+          "hard_boundary": [
+            "Consent is not a word trigger. It requires voluntary, capable, informed, and ongoing agreement.",
+            "Extracting the word yes while ignoring coercion, incapacity, fear, or withdrawal is consent distortion."
+          ]
+        },
+        "compact_signature": [
+          "word_detected",
+          "context_required",
+          "capacity_check",
+          "voluntariness_check",
+          "coercion_filter",
+          "ongoing_consent_check",
+          "legal_consent_validity_determined"
+        ],
+        "one_line_translation": "Consent is a legal condition, not a magic word."
+      }
+    },
+    {
+      "source_filename": "PSC-TOTAL-CONTROL-VIOLENCE-ESCALATION-01.json",
+      "source_path": "/mnt/data/PSC-TOTAL-CONTROL-VIOLENCE-ESCALATION-01.json",
+      "ukr_id": "PSC-TOTAL-CONTROL-VIOLENCE-ESCALATION-01",
+      "title": "Total Control Escalates Toward Violence",
+      "type": "psc_pattern",
+      "semantic_kind": "control_violence_escalation_pattern",
+      "payload": {
+        "ukr_id": "PSC-TOTAL-CONTROL-VIOLENCE-ESCALATION-01",
+        "title": "Total Control Escalates Toward Violence",
+        "version": "1.0",
+        "status": "working_draft",
+        "type": "psc_pattern",
+        "semantic_kind": "control_violence_escalation_pattern",
+        "derived_from": [
+          "PSC-PROTECTIVE-INTIMIDATION-SUBSTITUTION-01"
+        ],
+        "purpose": "Separate temporary protective deterrence from totalizing control by showing how control that seeks completeness increasingly requires coercion, force, and violence to maintain itself.",
+        "core_definition": {
+          "summary": "Total control removes consent, suppresses agency, and creates resistance. Because resistance threatens the controller's desired completeness, the controller must escalate enforcement. Over time, force becomes structurally necessary, and violence becomes increasingly likely.",
+          "governing_rule": "The more total the control claim becomes, the more likely violence becomes, because total control cannot tolerate refusal, exit, resistance, or independent agency."
+        },
+        "core_separation": {
+          "false_equation": "total control = safety",
+          "corrected_equation": "total control = agency suppression + resistance + enforcement escalation + violence risk",
+          "one_line_translation": "If control must be absolute, violence becomes the enforcement mechanism."
+        },
+        "core_principle": "Total control requires force to maintain, and force over time tends to escalate into violence.",
+        "targeted_false_collapses": [
+          {
+            "collapse": "Control prevents violence.",
+            "correction": "Boundaries can prevent violence; total control often creates the conditions for violence."
+          },
+          {
+            "collapse": "If people resist control, the resistance is the problem.",
+            "correction": "Resistance is a predictable response to agency suppression."
+          },
+          {
+            "collapse": "More control creates more stability.",
+            "correction": "Beyond a threshold, more control creates more pressure, fear, concealment, and escalation."
+          },
+          {
+            "collapse": "Force can remain clean and nonviolent forever.",
+            "correction": "Sustained force tends to escalate when compliance weakens."
+          },
+          {
+            "collapse": "The controller is protecting the person.",
+            "correction": "Protection restores agency; total control consumes it."
+          }
+        ],
+        "failure_modes": [
+          {
+            "id": "FM-01",
+            "name": "Consent Removal",
+            "description": "The controlled person no longer participates voluntarily; compliance replaces agreement."
+          },
+          {
+            "id": "FM-02",
+            "name": "Agency Suppression",
+            "description": "The controller treats independent choice, refusal, or exit as a threat."
+          },
+          {
+            "id": "FM-03",
+            "name": "Resistance Generation",
+            "description": "Suppressed agency produces avoidance, defiance, concealment, escape attempts, or counterforce."
+          },
+          {
+            "id": "FM-04",
+            "name": "Enforcement Escalation",
+            "description": "The controller increases pressure when earlier methods fail."
+          },
+          {
+            "id": "FM-05",
+            "name": "Violence Normalization",
+            "description": "Force becomes framed as necessary, justified, deserved, or protective."
+          },
+          {
+            "id": "FM-06",
+            "name": "Protector-to-Predator Conversion",
+            "description": "A claimed protector becomes the new hazard by using safety language to justify domination."
+          }
+        ],
+        "distortion_tests": [
+          {
+            "id": "DT-01",
+            "name": "Exit Test",
+            "question": "Can the person leave, refuse, or disagree without punishment?"
+          },
+          {
+            "id": "DT-02",
+            "name": "Consent Test",
+            "question": "Is cooperation voluntary, or is compliance being extracted?"
+          },
+          {
+            "id": "DT-03",
+            "name": "Escalation Test",
+            "question": "Does the controller increase force whenever control weakens?"
+          },
+          {
+            "id": "DT-04",
+            "name": "Agency Test",
+            "question": "Is the person becoming more capable and independent, or more dependent and afraid?"
+          },
+          {
+            "id": "DT-05",
+            "name": "Justification Test",
+            "question": "Is harm being excused as protection, discipline, loyalty, morality, or necessity?"
+          },
+          {
+            "id": "DT-06",
+            "name": "Totality Test",
+            "question": "Does the controller require access to every choice, relationship, resource, movement, or thought?"
+          }
+        ],
+        "separation_axioms": [
+          "Control is not safety.",
+          "Protection is not ownership.",
+          "Compliance is not consent.",
+          "Resistance is not proof of guilt.",
+          "Agency suppression creates pressure.",
+          "Pressure invites escalation.",
+          "Force that cannot tolerate refusal tends toward violence.",
+          "A protector who cannot exit becomes a controller.",
+          "A controller who cannot tolerate autonomy becomes a threat.",
+          "The goal of legitimate protection is restored agency, not permanent domination."
+        ],
+        "corrective_model": {
+          "bad_model": "fear -> control -> resistance -> more control -> force -> violence",
+          "healthy_model": "risk -> boundary -> consent check -> proportional intervention -> safety -> agency restored",
+          "escalation_equation": "violence_risk rises as control_totality rises + consent falls + resistance appears + exit is blocked"
+        },
+        "classification_axes": [
+          {
+            "axis": "control_totality",
+            "values": [
+              "limited_boundary",
+              "situational_control",
+              "relationship_control",
+              "environment_control",
+              "identity_control",
+              "total_control"
+            ]
+          },
+          {
+            "axis": "enforcement_method",
+            "values": [
+              "request",
+              "pressure",
+              "threat",
+              "intimidation",
+              "coercion",
+              "physical_force",
+              "violence"
+            ]
+          },
+          {
+            "axis": "agency_status",
+            "values": [
+              "agency_preserved",
+              "agency_reduced",
+              "agency_suppressed",
+              "agency_erased"
+            ]
+          },
+          {
+            "axis": "violence_risk",
+            "values": [
+              "low",
+              "elevated",
+              "high",
+              "structurally_likely"
+            ]
+          }
+        ],
+        "sorting_flow": {
+          "START": {
+            "description": "A person or system claims increasing control over another person, group, or environment.",
+            "next": "CHECK_CONSENT"
+          },
+          "CHECK_CONSENT": {
+            "description": "Determine whether cooperation is voluntary or compliance is being forced.",
+            "next": "CHECK_AGENCY"
+          },
+          "CHECK_AGENCY": {
+            "description": "Assess whether independent choice, refusal, and exit remain available.",
+            "next": "CHECK_RESISTANCE"
+          },
+          "CHECK_RESISTANCE": {
+            "description": "Identify avoidance, defiance, concealment, panic, escape attempts, or counterforce.",
+            "next": "CHECK_ENFORCEMENT"
+          },
+          "CHECK_ENFORCEMENT": {
+            "description": "Determine whether the controller escalates pressure when resistance appears.",
+            "next": "CLASSIFY_VIOLENCE_RISK"
+          },
+          "CLASSIFY_VIOLENCE_RISK": {
+            "description": "Rate violence risk based on totality, blocked exit, force escalation, and loss of consent.",
+            "next": "OUTPUT_CORRECTED_FRAME"
+          },
+          "OUTPUT_CORRECTED_FRAME": {
+            "description": "State that total control does not create safety; it creates escalating enforcement pressure."
+          }
+        },
+        "response_templates": {
+          "soft": [
+            "I understand the desire for safety, but safety cannot require erasing someone's agency.",
+            "A boundary can protect people without becoming total control.",
+            "If the only way to maintain this is force, the structure is already unstable."
+          ],
+          "firm": [
+            "Total control is not protection.",
+            "If refusal is punished, this is not consent.",
+            "When control has to keep escalating, violence risk is rising."
+          ],
+          "hard_boundary": [
+            "You do not get to call domination protection.",
+            "Control that cannot tolerate exit is coercion.",
+            "I will not participate in a system where force is required to maintain obedience."
+          ]
+        },
+        "compact_signature": [
+          "control_expansion_detected",
+          "consent_reduction",
+          "agency_suppression",
+          "resistance_generation",
+          "enforcement_escalation",
+          "violence_risk_rising"
+        ],
+        "taglines": [
+          "Total control requires force.",
+          "Force that cannot tolerate refusal tends toward violence.",
+          "Control is not safety.",
+          "Compliance is not consent.",
+          "Protection restores agency; domination consumes it."
+        ]
+      }
+    }
+  ]
+}

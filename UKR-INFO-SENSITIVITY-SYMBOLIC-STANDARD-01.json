@@ -1,0 +1,381 @@
+{
+  "ukr_id": "UKR-INFO-SENSITIVITY-SYMBOLIC-STANDARD-01",
+  "title": "Information Sensitivity Symbolic Standard",
+  "version": "1.0",
+  "status": "working_draft",
+  "type": "ukr_symbolic_access_control_standard",
+  "semantic_kind": "information_sensitivity_classification_access_restriction_boundary",
+  "created_for": "symbolic_standard_extension",
+  "purpose": "Add an information sensitivity and access-control layer to the symbolic standard so documents, passages, evidence, identity-linked information, private inner content, and harm-risk material can be classified before viewing is allowed.",
+  "core_definition": {
+    "summary": "This UKR classifies information by sensitivity level, special risk tags, viewer authorization, need-to-know, purpose limits, and harm risk. It prevents curiosity, proximity, technical access, claimed authority, or social connection from becoming permission to view restricted material.",
+    "primary_unit_of_analysis": "information_item",
+    "secondary_units": [
+      "document",
+      "document_passage",
+      "file",
+      "record",
+      "screenshot",
+      "log",
+      "identity_link",
+      "private_inner_content",
+      "evidence_packet",
+      "viewer",
+      "role",
+      "authorization",
+      "need_to_know",
+      "scope_limit",
+      "access_decision"
+    ],
+    "governing_rule": "Information access must be classified before viewing is allowed. Access requires sensitivity classification, viewer authorization, need-to-know, owner permission where applicable, purpose limit, and scope control. Harm-risk information is restricted by default.",
+    "core_rule_formula": "Access = sensitivity_level + viewer_authorization + need_to_know + owner_permission + purpose_limit + scope_limit - harm_risk - overreach"
+  },
+  "core_separation": {
+    "false_equation": "curiosity_or_proximity_or_technical_access = permission_to_view",
+    "corrected_equation": "view_permission = classification_level + authorization + need_to_know + purpose_limit + scope_limit",
+    "one_line_translation": "Not everyone gets to see everything. Access requires permission, purpose, and proof of need."
+  },
+  "master_access_boundary": {
+    "◇P": {
+      "label": "Public",
+      "meaning": "Safe for anyone to view.",
+      "default_access": "everyone",
+      "rule": "◇P → open_view",
+      "examples": [
+        "public website text",
+        "published announcements",
+        "public policies",
+        "public-facing descriptions",
+        "non-sensitive educational content"
+      ]
+    },
+    "◈I": {
+      "label": "Internal",
+      "meaning": "Normal private or internal information not meant for public view.",
+      "default_access": "approved internal members or approved users",
+      "rule": "◈I → approved_internal_access",
+      "examples": [
+        "internal notes",
+        "draft plans",
+        "general team documents",
+        "non-sensitive operational details",
+        "ordinary project discussion"
+      ]
+    },
+    "◆R": {
+      "label": "Restricted",
+      "meaning": "Sensitive information requiring a specific reason to access.",
+      "default_access": "specific roles with need-to-know",
+      "rule": "◆R → role ∧ need_to_know",
+      "examples": [
+        "financial details",
+        "private planning",
+        "non-public strategy",
+        "staff-only documents",
+        "sensitive but non-dangerous records"
+      ]
+    },
+    "⛔C": {
+      "label": "Confidential",
+      "meaning": "High-sensitivity information that could cause privacy harm, legal risk, reputational damage, exploitation, or personal vulnerability if exposed.",
+      "default_access": "named or explicitly approved viewers only",
+      "rule": "⛔C → named_access ∧ purpose_limit ∧ audit",
+      "examples": [
+        "personal addresses",
+        "phone numbers",
+        "legal documents",
+        "private accusations",
+        "medical details",
+        "account recovery information",
+        "private messages",
+        "sensitive identity records"
+      ]
+    },
+    "✦S": {
+      "label": "Secret",
+      "meaning": "Critical private information where exposure creates serious harm, danger, compromise, or irreversible loss.",
+      "default_access": "minimum necessary access only",
+      "rule": "✦S → minimum_access ∧ explicit_authorization ∧ logging",
+      "examples": [
+        "passwords",
+        "API keys",
+        "tokens",
+        "security vulnerabilities",
+        "safety plans",
+        "high-risk personal location information",
+        "private evidence involving real-world danger"
+      ]
+    }
+  },
+  "special_sensitivity_tags": {
+    "⌬ID": {
+      "label": "Identity-Sensitive",
+      "meaning": "Information that identifies a real person, account, source, location, role, signature, or private association.",
+      "rule": "⌬ID ≠ public_permission",
+      "examples": [
+        "names connected to private claims",
+        "personal photos",
+        "phone numbers",
+        "addresses",
+        "emails",
+        "account handles",
+        "work/school/hotel/location links",
+        "private association claims"
+      ],
+      "boundary": "Identity information does not become public just because someone knows it."
+    },
+    "▣EV": {
+      "label": "Evidence-Sensitive",
+      "meaning": "Records, logs, screenshots, documents, proof trails, claims, or investigative material.",
+      "rule": "▣EV → preserve_integrity ∧ restrict_editing ∧ track_access",
+      "examples": [
+        "screenshots",
+        "receipts",
+        "chat logs",
+        "videos",
+        "audio",
+        "incident timelines",
+        "documents",
+        "witness statements"
+      ],
+      "boundary": "Evidence should not be casually shared, altered, or socially circulated."
+    },
+    "☁PR": {
+      "label": "Private Inner Content",
+      "meaning": "Personal thoughts, drafts, symbolic/private material, imagination, journals, unpublished reflections.",
+      "rule": "☁PR ≠ ▣ public_conduct",
+      "examples": [
+        "personal journal entries",
+        "symbolic writing",
+        "unpublished drafts",
+        "private fantasies or thoughts",
+        "internal reasoning notes",
+        "personal interpretations"
+      ],
+      "boundary": "Private inner content does not become public conduct or misconduct just because someone reads it."
+    },
+    "⛝HX": {
+      "label": "Harm / Exploit Risk",
+      "meaning": "Information that could enable harassment, coercion, doxxing, theft, retaliation, hacking, manipulation, or abuse.",
+      "rule": "⛝HX → restrict_by_default",
+      "examples": [
+        "doxxing details",
+        "stalking-relevant locations",
+        "security bypass information",
+        "blackmail material",
+        "coercion leverage",
+        "harassment targets",
+        "exploit paths",
+        "personal vulnerability maps"
+      ],
+      "boundary": "If access could enable harm, default to denial unless a legitimate safety, legal, or protective need is proven."
+    }
+  },
+  "access_roles": {
+    "owner": {
+      "meaning": "The person or entity that owns or controls the material.",
+      "default_access": "full access to their own material unless legal or safety constraints apply"
+    },
+    "named_viewer": {
+      "meaning": "A person specifically approved to view an item.",
+      "default_access": "can view only specifically shared items"
+    },
+    "trusted_handler": {
+      "meaning": "A person trusted to handle restricted or confidential material within a defined scope.",
+      "default_access": "scope-limited access"
+    },
+    "evidence_handler": {
+      "meaning": "A person authorized to handle evidence-sensitive material.",
+      "default_access": "access to ▣EV only within evidence integrity rules"
+    },
+    "admin": {
+      "meaning": "A person who can manage systems or permissions.",
+      "default_access": "can manage systems, but does not automatically view private content"
+    },
+    "public_viewer": {
+      "meaning": "Any ordinary viewer without special authorization.",
+      "default_access": "◇P only"
+    },
+    "blocked_viewer": {
+      "meaning": "A viewer explicitly denied access.",
+      "default_access": "no access"
+    }
+  },
+  "classification_format": {
+    "standard_tag": "[Classification | Special Tags | Allowed Viewers | Restriction Reason | Scope]",
+    "example": "[⛔C | ⌬ID ▣EV | Owner + Evidence Handler | identity-linked private evidence | no public sharing]",
+    "field_rules": {
+      "Classification": "Use ◇P, ◈I, ◆R, ⛔C, or ✦S.",
+      "Special_Tags": "Apply ⌬ID, ▣EV, ☁PR, or ⛝HX when relevant.",
+      "Allowed_Viewers": "Name roles or specific authorized viewer classes.",
+      "Restriction_Reason": "State why access is limited.",
+      "Scope": "State the limit so access does not expand beyond the reason."
+    }
+  },
+  "valid_access_rules": {
+    "public_rule": "◇P material may be viewed openly.",
+    "internal_rule": "◈I material requires approved membership or approved internal access.",
+    "restricted_rule": "◆R material requires role plus need-to-know.",
+    "confidential_rule": "⛔C material requires named access, purpose limit, and audit or tracking.",
+    "secret_rule": "✦S material requires minimum access, explicit authorization, and logging.",
+    "identity_rule": "⌬ID identifies; it does not grant ownership, guilt, authority, or public permission.",
+    "evidence_rule": "▣EV requires evidence integrity: preserve, restrict editing, track access.",
+    "private_inner_content_rule": "☁PR remains private inner content unless explicitly shared by the owner.",
+    "harm_risk_rule": "⛝HX is restricted by default; access must be justified by safety, legal, or protective need.",
+    "admin_boundary_rule": "Admin capability is not automatic content-viewing permission.",
+    "technical_access_rule": "Technical access is not authorization."
+  },
+  "symbolic_integration": {
+    "integrates_with": [
+      "UKR-IC-17D-DOCUMENT-MARKING-SYSTEM-01",
+      "UKR-IMAGINATION-CONDUCT-SYMBOL-SEPARATION-01",
+      "UKR-MARK-TYPE-SYMBOL-SET-01",
+      "UKR-17D-FIRST-ORDER-LOGIC-INTEGRATED-SYMBOL-SET-01"
+    ],
+    "integrated_processing_flow": "☁/▣ first → 17D context second → evidence third → mark fourth → sensitivity fifth → access decision last",
+    "classification_chain": [
+      "01_layer_check",
+      "02_17d_context_check",
+      "03_evidence_check",
+      "04_mark_check",
+      "05_sensitivity_check",
+      "06_viewer_authorization_check",
+      "07_access_decision"
+    ],
+    "access_decision_formula": "view_permission := classification_level ∧ authorization ∧ need_to_know ∧ purpose_limit ∧ scope_limit ∧ ¬unjustified_harm_risk"
+  },
+  "distortion_tests": [
+    {
+      "id": "DT-01",
+      "name": "Curiosity Is Not Access Test",
+      "question": "Is someone treating curiosity, interest, or social pressure as permission to view?"
+    },
+    {
+      "id": "DT-02",
+      "name": "Technical Access Boundary Test",
+      "question": "Can the person open the item technically, but lack authorization to view it?"
+    },
+    {
+      "id": "DT-03",
+      "name": "Need-to-Know Test",
+      "question": "Does the viewer have a real need-to-know within scope?"
+    },
+    {
+      "id": "DT-04",
+      "name": "Identity Exposure Test",
+      "question": "Does the item identify a person, location, source, account, or private association?"
+    },
+    {
+      "id": "DT-05",
+      "name": "Evidence Integrity Test",
+      "question": "Could sharing or editing damage the integrity of evidence?"
+    },
+    {
+      "id": "DT-06",
+      "name": "Private Inner Content Test",
+      "question": "Is private symbolic or inner material being treated as if it is public conduct?"
+    },
+    {
+      "id": "DT-07",
+      "name": "Harm Enablement Test",
+      "question": "Could access enable harassment, coercion, doxxing, theft, retaliation, hacking, manipulation, or abuse?"
+    },
+    {
+      "id": "DT-08",
+      "name": "Authority Proof Test",
+      "question": "Has the viewer's claimed authority been verified?"
+    }
+  ],
+  "failure_modes": [
+    {
+      "id": "FM-01",
+      "name": "Curiosity-as-Permission",
+      "description": "A person wants to see information and treats that desire as access authorization."
+    },
+    {
+      "id": "FM-02",
+      "name": "Technical-Access Overreach",
+      "description": "A person can open or retrieve content and falsely treats capability as permission."
+    },
+    {
+      "id": "FM-03",
+      "name": "Identity Exposure Drift",
+      "description": "Identity-linked information is shared beyond its proper scope."
+    },
+    {
+      "id": "FM-04",
+      "name": "Evidence Circulation",
+      "description": "Evidence-sensitive material is casually shared, edited, or socially circulated."
+    },
+    {
+      "id": "FM-05",
+      "name": "Private-Content Violation",
+      "description": "Private inner content is viewed, exposed, or judged without consent."
+    },
+    {
+      "id": "FM-06",
+      "name": "Harm-Risk Leakage",
+      "description": "Information that enables harm is disclosed to an unsafe or unjustified viewer."
+    },
+    {
+      "id": "FM-07",
+      "name": "Authority Impersonation",
+      "description": "A viewer claims authority without proof and attempts to gain access."
+    }
+  ],
+  "quick_classification_examples": [
+    {
+      "item": "Public blog post",
+      "classification": "[◇P | none | Everyone | public-facing material | open view]"
+    },
+    {
+      "item": "Internal project note",
+      "classification": "[◈I | none | Approved internal members | internal planning | no public sharing]"
+    },
+    {
+      "item": "Private strategy document",
+      "classification": "[◆R | none | Specific role + need-to-know | non-public strategy | scope-limited]"
+    },
+    {
+      "item": "Personal phone number",
+      "classification": "[⛔C | ⌬ID | Named viewers only | identity-linked contact info | no public sharing]"
+    },
+    {
+      "item": "Password or API key",
+      "classification": "[✦S | ⛝HX | Minimum necessary access | secret credential | log access]"
+    },
+    {
+      "item": "Screenshot of private chat",
+      "classification": "[⛔C | ▣EV ⌬ID | Owner + Evidence Handler | private identity-linked evidence | preserve integrity]"
+    },
+    {
+      "item": "Personal journal entry",
+      "classification": "[⛔C | ☁PR | Owner only | private inner content | no external judgment]"
+    },
+    {
+      "item": "Doxxing target list",
+      "classification": "[✦S | ⛝HX ⌬ID | Blocked unless protective/legal need is proven | harm enablement risk | deny by default]"
+    },
+    {
+      "item": "Legal evidence packet",
+      "classification": "[⛔C/✦S | ▣EV ⌬ID | Owner + approved legal/evidence handler | identity-linked evidence | chain-of-custody scope]"
+    },
+    {
+      "item": "Symbolic private writing",
+      "classification": "[⛔C | ☁PR ❝❞ ⟐ | Owner or explicitly approved viewer | private symbolic content | ☁PR ≠ ▣]"
+    }
+  ],
+  "psc_locks": [
+    "Curiosity is not access.",
+    "Proximity is not permission.",
+    "Technical access is not authorization.",
+    "Authority must be proven.",
+    "Private content stays private unless shared.",
+    "Evidence needs integrity protection.",
+    "Identity data has a scope lock.",
+    "Harm-risk data is restricted by default.",
+    "Not everyone gets to see everything.",
+    "Access requires permission, purpose, and proof of need."
+  ],
+  "one_line_translation": "Not everyone gets to see everything. Access requires permission, purpose, and proof of need."
+}

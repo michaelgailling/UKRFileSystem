@@ -1,0 +1,217 @@
+{
+  "ukrid": "UKR-VICE-VERSA-STATEMENT-OPERATOR-V1",
+  "title": "Vice Versa Statement Swap and Symmetry Check",
+  "version": "1.0",
+  "status": "workingdraft",
+  "type": "jsonukrprocessmap",
+  "semantickind": "logicrelationalswapoperator",
+  "literalboundary": "This UKR defines a language-level vice-versa operator. It describes how to swap roles or sides in a statement for analysis. It is not a plan for impersonation, evasion, harassment, surveillance, or any real-world action.",
+  "coresummary": {
+    "plaintranslation": "Vice versa means flipping the roles or sides in a relationship and checking what remains true, what changes, and what breaks.",
+    "onelinetranslation": "Swap A and B in the statement, then see what still holds."
+  },
+  "definitions": {
+    "statement": "Any declarative sentence that asserts a relationship, role, or comparison between at least two named parts.",
+    "rolepair": "The two elements that will be swapped, usually subject/object, agent/patient, or group A / group B.",
+    "viceversaoperation": "A structured procedure that takes a statement and a chosen role pair (A,B), swaps their positions, and then re-evaluates meaning and validity."
+  },
+  "primaryunits": {
+    "originalstatement": {
+      "fields": {
+        "text": "The original natural-language statement.",
+        "context": "Optional short description of situation or domain.",
+        "roles": "List of role labels or entities that appear in the statement."
+      }
+    },
+    "swapconfig": {
+      "fields": {
+        "roleA": "First role label or entity to be swapped.",
+        "roleB": "Second role label or entity to be swapped.",
+        "roleAmarkers": "Pronouns, names, or noun phrases bound to roleA.",
+        "roleBmarkers": "Pronouns, names, or noun phrases bound to roleB."
+      }
+    },
+    "swappedstatement": {
+      "fields": {
+        "text": "Resulting statement text after swapping roleA and roleB markers.",
+        "notes": "Any adjustments needed to keep grammar readable."
+      }
+    },
+    "evaluation": {
+      "fields": {
+        "logicalsymmetry": "Does the claim stay logically equivalent after swap? values: symmetric, asymmetric, unclear.",
+        "fairnesstest": "Does the swap reveal bias or double standard? values: same_standard, double_standard, context_dependent.",
+        "meaningchange": "Short description of what changed in meaning, if anything.",
+        "evidenceimpact": "Does the swap change what evidence would be needed? values: no_change, changes_required, not_applicable."
+      }
+    }
+  },
+  "governingrule": "Every statement and its vice-versa form stay inside their own evidence boundaries. A clean swap may reveal symmetry or bias, but it does not by itself prove guilt, innocence, authority, or moral standing.",
+  "falseequations": [
+    {
+      "collapse": "Imagination of a swapped statement equals real misconduct.",
+      "correction": "Imagining or writing the swapped statement is a thought exercise, not an action."
+    },
+    {
+      "collapse": "Symmetric wording means symmetric evidence.",
+      "correction": "Even if statements look symmetric, real-world evidence may differ by context and facts."
+    },
+    {
+      "collapse": "Vice versa failure means someone is automatically wrong or malicious.",
+      "correction": "Asymmetry can come from legitimate context differences, not just bias."
+    }
+  ],
+  "processflow": {
+    "compactflow": "capture-statement → identify-role-pair → bind-markers → generate-swapped-statement → evaluate-symmetry → record-conclusions",
+    "steps": [
+      {
+        "id": "step01_capture_statement",
+        "name": "Capture statement",
+        "question": "What exact statement are we analyzing?",
+        "rule": "Write the full sentence without paraphrasing.",
+        "input": ["userstatement"],
+        "output": ["originalstatement.text"]
+      },
+      {
+        "id": "step02_identify_role_pair",
+        "name": "Identify role pair",
+        "question": "Which two roles or entities are we swapping?",
+        "rule": "Choose A and B so that swapping them is meaningful (e.g., men/women, boss/employee, groupX/groupY).",
+        "input": ["originalstatement.text"],
+        "output": ["swapconfig.roleA", "swapconfig.roleB"]
+      },
+      {
+        "id": "step03_bind_markers",
+        "name": "Bind markers",
+        "question": "What words in the sentence point to roleA and roleB?",
+        "rule": "List names, nouns, and pronouns that clearly refer to A and to B.",
+        "input": ["originalstatement.text", "swapconfig.roleA", "swapconfig.roleB"],
+        "output": ["swapconfig.roleAmarkers", "swapconfig.roleBmarkers"]
+      },
+      {
+        "id": "step04_generate_swapped",
+        "name": "Generate swapped statement",
+        "question": "What do we get if we swap A-markers and B-markers?",
+        "rule": "Replace each roleA marker with roleB and each roleB marker with roleA, adjusting grammar only as needed.",
+        "input": ["originalstatement.text", "swapconfig.roleAmarkers", "swapconfig.roleBmarkers"],
+        "output": ["swappedstatement.text"]
+      },
+      {
+        "id": "step05_evaluate_symmetry",
+        "name": "Evaluate symmetry and fairness",
+        "questions": [
+          "Does the swapped statement still make logical sense?",
+          "Would we treat the swapped version as acceptable, true, or fair to say?",
+          "Does the swap change what evidence we would demand?"
+        ],
+        "rules": [
+          "If both versions need the same type and strength of evidence, mark fairnesstest = \"same_standard\".",
+          "If one version is accepted without evidence while the other is condemned, consider fairnesstest = \"double_standard\".",
+          "If context (history, power, law) matters, mark fairnesstest = \"context_dependent\" and describe why."
+        ],
+        "input": ["originalstatement.text", "swappedstatement.text"],
+        "output": [
+          "evaluation.logicalsymmetry",
+          "evaluation.fairnesstest",
+          "evaluation.meaningchange",
+          "evaluation.evidenceimpact"
+        ]
+      },
+      {
+        "id": "step06_record_conclusion",
+        "name": "Record conclusion",
+        "question": "What did the vice-versa test show?",
+        "rule": "Keep the conclusion descriptive, not punitive. Stay with what the swap reveals about structure, not about personal worth.",
+        "input": ["evaluation.*"],
+        "output": ["viceversasummary"]
+      }
+    ]
+  },
+  "daradvalidation": {
+    "D1_deduction": {
+      "question": "What must be true for vice versa to work?",
+      "answers": [
+        "The statement must identify at least two roles or entities.",
+        "We must be able to map words in the sentence to those roles.",
+        "Swapping A and B produces a new sentence that can be read and evaluated."
+      ]
+    },
+    "A1_abduction": {
+      "question": "What could a vice-versa result explain?",
+      "answers": [
+        "Why a rule feels fair only in one direction.",
+        "Which parts of a claim depend on power, history, or context.",
+        "Where hidden bias or double standards might live."
+      ]
+    },
+    "R_reduction": {
+      "question": "What does the vice-versa test actually prove?",
+      "answers": [
+        "It proves how the wording behaves under a clean role swap.",
+        "It does not by itself prove legal guilt, moral status, or factual truth.",
+        "It highlights where we need more context or evidence."
+      ]
+    },
+    "A2_reconstruction": {
+      "question": "After removing over-interpretation, what remains?",
+      "answers": [
+        "A pair of statements (original and swapped) with noted similarities and differences.",
+        "A clearer map of where symmetry holds and where context breaks symmetry."
+      ]
+    },
+    "D2_deduction": {
+      "question": "What final distinction must hold?",
+      "answers": [
+        "Vice versa is a lens on structure and fairness, not a final verdict on people.",
+        "Symmetry in language is evidence about framing, not about who is right in reality."
+      ]
+    }
+  },
+  "examples": {
+    "example1": {
+      "originalstatement": "It is fine for bosses to read their employees' public posts, but not the other way around.",
+      "swapconfig": {
+        "roleA": "bosses",
+        "roleB": "employees",
+        "roleAmarkers": ["bosses"],
+        "roleBmarkers": ["employees"]
+      },
+      "swappedstatement": "It is fine for employees to read their bosses' public posts, but not the other way around.",
+      "evaluation": {
+        "logicalsymmetry": "symmetric",
+        "fairnesstest": "same_standard",
+        "meaningchange": "Same structure; power difference may affect risk but not the core logic of reading public posts.",
+        "evidenceimpact": "no_change"
+      }
+    },
+    "example2": {
+      "originalstatement": "Group X may stereotype Group Y, but Group Y must never stereotype Group X.",
+      "swapconfig": {
+        "roleA": "Group X",
+        "roleB": "Group Y",
+        "roleAmarkers": ["Group X"],
+        "roleBmarkers": ["Group Y"]
+      },
+      "swappedstatement": "Group Y may stereotype Group X, but Group X must never stereotype Group Y.",
+      "evaluation": {
+        "logicalsymmetry": "symmetric",
+        "fairnesstest": "double_standard",
+        "meaningchange": "Swapping shows that the rule is about who is allowed to stereotype whom, not about stereotyping being wrong in itself.",
+        "evidenceimpact": "changes_required"
+      }
+    }
+  },
+  "usagenotes": {
+    "intendeduse": [
+      "Test fairness and symmetry of rules, policies, or judgments by swapping roles.",
+      "Surface hidden double standards without accusing anyone by default.",
+      "Clarify which asymmetries come from real-world context and which come from bias."
+    ],
+    "hardboundaries": [
+      "Do not treat vice-versa results as automatic proof of guilt or virtue.",
+      "Do not use vice versa to bypass evidence requirements in legal, clinical, or safety decisions.",
+      "Keep imagination, wording tests, and real-world conduct clearly separated."
+    ]
+  },
+  "compactsignature": "statementcaptured → rolepairchosen → markersbound → textswapped → symmetryevaluated → conclusionlogged"
+}

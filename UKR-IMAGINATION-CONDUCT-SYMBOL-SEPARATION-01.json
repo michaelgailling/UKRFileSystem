@@ -1,0 +1,221 @@
+{
+  "ukr_id": "UKR-IMAGINATION-CONDUCT-SYMBOL-SEPARATION-01",
+  "title": "Imagination and Conduct Symbol Separation",
+  "version": "1.0",
+  "status": "working_draft",
+  "type": "ukr_symbolic_separation_map",
+  "semantic_kind": "imagination_conduct_boundary_symbol_set",
+  "purpose": "Create a stable symbolic distinction between private imagination and observable conduct so thoughts, fantasies, inner scenes, or a dirty mind are not falsely collapsed into real-world behavior or misconduct.",
+  "core_definition": {
+    "summary": "This UKR separates imagination from conduct using two custom symbols: ☁ for the private imagination layer and ▣ for the observable conduct layer. The system preserves the boundary that imagination may contain private thoughts, fantasies, jokes, mental images, or symbolic scenes without becoming action, while conduct must be judged by what was actually done.",
+    "primary_unit_of_analysis": "imagination_conduct_boundary",
+    "secondary_units": [
+      "private_thought",
+      "fantasy",
+      "mental_image",
+      "inner_scene",
+      "observable_action",
+      "chosen_behavior",
+      "public_conduct",
+      "misconduct_evidence",
+      "restraint",
+      "good_conduct"
+    ],
+    "governing_rule": "Imagination is not conduct. Conduct requires observable action. Misconduct requires evidence of actual behavior, not merely private thought or fantasy."
+  },
+  "symbol_set": [
+    {
+      "concept": "imagination",
+      "symbol": "☁",
+      "symbol_name": "Mind-Cloud",
+      "meaning_lock": "private thought, fantasy, mental image, inner scene, dirty mind, symbolic imagination layer",
+      "plain_translation": "What appears inside the mind.",
+      "boundary": "Imagination is not action, consent, misconduct, external reality, or proof of behavior."
+    },
+    {
+      "concept": "conduct",
+      "symbol": "▣",
+      "symbol_name": "Action-Square",
+      "meaning_lock": "actual behavior, chosen action, observable conduct, real-world behavior layer",
+      "plain_translation": "What a person actually does.",
+      "boundary": "Conduct must be judged by observable behavior, evidence, context, consent, and consequences."
+    }
+  ],
+  "core_separation": {
+    "false_equation": "dirty_mind_or_private_fantasy = dirty_conduct_or_misconduct",
+    "corrected_equation": "private_imagination + restraint + good_behavior = dirty_mind_with_clean_conduct",
+    "symbolic_false_equation": "☁ = ▣",
+    "symbolic_corrected_equation": "☁ ≠ ▣",
+    "one_line_translation": "A cloud in the mind is not a square in the world."
+  },
+  "core_formulas": [
+    {
+      "formula": "☁ ≠ ▣",
+      "translation": "Imagination is not conduct."
+    },
+    {
+      "formula": "☁ + ▣✓ = dirty_mind + good_conduct",
+      "translation": "The mind can wander while the actions stay clean."
+    },
+    {
+      "formula": "⛝ requires ▣",
+      "translation": "A misconduct mark requires actual conduct, not just imagination."
+    },
+    {
+      "formula": "☁ without ▣ = private_inner_content",
+      "translation": "An inner thought without action remains private imagination."
+    },
+    {
+      "formula": "▣ + evidence = conduct_assessment",
+      "translation": "Behavior is assessed through what happened, not through imagined meaning."
+    }
+  ],
+  "psc_lock": {
+    "false_collapse": "private fantasy, dirty thoughts, or internal imagery are treated as if they automatically prove real-world misconduct.",
+    "correction": "Private imagination and observable conduct belong to separate layers. The imagination layer can be strange, sexual, dark, symbolic, playful, or intrusive without becoming conduct unless it is acted on.",
+    "one_line_translation": "Thoughts live in ☁; actions live in ▣."
+  },
+  "distortion_tests": [
+    {
+      "id": "DT-01",
+      "name": "Layer Separation Test",
+      "question": "Is this being judged as imagination ☁ or conduct ▣?"
+    },
+    {
+      "id": "DT-02",
+      "name": "Action Evidence Test",
+      "question": "What actual behavior happened?"
+    },
+    {
+      "id": "DT-03",
+      "name": "Misconduct Boundary Test",
+      "question": "Is there evidence of misconduct, or only private thought/fantasy?"
+    },
+    {
+      "id": "DT-04",
+      "name": "Fantasy Literalization Test",
+      "question": "Is someone treating fantasy as literal external reality?"
+    },
+    {
+      "id": "DT-05",
+      "name": "Restraint Recognition Test",
+      "question": "Did the person restrain action and keep conduct clean?"
+    },
+    {
+      "id": "DT-06",
+      "name": "Proof Inflation Test",
+      "question": "Is private imagination being inflated into proof of public behavior?"
+    }
+  ],
+  "failure_modes": [
+    {
+      "id": "FM-01",
+      "name": "Imagination-Conduct Collapse",
+      "description": "Private thoughts or fantasies are falsely treated as real-world actions."
+    },
+    {
+      "id": "FM-02",
+      "name": "Dirty Mind Equals Dirty Conduct Error",
+      "description": "A sexual, dark, weird, or mischievous mind is falsely treated as evidence of bad behavior."
+    },
+    {
+      "id": "FM-03",
+      "name": "Fantasy Literalization",
+      "description": "An imagined scene is treated as if it happened in external reality."
+    },
+    {
+      "id": "FM-04",
+      "name": "Misconduct Without Action",
+      "description": "A negative conduct mark is assigned without evidence of actual behavior."
+    },
+    {
+      "id": "FM-05",
+      "name": "Restraint Erasure",
+      "description": "Self-control and non-action are ignored so imagination can be falsely blamed as conduct."
+    }
+  ],
+  "classification_axes": [
+    {
+      "axis": "layer",
+      "values": [
+        "imagination_cloud",
+        "conduct_square",
+        "mixed_context",
+        "unclear"
+      ]
+    },
+    {
+      "axis": "visibility",
+      "values": [
+        "private",
+        "spoken",
+        "acted",
+        "documented",
+        "observable"
+      ]
+    },
+    {
+      "axis": "action_status",
+      "values": [
+        "thought_only",
+        "joke_only",
+        "fantasy_only",
+        "restrained",
+        "acted_on",
+        "harmful_action"
+      ]
+    },
+    {
+      "axis": "evidence_strength",
+      "values": [
+        "none",
+        "self_reported_thought",
+        "ambiguous_signal",
+        "observable_behavior",
+        "verified_conduct"
+      ]
+    }
+  ],
+  "healthy_pattern": {
+    "sequence": [
+      "private_imagination_detected",
+      "conduct_layer_checked",
+      "actual_behavior_identified",
+      "restraint_or_action_assessed",
+      "misconduct_requires_evidence",
+      "boundary_preserved"
+    ],
+    "compact_flow": "☁ detected -> ▣ checked -> evidence required -> restraint recognized -> no false collapse"
+  },
+  "response_templates": {
+    "soft": [
+      "That belongs to the imagination layer, not the conduct layer.",
+      "A private thought is not the same as an action.",
+      "The conduct question is what actually happened."
+    ],
+    "firm": [
+      "Do not treat imagination as misconduct.",
+      "A dirty mind is not dirty conduct.",
+      "Misconduct requires actual behavior, not fantasy."
+    ],
+    "hard_boundary": [
+      "Do not assign a misconduct mark without evidence of conduct.",
+      "Private imagination does not create public guilt.",
+      "A thought is not an action unless it is acted on."
+    ]
+  },
+  "compact_signature": [
+    "☁_private_imagination",
+    "▣_observable_conduct",
+    "☁_not_equal_▣",
+    "misconduct_requires_action",
+    "good_conduct_preserved"
+  ],
+  "taglines": [
+    "A cloud in the mind is not a square in the world.",
+    "Dirty mind, clean conduct.",
+    "Thoughts live in ☁; actions live in ▣.",
+    "Misconduct requires conduct.",
+    "Fantasy is not evidence of behavior."
+  ]
+}

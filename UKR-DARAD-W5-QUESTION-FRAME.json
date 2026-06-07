@@ -1,0 +1,223 @@
+{
+  "ukrid": "UKR-DARAD-W5-QUESTION-FRAME",
+  "title": "Who/What/When/Where/Why Perceptual Question Frame for DARAD",
+  "version": "1.0",
+  "status": "workingdraft",
+  "semantickind": "perceptionquestionframework",
+  "domaintags": [
+    "reasoning",
+    "investigation",
+    "perception",
+    "who-what-when-where-why",
+    "DARAD",
+    "PSC"
+  ],
+  "summary": "A structured WHO/WHAT/WHEN/WHERE/WHY question set aligned with the DARAD Holmesian Reasoning Framework to stabilize perception, timelines, and event mapping before motive and conclusion.",
+  "purpose": "Provide a reusable question scaffold that anchors DARAD-style investigation in clean perception and timeline mapping, preventing premature collapse from observation to motive or guilt.",
+  "derivedfrom": [
+    "UKR-DARAD-V1-HOLMESIAN-REASONING",
+    "URK-PSC-COMPILATION",
+    "BOOTSTRAP-REASONING-ENGINE"
+  ],
+  "corequestions": [
+    "What facts are established?",
+    "What explanation best fits the facts?",
+    "What can be reduced, simplified, or eliminated?",
+    "What refined hypothesis survives comparison?",
+    "What conclusion is justified at the end of the cycle?"
+  ],
+  "mappingnote": "WHO/WHAT/WHEN/WHERE stabilize D1 (Deduction 1) and R (Reduction). WHY is handled within A1/A2 (Abduction stages) only after perception and timeline are anchored.",
+  "groups": [
+    {
+      "groupid": "WHO",
+      "label": "Who - Identity and Relationship Perception",
+      "stagealignment": ["D1", "R"],
+      "summary": "Clarify who is present, recognized, and what is actually known about identity and relationship without inflating appearance or familiarity into proof of authority, intent, or guilt.",
+      "questions": [
+        {
+          "id": "WHO-01",
+          "text": "Who do I see?",
+          "role": "sensoryintake",
+          "notes": "Limit to direct perception or documented identity markers (face, body, avatar, name tag, username). Do not infer motive from appearance alone."
+        },
+        {
+          "id": "WHO-02",
+          "text": "Do I know their name?",
+          "role": "identityclaimcheck",
+          "notes": "Separate 'they look familiar' from 'I know their verified name'. Name is an identity claim that may require documentation to confirm."
+        },
+        {
+          "id": "WHO-03",
+          "text": "Do I recognize their face?",
+          "role": "memoryrecallcheck",
+          "notes": "Face recognition is memory-based and can be wrong. Treat recognition as a hypothesis about identity, not proof."
+        },
+        {
+          "id": "WHO-04",
+          "text": "Do they look approachable?",
+          "role": "socialevaluation",
+          "notes": "This is a social perception, not a fact about safety or intent. Keep it tagged as evaluation, not evidence."
+        },
+        {
+          "id": "WHO-05",
+          "text": "Have I talked to them before?",
+          "role": "relationshiphistorycheck",
+          "notes": "Distinguish verified prior interaction (messages, calls, meetings) from imagined or misremembered contact."
+        },
+        {
+          "id": "WHO-06",
+          "text": "Are they my friend?",
+          "role": "relationshipclassification",
+          "notes": "Friend is a social classification. It should be grounded in known history and mutual interaction, not just familiarity or parasocial exposure."
+        }
+      ]
+    },
+    {
+      "groupid": "WHAT",
+      "label": "What - Event and Fact Perception",
+      "stagealignment": ["D1", "R"],
+      "summary": "Anchor what happened in observable actions, events, and elements before adding motives, labels, or accusations. Preserve clean story content integrity.",
+      "questions": [
+        {
+          "id": "WHAT-01",
+          "text": "What is going on?",
+          "role": "situationoverview",
+          "notes": "Generate a plain-language description of current observable activity without motives or character judgments."
+        },
+        {
+          "id": "WHAT-02",
+          "text": "What events happened?",
+          "role": "eventlisting",
+          "notes": "List concrete events as separate steps. Each item should be something that could, in principle, be recorded or witnessed."
+        },
+        {
+          "id": "WHAT-03",
+          "text": "What elements were involved?",
+          "role": "elementmapping",
+          "notes": "Identify people, objects, systems, communications, and environmental factors involved in the events."
+        },
+        {
+          "id": "WHAT-04",
+          "text": "What was the reason?",
+          "role": "preliminarymotivesense",
+          "notes": "Treat this as a hypothesis prompt, not a conclusion. The true motive belongs primarily in DARAD abduction stages (A1/A2)."
+        },
+        {
+          "id": "WHAT-05",
+          "text": "What are the facts?",
+          "role": "factfilter",
+          "notes": "Filter the event list to items with direct support (evidence, records, consistent testimony). Mark rumor or speculation separately."
+        }
+      ]
+    },
+    {
+      "groupid": "WHEN",
+      "label": "When - Timeline and Order",
+      "stagealignment": ["D1", "R"],
+      "summary": "Stabilize the temporal sequence of events and check plausibility before assigning causation or responsibility.",
+      "questions": [
+        {
+          "id": "WHEN-01",
+          "text": "When did an event happen?",
+          "role": "eventtimestamp",
+          "notes": "Attach approximate or exact times/dates to each event, with uncertainty markers where needed."
+        },
+        {
+          "id": "WHEN-02",
+          "text": "What order did they happen in?",
+          "role": "sequencing",
+          "notes": "Arrange events into a timeline. Identify places where the order is unknown or disputed."
+        },
+        {
+          "id": "WHEN-03",
+          "text": "Are the order of events plausible?",
+          "role": "timelineplausibilitycheck",
+          "notes": "Check the sequence against physical limits, travel time, access windows, and other hard constraints. Flag contradictions."
+        }
+      ]
+    },
+    {
+      "groupid": "WHERE",
+      "label": "Where - Location and Position",
+      "stagealignment": ["D1", "R"],
+      "summary": "Map locations of people and objects before inferring action or guilt. Separate mere presence from specific participation in key events.",
+      "questions": [
+        {
+          "id": "WHERE-01",
+          "text": "Where did the events happen?",
+          "role": "eventlocationmapping",
+          "notes": "Identify physical or virtual locations (room, building, server, chat channel, game instance) for each key event."
+        },
+        {
+          "id": "WHERE-02",
+          "text": "Where was person A?",
+          "role": "personallocationA",
+          "notes": "Locate person A at each relevant time slice. Mark any gaps or uncertainty in location."
+        },
+        {
+          "id": "WHERE-03",
+          "text": "Where was person B?",
+          "role": "personallocationB",
+          "notes": "Locate person B at each relevant time slice. Again, mark uncertainty clearly."
+        },
+        {
+          "id": "WHERE-04",
+          "text": "Where were objects during the event?",
+          "role": "objectpositionmapping",
+          "notes": "Track positions or states of key objects (devices, documents, vehicles, tools) over the timeline."
+        }
+      ]
+    },
+    {
+      "groupid": "WHY",
+      "label": "Why - Motive and Explanation (Abductive Layer)",
+      "stagealignment": ["A1", "A2", "D2"],
+      "summary": "Explore multiple possible explanations for the observed who/what/when/where pattern, but keep them explicitly marked as hypotheses until tested.",
+      "questions": [
+        {
+          "id": "WHY-01",
+          "text": "Why did the events occur?",
+          "role": "globalexplanationprompt",
+          "notes": "Generate several candidate explanations. None are treated as proven until they survive DARAD reduction and deduction."
+        },
+        {
+          "id": "WHY-02",
+          "text": "Why were those people there?",
+          "role": "presenceexplanation",
+          "notes": "Consider roles, duties, habits, coincidences, and context. Do not equate presence with guilt or intent."
+        },
+        {
+          "id": "WHY-03",
+          "text": "Why were those objects there?",
+          "role": "objectpresenceexplanation",
+          "notes": "Check legitimate uses, prior placement, storage, or transfer. Avoid automatic escalation from presence to weaponization or wrongdoing."
+        },
+        {
+          "id": "WHY-04",
+          "text": "Why did things start like they did?",
+          "role": "initialconditionexplanation",
+          "notes": "Look for triggers, prior agreements, environmental conditions, or system states that set the initial scene."
+        },
+        {
+          "id": "WHY-05",
+          "text": "Why did they end up like they did?",
+          "role": "outcomeexplanation",
+          "notes": "Connect outcome to chain-of-events using the established timeline. Mark where the connection is strong, weak, or speculative."
+        }
+      ]
+    }
+  ],
+  "operationalrules": [
+    "Run WHO/WHAT/WHEN/WHERE questions first to stabilize observation and timeline before moving into WHY.",
+    "Treat WHY answers as hypotheses within DARAD Abduction stages, not as automatic conclusions.",
+    "Keep a separation label for each answer: observed fact, inferred pattern, hypothesis, or speculation.",
+    "If a WHY hypothesis conflicts with WHO/WHAT/WHEN/WHERE constraints, it must be revised or rejected.",
+    "Use this frame as an intake layer for DARAD rather than a replacement for the DARAD cycle."
+  ],
+  "compactsignature": "whomap, whatevents, whentimeline, wherelocations, whyhypotheses, daradalignment",
+  "taglines": [
+    "Ask WHO/WHAT/WHEN/WHERE before trusting WHY.",
+    "Presence and sequence anchor explanation.",
+    "Evidence role separation precedes motive assignment."
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "ukr_surveillance_systems": {
+    "version": 1,
+    "systems": [
+      {
+        "name": "XKEYSCORE",
+        "type": "distributed_search_and_analytics_layer",
+        "agencies": ["NSA", "GCHQ", "CSE", "ASD", "GCSB"],
+        "collection_layer": {
+          "position_in_stack": "network_edge_and_backbone",
+          "collection_methods": [
+            "fiber_optic_taps",
+            "satellite_ground_stations",
+            "other_NSA_Five_Eyes_collection_points"
+          ],
+          "capture_mode": "full_take_internet_packets",
+          "buffer_window_days": 3,
+          "content_scope": [
+            "emails",
+            "web_traffic",
+            "chats",
+            "file_transfers",
+            "other_IP_sessions"
+          ]
+        },
+        "data_processing": {
+          "session_reassembly": true,
+          "metadata_extraction": [
+            "ip_addresses",
+            "ports",
+            "protocols",
+            "cookies",
+            "email_addresses",
+            "usernames",
+            "login_names",
+            "application_type",
+            "language"
+          ],
+          "indexing": {
+            "indexed_fields": [
+              "selectors",
+              "session_metadata",
+              "some_content_fields"
+            ],
+            "query_scope": "federated_across_multiple_collection_sites"
+          },
+          "storage_model": {
+            "content_storage": "short_term_rolling_buffer",
+            "metadata_storage": "longer_term_indices"
+          }
+        },
+        "query_model": {
+          "selector_types": {
+            "strong_selectors": [
+              "email_address",
+              "ip_address",
+              "username",
+              "phone_number"
+            ],
+            "soft_selectors": [
+              "free_text_keywords",
+              "language",
+              "file_type",
+              "user_agent",
+              "geographic_region"
+            ]
+          },
+          "query_capabilities": [
+            "free_text_search",
+            "selector_search",
+            "time_window_filtering",
+            "protocol_filtering",
+            "pivot_from_metadata_to_content"
+          ],
+          "realtime_features": [
+            "near_realtime_alerting_on_selector_matches",
+            "continuous_monitoring_of_target_activity"
+          ]
+        },
+        "analyst_workflow": [
+          "define_or_import_selectors_and_keywords",
+          "run_metadata_queries_to_discover_patterns",
+          "pivot_to_full_content_for_selected_sessions",
+          "refine_selectors_based_on_results",
+          "export_hits_to_other_tools_or_databases"
+        ]
+      },
+      {
+        "name": "PRISM",
+        "type": "provider_side_data_acquisition_pipeline",
+        "agencies": ["NSA", "FBI_DITU"],
+        "legal_basis": [
+          "FISA_Section_702",
+          "other_US_foreign_intelligence_authorities"
+        ],
+        "collection_layer": {
+          "position_in_stack": "service_provider_application_layer",
+          "collection_methods": [
+            "legal_orders_to_service_providers",
+            "direct_feeds_from_company_systems"
+          ],
+          "providers_example": [
+            "microsoft",
+            "google",
+            "yahoo",
+            "facebook",
+            "apple",
+            "other_US_based_communications_and_cloud_services"
+          ],
+          "data_types": [
+            "emails",
+            "chats_and_im",
+            "stored_files_and_documents",
+            "photos_and_videos",
+            "social_graph_data",
+            "some_realtime_streams"
+          ]
+        },
+        "tasking_pipeline": {
+          "selector_definition": [
+            "foreign_intelligence_targets_accounts",
+            "email_addresses",
+            "user_ids",
+            "phone_numbers"
+          ],
+          "tasking_flow": [
+            "analyst_defines_selectors_and_justification",
+            "selectors_passed_through_targeting_tools",
+            "FBI_DITU_and_legal_channels_issue_orders_to_providers",
+            "providers_query_internal_systems",
+            "matching_data_delivered_to_FBI_equipment",
+            "data_forwarded_to_NSA_ingest_systems"
+          ]
+        },
+        "data_processing": {
+          "routing_components": [
+            "PRINTAURA",
+            "SCISSORS",
+            "Protocol_Exploitation"
+          ],
+          "target_databases": [
+            "NUCLEON_voice",
+            "PINWALE_video",
+            "MAINWAY_call_records",
+            "MARINA_internet_records"
+          ],
+          "unification": {
+            "goal": "aggregate_unstructured_and_structured_data_from_multiple_providers",
+            "analytical_views": [
+              "social_network_graphs",
+              "transaction_patterns",
+              "communication_timelines"
+            ]
+          }
+        },
+        "query_model": {
+          "selector_scope": [
+            "specific_accounts",
+            "specific_identities",
+            "narrowly_defined_targets"
+          ],
+          "capabilities": [
+            "retrieve_full_content_for_target_selectors",
+            "run_temporal_and_relational_analysis",
+            "link_identities_across_providers",
+            "visualize_target_networks_and_activity"
+          ]
+        },
+        "analyst_workflow": [
+          "identify_target_and_legal_basis",
+          "define_and_submit_selectors",
+          "receive_ingested_PRISM_data_via_internal_databases",
+          "review_content_and_metadata",
+          "conduct_network_and_behavior_analysis",
+          "produce_intelligence_reports"
+        ]
+      },
+      {
+        "name": "TEMPORA",
+        "type": "bulk_fiber_backbone_collection_and_buffer",
+        "agencies": ["GCHQ", "NSA_partner_access"],
+        "collection_layer": {
+          "position_in_stack": "submarine_and_backbone_fiber_optic_cables",
+          "collection_methods": [
+            "physical_fiber_taps_at_landing_stations",
+            "other_backbone_choke_points"
+          ],
+          "capture_mode": "bulk_internet_traffic",
+          "scope": [
+            "international_traffic_crossing_UK_infrastructure",
+            "significant_volumes_of_web_email_and_other_IP_services"
+          ]
+        },
+        "data_processing": {
+          "buffering": {
+            "content_buffer_days": "few_days",
+            "metadata_buffer_longer": true
+          },
+          "pre_filtering": [
+            "protocol_based_filters",
+            "geographic_and_routing_filters"
+          ],
+          "integration": [
+            "export_selected_data_to_GCHQ_databases",
+            "share_selected_data_with_NSA_and_other_Five_Eyes_partners",
+            "feed_data_into_systems_such_as_XKEYSCORE"
+          ]
+        },
+        "query_model": {
+          "access_layer": "used_as_data_source_for_other_query_tools",
+          "selector_types": [
+            "standard_SIGINT_selectors",
+            "keywords",
+            "targeted_identifiers"
+          ],
+          "capabilities": [
+            "retrospective_search_over_recent_backbone_traffic",
+            "metadata_analysis_over_larger_time_windows"
+          ]
+        },
+        "analyst_workflow": [
+          "define_selectors_or_tasks_within_GCHQ_or_partner_tools",
+          "query_TEMPORA_backed_indices_and_buffers",
+          "retrieve_relevant_sessions_or_metadata",
+          "correlate_with_other_collection_sources",
+          "escalate_notable_hits_to_downstream_analysis"
+        ]
+      },
+      {
+        "name": "ECHELON",
+        "type": "global_signals_intelligence_network",
+        "agencies": ["NSA", "GCHQ", "CSE", "ASD", "GCSB"],
+        "collection_layer": {
+          "position_in_stack": "satellite_and_long_range_links",
+          "collection_methods": [
+            "satellite_downlink_interception",
+            "microwave_relay_interception",
+            "other_long_distance_telecom_bearers"
+          ],
+          "capture_mode": "bulk_capture_of_selected_channels",
+          "historical_data_types": [
+            "telephone_calls",
+            "fax",
+            "telex",
+            "data_traffic",
+            "early_internet_services"
+          ]
+        },
+        "dictionary_system": {
+          "components": "dictionary_computers_at_each_listening_station",
+          "programmed_selectors": [
+            "keywords_and_phrases",
+            "codewords",
+            "email_or_fax_addresses",
+            "phone_numbers",
+            "other_identifier_patterns"
+          ],
+          "processing_flow": [
+            "incoming_messages_streamed_through_dictionary_engines",
+            "automatic_keyword_and_selector_matching",
+            "messages_with_hits_flagged_and_stored",
+            "flagged_messages_routed_to_requesting_agency"
+          ]
+        },
+        "advanced_processing": {
+          "voice_processing": [
+            "voice_recognition",
+            "speaker_or_phrase_detection"
+          ],
+          "text_processing": [
+            "optical_character_recognition_for_fax_and_images",
+            "language_identification",
+            "basic_categorization"
+          ]
+        },
+        "query_model": {
+          "paradigm": "pre_programmed_keyword_filtering_rather_than_adhoc_search",
+          "capabilities": [
+            "mass_keyword_scan_of_bulk_streams",
+            "selector_based_routing_to_analysts",
+            "long_term_collection_of_selected_hits"
+          ]
+        },
+        "analyst_workflow": [
+          "define_keyword_lists_and_selectors_for_dictionary",
+          "deploy_or_update_dictionaries_at_listening_stations",
+          "receive_stream_of_flagged_messages_from_stations",
+          "prioritize_and_review_hits",
+          "conduct_follow_up_analysis_and_correlate_with_other_sources"
+        ]
+      }
+    ]
+  }
+}

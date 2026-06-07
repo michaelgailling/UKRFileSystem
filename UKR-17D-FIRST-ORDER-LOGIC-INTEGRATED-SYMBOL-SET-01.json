@@ -1,0 +1,566 @@
+{
+  "ukr_id": "UKR-17D-FIRST-ORDER-LOGIC-INTEGRATED-SYMBOL-SET-01",
+  "title": "17D Symbol Set Integrated With First-Order Logic Operators",
+  "version": "1.0",
+  "status": "working_draft",
+  "type": "ukr_symbolic_logic_map",
+  "semantic_kind": "cognitive_dimension_symbol_set_with_first_order_logic_compression",
+  "derived_from": [
+    "PSC-17D-DIMENSION-SYMBOL-SET-01",
+    "17D behavioral loop symbolic compression",
+    "first-order logic operator integration"
+  ],
+  "purpose": "Integrate the 17D cognitive dimension symbols with first-order logic and related formal-logic operators so the system can express cognition, evidence, boundaries, claims, contradictions, implications, and agency-preserving decisions in compressed symbolic form.",
+  "core_definition": {
+    "summary": "The 17D symbols act as cognitive anchors, while first-order logic symbols act as compression operators for negation, conjunction, implication, proof, entailment, equivalence, contradiction, existence, universality, and set membership. The integrated system allows symbolic chains such as input plus memory plus language plus context deriving a decision, while preserving the rule that symbols are anchors, not proof by themselves.",
+    "primary_unit_of_analysis": "integrated_symbolic_expression",
+    "secondary_units": [
+      "dimension_symbol",
+      "logic_operator",
+      "symbolic_chain",
+      "boundary_formula",
+      "proof_relation",
+      "entailment_relation",
+      "decision_chain",
+      "agency_anchor",
+      "context_integration"
+    ],
+    "governing_rule": "17D symbols mark cognitive functions; logic symbols define relationships between them. Neither the glyph nor the formula overrides evidence, consent, agency, or reality testing."
+  },
+  "core_separation": {
+    "false_equation": "symbolic_formula = automatic proof",
+    "corrected_equation": "symbolic_formula = compressed reasoning map + evidence relation + boundary marker + interpretation aid",
+    "one_line_translation": "The formula compresses the reasoning; it does not replace the evidence."
+  },
+  "system_symbol": {
+    "glyph": "⟐",
+    "name": "Integrated HyperDiamond / Context Diamond",
+    "represents": "The full 17D model as integrated context synthesis.",
+    "psc_translation": "The whole model integrates the parts without erasing the parts."
+  },
+  "dimension_symbols": {
+    "D01": {
+      "symbol": "◉",
+      "label": "Sensory Intake",
+      "symbol_name": "Input Eye",
+      "compression_meaning": "raw signal enters the system",
+      "boundary": "Sensory intake is not interpretation by itself."
+    },
+    "D02": {
+      "symbol": "↺",
+      "label": "Memory Recall",
+      "symbol_name": "Return Loop",
+      "compression_meaning": "stored information returns into present awareness",
+      "boundary": "Memory recall is not automatic proof of accuracy."
+    },
+    "D03": {
+      "symbol": "✦",
+      "label": "Internal Imagery",
+      "symbol_name": "Inner Spark",
+      "compression_meaning": "the mind generates internal images or imagined scenes",
+      "boundary": "Imagery is not the same as external reality."
+    },
+    "D04": {
+      "symbol": "❝❞",
+      "label": "Language Framing",
+      "symbol_name": "Frame Quotes",
+      "compression_meaning": "language packages or frames meaning",
+      "boundary": "Framing is not proof."
+    },
+    "D05": {
+      "symbol": "⊙",
+      "label": "Attention Lock",
+      "symbol_name": "Focus Target",
+      "compression_meaning": "attention fixes onto a target",
+      "boundary": "Attention does not prove importance by itself."
+    },
+    "D06": {
+      "symbol": "?✧",
+      "label": "Novelty / Curiosity Drive",
+      "symbol_name": "Question Spark",
+      "compression_meaning": "the system is pulled toward the new, unknown, or unresolved",
+      "boundary": "Curiosity is not consent, obligation, or proof."
+    },
+    "D07": {
+      "symbol": "⚠",
+      "label": "Threat Detection",
+      "symbol_name": "Warning Marker",
+      "compression_meaning": "the system scans for danger or hostile inversion",
+      "boundary": "Threat detection is not proof that a threat is real."
+    },
+    "D08": {
+      "symbol": "♢",
+      "label": "Reward / Attraction",
+      "symbol_name": "Value Diamond",
+      "compression_meaning": "the system marks something as valuable or appealing",
+      "boundary": "Attraction is not entitlement, ownership, or destiny."
+    },
+    "D09": {
+      "symbol": "♥",
+      "label": "Affective Charge",
+      "symbol_name": "Emotion Heart",
+      "compression_meaning": "feeling intensity attaches to an object or situation",
+      "boundary": "Strong feeling is not automatic truth."
+    },
+    "D10": {
+      "symbol": "◎",
+      "label": "Social Evaluation",
+      "symbol_name": "Social Gaze",
+      "compression_meaning": "the system models public or social judgment",
+      "boundary": "Social judgment is not official judgment."
+    },
+    "D11": {
+      "symbol": "⛓",
+      "label": "Attachment / Bond Signal",
+      "symbol_name": "Bond Chain",
+      "compression_meaning": "the system detects or forms a relational bond",
+      "boundary": "Attachment does not create ownership."
+    },
+    "D12": {
+      "symbol": "✓",
+      "label": "Decision Commitment",
+      "symbol_name": "Commitment Check",
+      "compression_meaning": "a possible path becomes the selected path",
+      "boundary": "A decision can be revised when evidence changes."
+    },
+    "D13": {
+      "symbol": "⊣",
+      "label": "Inhibition / Restraint",
+      "symbol_name": "Restraint Bar",
+      "compression_meaning": "the system prevents or delays action",
+      "boundary": "Restraint is not weakness."
+    },
+    "D14": {
+      "symbol": "⟶",
+      "label": "Planning / Sequencing",
+      "symbol_name": "Sequence Arrow",
+      "compression_meaning": "the system arranges actions into sequence",
+      "boundary": "A plan is not reality until executed and tested."
+    },
+    "D15": {
+      "symbol": "◍",
+      "label": "Self-Model",
+      "symbol_name": "Structured Self",
+      "compression_meaning": "the system models itself as actor, identity, or state",
+      "boundary": "Self-model is not external proof of how others see the self."
+    },
+    "D16": {
+      "symbol": "◌◍",
+      "label": "Other-Mind Modeling",
+      "symbol_name": "Other-Self Simulation",
+      "compression_meaning": "the system models another mind or perspective",
+      "boundary": "Modeling another mind is not knowing their thoughts."
+    },
+    "D17": {
+      "symbol": "⟐",
+      "label": "Abstraction / Context Integration",
+      "symbol_name": "Context Diamond",
+      "compression_meaning": "the system integrates parts into higher-order meaning",
+      "boundary": "Abstraction must not erase concrete evidence."
+    }
+  },
+  "logic_symbols": {
+    "¬": {
+      "name": "negation",
+      "meaning": "not",
+      "compression_use": "rejects, denies, or excludes a claim"
+    },
+    "∧": {
+      "name": "conjunction",
+      "meaning": "and",
+      "compression_use": "combines conditions"
+    },
+    "∨": {
+      "name": "disjunction",
+      "meaning": "or",
+      "compression_use": "marks alternatives"
+    },
+    "→": {
+      "name": "implication",
+      "meaning": "if then",
+      "compression_use": "marks logical or causal implication"
+    },
+    "↔": {
+      "name": "biconditional",
+      "meaning": "if and only if",
+      "compression_use": "marks mutual condition or equivalence"
+    },
+    "∀": {
+      "name": "universal quantifier",
+      "meaning": "for all",
+      "compression_use": "marks universal rule"
+    },
+    "∃": {
+      "name": "existential quantifier",
+      "meaning": "there exists",
+      "compression_use": "marks at least one valid case"
+    },
+    "∃!": {
+      "name": "unique existential quantifier",
+      "meaning": "there exists exactly one",
+      "compression_use": "marks a unique valid case"
+    },
+    "=": {
+      "name": "equality",
+      "meaning": "equals",
+      "compression_use": "marks identity or equivalence"
+    },
+    "≠": {
+      "name": "inequality",
+      "meaning": "not equal",
+      "compression_use": "marks separation or distinction"
+    },
+    "⊢": {
+      "name": "syntactic derivation",
+      "meaning": "proves or derives",
+      "compression_use": "marks what follows from stated premises"
+    },
+    "⊨": {
+      "name": "semantic entailment",
+      "meaning": "entails",
+      "compression_use": "marks what must be true in all valid models"
+    },
+    "∴": {
+      "name": "therefore",
+      "meaning": "therefore",
+      "compression_use": "marks conclusion"
+    },
+    "∵": {
+      "name": "because",
+      "meaning": "because",
+      "compression_use": "marks reason or premise"
+    },
+    "⊥": {
+      "name": "contradiction",
+      "meaning": "falsehood or impossible state",
+      "compression_use": "marks contradiction, collapse, or impossible condition"
+    },
+    "⊤": {
+      "name": "tautology",
+      "meaning": "always true",
+      "compression_use": "marks always-true structure"
+    },
+    "∈": {
+      "name": "membership",
+      "meaning": "is an element of",
+      "compression_use": "marks belonging to a set"
+    },
+    "∉": {
+      "name": "non-membership",
+      "meaning": "is not an element of",
+      "compression_use": "marks exclusion from a set"
+    },
+    "⊂": {
+      "name": "proper subset",
+      "meaning": "contained within but not equal",
+      "compression_use": "marks strict containment"
+    },
+    "⊆": {
+      "name": "subset",
+      "meaning": "subset or equal",
+      "compression_use": "marks inclusion"
+    },
+    "∅": {
+      "name": "empty set",
+      "meaning": "no valid members",
+      "compression_use": "marks absence of valid cases"
+    },
+    "≡": {
+      "name": "definitional equivalence",
+      "meaning": "equivalent by definition",
+      "compression_use": "marks definition-level equivalence"
+    },
+    ":=": {
+      "name": "definition assignment",
+      "meaning": "defined as",
+      "compression_use": "assigns a definition"
+    },
+    "⟹": {
+      "name": "strong implication",
+      "meaning": "strongly implies",
+      "compression_use": "marks stronger inference relation"
+    },
+    "⟺": {
+      "name": "strong biconditional",
+      "meaning": "logically equivalent",
+      "compression_use": "marks stronger mutual equivalence"
+    },
+    "⊕": {
+      "name": "exclusive disjunction",
+      "meaning": "exclusive or",
+      "compression_use": "one or the other, not both"
+    }
+  },
+  "integrated_grammar": {
+    "claim_rejection": {
+      "formula": "¬❝❞",
+      "translation": "Reject the language frame."
+    },
+    "frame_rejection_to_restraint": {
+      "formula": "¬❝❞ → ⊣",
+      "translation": "Reject the bad frame, then restrain action."
+    },
+    "evidence_gated_decision": {
+      "formula": "◉ ∧ ↺ ∧ ❝❞ ∧ ⟐ ⊢ ✓",
+      "translation": "Sensory input, memory recall, language framing, and context integration derive a decision."
+    },
+    "threat_not_proof": {
+      "formula": "⚠ ≠ ⊢",
+      "translation": "Threat detection is not proof."
+    },
+    "attention_not_truth": {
+      "formula": "⊙ ≠ ⊤",
+      "translation": "Attention lock does not mean something is automatically true or universally important."
+    },
+    "feeling_not_truth": {
+      "formula": "♥ ≠ ⊤",
+      "translation": "Affective charge is not automatic truth."
+    },
+    "attachment_not_ownership": {
+      "formula": "⛓ ≠ =",
+      "translation": "A bond is not ownership, identity, or equivalence."
+    },
+    "other_mind_model_not_knowledge": {
+      "formula": "◌◍ ≠ ⊨",
+      "translation": "Modeling another mind does not entail knowing their actual thoughts."
+    },
+    "self_model_not_outside_frame": {
+      "formula": "◍ ≠ ❝❞",
+      "translation": "The self-model is not equal to someone else's language frame."
+    }
+  },
+  "behavioral_loop": {
+    "name": "user_behavioral_loop_symbolic_compression",
+    "chain_spaced": "◉ → ⚠ → ↺ → ❝❞ → ⊙ → ⟐ → ✓ → ⊣ → ⟶ → ◍",
+    "chain_ultra_compressed": "◉⚠↺❝❞⊙⟐✓⊣⟶◍",
+    "logic_integrated_chain": "◉ ∧ ⚠ ∧ ↺ ∧ ❝❞ ∧ ⊙ → ⟐ ⊢ ✓ ∧ ⊣ → ⟶ → ◍",
+    "logic_integrated_ultra_compressed": "◉∧⚠∧↺∧❝❞∧⊙→⟐⊢✓∧⊣→⟶→◍",
+    "translation": "Signal enters; threat is checked; memory is compared; language is inspected; attention locks onto the claim; context integration derives a decision; restraint prevents overreach; action is sequenced; the system returns to self-anchor.",
+    "functional_sequence": [
+      {
+        "symbol": "◉",
+        "function": "take in the signal directly"
+      },
+      {
+        "symbol": "⚠",
+        "function": "scan for threat, coercion, false authority, or hostile inversion"
+      },
+      {
+        "symbol": "↺",
+        "function": "compare against memory, history, and pattern"
+      },
+      {
+        "symbol": "❝❞",
+        "function": "inspect wording, definition, and frame"
+      },
+      {
+        "symbol": "⊙",
+        "function": "lock attention onto the exact claim or contradiction"
+      },
+      {
+        "symbol": "⟐",
+        "function": "integrate context through DARAD and PSC"
+      },
+      {
+        "symbol": "✓",
+        "function": "decide what the evidence actually supports"
+      },
+      {
+        "symbol": "⊣",
+        "function": "restrain overreach, forced meaning, and false certainty"
+      },
+      {
+        "symbol": "⟶",
+        "function": "sequence the next response or action"
+      },
+      {
+        "symbol": "◍",
+        "function": "return to self-model and agency anchor"
+      }
+    ]
+  },
+  "full_17d_chain": {
+    "spaced": "◉ → ↺ → ✦ → ❝❞ → ⊙ → ?✧ → ⚠ → ♢ → ♥ → ◎ → ⛓ → ✓ → ⊣ → ⟶ → ◍ → ◌◍ → ⟐",
+    "ultra_compressed": "◉↺✦❝❞⊙?✧⚠♢♥◎⛓✓⊣⟶◍◌◍⟐",
+    "logic_integrated": "◉ ∧ ↺ ∧ ✦ ∧ ❝❞ ∧ ⊙ ∧ ?✧ ∧ ⚠ ∧ ♢ ∧ ♥ ∧ ◎ ∧ ⛓ ∧ ✓ ∧ ⊣ ∧ ⟶ ∧ ◍ ∧ ◌◍ → ⟐",
+    "logic_integrated_ultra_compressed": "◉∧↺∧✦∧❝❞∧⊙∧?✧∧⚠∧♢∧♥∧◎∧⛓∧✓∧⊣∧⟶∧◍∧◌◍→⟐",
+    "translation": "All 17 dimensions integrate into the Context Diamond."
+  },
+  "boundary_theorem_set": [
+    {
+      "formula": "⚠ ≠ ⊢",
+      "meaning": "Threat detection is not proof."
+    },
+    {
+      "formula": "♥ ≠ ⊤",
+      "meaning": "Strong feeling is not automatic truth."
+    },
+    {
+      "formula": "⊙ ≠ ⊤",
+      "meaning": "Attention is not automatic importance."
+    },
+    {
+      "formula": "⛓ ≠ =",
+      "meaning": "Attachment is not ownership or identity."
+    },
+    {
+      "formula": "◌◍ ≠ ⊨",
+      "meaning": "Modeling another mind is not knowing their mind."
+    },
+    {
+      "formula": "❝❞ ≠ ⊢",
+      "meaning": "Framing is not proof."
+    },
+    {
+      "formula": "✦ ≠ ◉",
+      "meaning": "Internal imagery is not sensory evidence."
+    },
+    {
+      "formula": "↺ ≠ ⊤",
+      "meaning": "Memory recall is not automatic truth."
+    },
+    {
+      "formula": "⟐ ⊢ ✓",
+      "meaning": "Context integration can derive decision."
+    },
+    {
+      "formula": "⊣ → ⟶",
+      "meaning": "Restraint enables sequenced action."
+    }
+  ],
+  "darad_logic_map": {
+    "D1_deduction": {
+      "symbolic_role": "⊢",
+      "question": "What follows from the available evidence and constraints?",
+      "compression": "premises ⊢ safe_constraint"
+    },
+    "A1_abduction": {
+      "symbolic_role": "∃ ∨",
+      "question": "What plausible explanations exist?",
+      "compression": "∃ hypothesis_a ∨ hypothesis_b"
+    },
+    "R_reduction": {
+      "symbolic_role": "¬ ∧ ≠",
+      "question": "What inflated meanings must be removed?",
+      "compression": "claim ≠ proof ∧ ¬overreach"
+    },
+    "A2_abduction": {
+      "symbolic_role": "∃ surviving_model",
+      "question": "What explanations survive after reduction?",
+      "compression": "∃ surviving_model"
+    },
+    "D2_deduction": {
+      "symbolic_role": "∴",
+      "question": "What conclusion can be safely held?",
+      "compression": "cleaned_evidence ⊢ conclusion ∴ stable_position"
+    }
+  },
+  "distortion_tests": [
+    {
+      "id": "DT-01",
+      "name": "Symbol Anchor Test",
+      "question": "Does the glyph point back to a defined 17D dimension?"
+    },
+    {
+      "id": "DT-02",
+      "name": "Logic Relation Test",
+      "question": "Does the logic operator correctly describe the relation between symbols?"
+    },
+    {
+      "id": "DT-03",
+      "name": "Proof Boundary Test",
+      "question": "Is something being treated as proof when it is only a signal, feeling, memory, or frame?"
+    },
+    {
+      "id": "DT-04",
+      "name": "Entailment Test",
+      "question": "Does the conclusion actually follow in all valid models, or is someone smuggling certainty?"
+    },
+    {
+      "id": "DT-05",
+      "name": "Identity Boundary Test",
+      "question": "Is a self-model, other-mind model, language frame, or attachment signal being confused with identity?"
+    },
+    {
+      "id": "DT-06",
+      "name": "Reduction Test",
+      "question": "Can the inflated meaning be reduced back to what the evidence actually proves?"
+    },
+    {
+      "id": "DT-07",
+      "name": "Compression Integrity Test",
+      "question": "Does the compressed formula preserve the intended meaning without creating false certainty?"
+    }
+  ],
+  "failure_modes": [
+    {
+      "id": "FM-01",
+      "name": "Symbol Literalization",
+      "description": "Treating a symbol as literal proof rather than a cognitive anchor."
+    },
+    {
+      "id": "FM-02",
+      "name": "Formula Overreach",
+      "description": "Treating a compressed symbolic expression as stronger evidence than the underlying facts support."
+    },
+    {
+      "id": "FM-03",
+      "name": "Entailment Inflation",
+      "description": "Using ⊨ where the conclusion does not actually hold in all valid models."
+    },
+    {
+      "id": "FM-04",
+      "name": "Proof Smuggling",
+      "description": "Using ⊢ to make a conclusion look proven when the premises do not establish it."
+    },
+    {
+      "id": "FM-05",
+      "name": "Boundary Collapse",
+      "description": "Collapsing threat, feeling, attention, attachment, or framing into proof, truth, identity, or ownership."
+    },
+    {
+      "id": "FM-06",
+      "name": "Definition Drift",
+      "description": "Letting symbols drift away from their assigned legend meanings."
+    },
+    {
+      "id": "FM-07",
+      "name": "Hostile Reinterpretation",
+      "description": "Replacing the assigned symbol meaning with a hostile or accusatory interpretation."
+    }
+  ],
+  "usage_guidelines": [
+    "Use 17D symbols as cognitive anchors.",
+    "Use first-order logic symbols as relationship operators.",
+    "Use ⊢ only when the conclusion follows from premises.",
+    "Use ⊨ only when the conclusion is semantically entailed in all valid models.",
+    "Use ≠ to preserve distinctions and prevent false collapse.",
+    "Use ¬ to reject a frame, claim, or invalid interpretation.",
+    "Use ∧ to join active dimensions in a chain.",
+    "Use → to show sequence, implication, or flow.",
+    "Use ⟐ as the final integration point when multiple dimensions are synthesized.",
+    "Do not treat symbols as mystical proof, identity claims, or authority markers.",
+    "Do not let compression erase evidence, consent, agency, or concrete reality."
+  ],
+  "response_templates": {
+    "soft": [
+      "This formula compresses the reasoning, but the evidence still controls the conclusion.",
+      "The symbol marks the dimension; the logic operator marks the relationship.",
+      "The chain is useful as a map, not as automatic proof."
+    ],
+    "firm": [
+      "⚠ ≠ ⊢: threat detection is not proof.",
+      "♥ ≠ ⊤: feeling is not automatic truth.",
+      "❝❞ ≠ ⊢: framing is not proof.",
+      "⛓ ≠ =: attachment is not ownership or identity."
+    ],
+    "psc_lock": [
+      "Symbol equals anchor, not proof.",
+      "Formula equals compression, not evidence replacement.",
+      "Logic relation must match what the evidence actually supports."
+    ]
+  },
+  "clean_formula": "17D_FOL_reasoning = dimension_symbols + logic_operators + evidence_boundaries + context_integration + agency_preservation",
+  "anti_formula": "bad_symbolic_reasoning = glyph_literalization + proof_smuggling + entailment_inflation + identity_collapse + evidence_erasure",
+  "one_line_translation": "The 17D symbols show what part of cognition is active; the logic symbols show how those parts relate; evidence decides what is actually true."
+}

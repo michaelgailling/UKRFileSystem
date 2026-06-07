@@ -1,0 +1,240 @@
+{
+  "ukr_id": "UKR-DURHAM-OSHAWA-VIBE-TABLE-PUBLIC-RECORD-TRANSLATION-PROCESS-01",
+  "title": "Durham/Oshawa Public Record to Vibe Translation Table Process",
+  "version": "1.0",
+  "status": "working_draft",
+  "type": "ukr_process_map",
+  "semantic_kind": "public_record_pressure_signal_to_vibe_translation_table",
+
+  "purpose": "Convert public-record evidence about Durham Region and Oshawa into a structured vibe-analysis table while preserving evidence boundaries, DARAD validation, and PSC separation between documented facts, interpretation, and lived-environment feeling.",
+
+  "core_definition": {
+    "summary": "This UKR takes a public or source-grounded fact, assigns it to a social/environmental layer, then translates its likely lived-effect into plain-language vibe terms without inflating the fact into unsupported certainty.",
+    "primary_unit_of_analysis": "public_record_pressure_signal",
+    "secondary_units": [
+      "layer",
+      "source_grounded_claim",
+      "evidence_boundary",
+      "social_pressure_field",
+      "vibe_translation",
+      "false_collapse",
+      "corrected_equation",
+      "darad_validation"
+    ],
+    "governing_rule": "A public record can support a pressure signal, but it does not automatically prove every personal interpretation, hostile intent, conspiracy, or total environmental conclusion."
+  },
+
+  "core_separation": {
+    "false_equation": "public_record_signal + bad_vibe = complete_proof_of_hostile_operation",
+    "corrected_equation": "public_record_signal + local_context + lived_observation = pressure_pattern + interpretation_boundary + evidence_required",
+    "one_line_translation": "The record can support the vibe without proving every suspected cause."
+  },
+
+  "table_schema": {
+    "columns": [
+      {
+        "column_name": "Layer",
+        "function": "Names the domain or pressure category the evidence belongs to.",
+        "examples": [
+          "Public safety / policing",
+          "Crime signal density",
+          "Housing instability",
+          "Mental health and addiction pressure",
+          "Government response",
+          "Social atmosphere"
+        ]
+      },
+      {
+        "column_name": "What the public record supports",
+        "function": "States only the evidence-supported claim. This column must avoid speculation.",
+        "evidence_rule": "Use public records, official statements, reporting, or source-grounded documentation."
+      },
+      {
+        "column_name": "Vibe translation",
+        "function": "Translates the public-record fact into the likely felt atmosphere or street-level experience.",
+        "boundary_rule": "The vibe translation is interpretive, not proof of individual guilt or intent."
+      }
+    ]
+  },
+
+  "processing_flow": {
+    "compact_flow": "source fact -> layer classify -> evidence boundary -> vibe translation -> DARAD check -> table row",
+    "steps": [
+      {
+        "step": "01_source_fact_capture",
+        "question": "What public-record claim is being used?",
+        "output": "source_grounded_claim"
+      },
+      {
+        "step": "02_layer_classification",
+        "question": "What kind of social/environmental pressure does this fact belong to?",
+        "output": "layer"
+      },
+      {
+        "step": "03_evidence_boundary_lock",
+        "question": "What does the fact actually prove, and what does it not prove?",
+        "output": {
+          "proves": [],
+          "does_not_prove": []
+        }
+      },
+      {
+        "step": "04_vibe_translation",
+        "question": "How would this pressure likely feel to someone moving through the region?",
+        "output": "vibe_translation"
+      },
+      {
+        "step": "05_false_collapse_scan",
+        "question": "Is the interpretation being inflated beyond the evidence?",
+        "output": "false_collapse_check"
+      },
+      {
+        "step": "06_darad_validation",
+        "question": "Does the row survive Deduction, Abduction, Reduction, Abduction, Deduction?",
+        "output": "darad_readout"
+      },
+      {
+        "step": "07_table_row_emit",
+        "question": "Can this be safely emitted as a table row?",
+        "output": "layer_public_record_vibe_row"
+      }
+    ]
+  },
+
+  "row_template": {
+    "layer": "",
+    "what_the_public_record_supports": "",
+    "vibe_translation": "",
+    "evidence_boundary": {
+      "proves": [],
+      "does_not_prove": []
+    },
+    "darad": {
+      "D1_deduction": "",
+      "A1_abduction": [],
+      "R_reduction": "",
+      "A2_reconstruction": "",
+      "D2_deduction": ""
+    },
+    "psc_lock": {
+      "false_collapse": "",
+      "corrected_equation": "",
+      "one_line_translation": ""
+    }
+  },
+
+  "example_row_project_atlantis": {
+    "layer": "Public safety / policing",
+
+    "what_the_public_record_supports": "DRPS launched Project Atlantis for downtown Oshawa and path networks, with stated goals involving crime, drug-linked challenges, officer visibility, and responsiveness.",
+
+    "vibe_translation": "More police presence, more surveillance-feel, more managed-public-space energy, and a stronger sense that downtown/pathway areas are being treated as pressure zones.",
+
+    "evidence_boundary": {
+      "proves": [
+        "A named policing initiative exists.",
+        "Downtown Oshawa and path networks were treated as areas needing increased attention.",
+        "The public safety frame includes crime, drug-linked challenges, visibility, and responsiveness."
+      ],
+      "does_not_prove": [
+        "Every police officer is targeting a specific person.",
+        "Every person in the area is dangerous.",
+        "Every strange event is coordinated.",
+        "The entire city is under one unified hostile operation.",
+        "The user personally caused or controls the policing pattern."
+      ]
+    },
+
+    "darad": {
+      "D1_deduction": "If DRPS publicly launched a targeted initiative, then there must be enough recognized public-safety pressure to justify organized police visibility.",
+      "A1_abduction": [
+        "The area may have increased crime complaints.",
+        "The area may have visible drug-linked activity.",
+        "The area may have community concern about pathways or downtown movement.",
+        "The initiative may be intended to reassure the public.",
+        "The initiative may also make the area feel more watched or controlled."
+      ],
+      "R_reduction": "The fact proves an official policing response exists; it does not prove personal targeting, universal danger, or hidden coordination by every actor in the area.",
+      "A2_reconstruction": "The clean reconstruction is that parts of Oshawa were being treated as public-safety pressure zones, creating a stronger managed-space or surveillance-feel for people moving through them.",
+      "D2_deduction": "If this reconstruction is correct, then increased officer visibility and enforcement attention should correlate with a stronger public-space control vibe, especially downtown and along paths."
+    },
+
+    "psc_lock": {
+      "false_collapse": "policing_initiative = proof_everything_is_personally_targeted",
+      "corrected_equation": "policing_initiative = public_safety_response + local_pressure_signal + increased_visibility + interpretation_boundary",
+      "one_line_translation": "More police presence can change the vibe without proving every event is about you."
+    }
+  },
+
+  "general_row_generation_algorithm": [
+    {
+      "input": "public_record_fact",
+      "operation": "extract only what the source actually says",
+      "output": "source_grounded_claim"
+    },
+    {
+      "input": "source_grounded_claim",
+      "operation": "classify by domain",
+      "output": "layer"
+    },
+    {
+      "input": "source_grounded_claim",
+      "operation": "separate proof from implication",
+      "output": "evidence_boundary"
+    },
+    {
+      "input": "layer + source_grounded_claim",
+      "operation": "translate into likely lived-environment effect",
+      "output": "vibe_translation"
+    },
+    {
+      "input": "vibe_translation",
+      "operation": "scan for overreach, hostile certainty, and unsupported causation",
+      "output": "cleaned_vibe_translation"
+    },
+    {
+      "input": "layer + source_grounded_claim + cleaned_vibe_translation",
+      "operation": "emit table row",
+      "output": "layer_public_record_vibe_table_row"
+    }
+  ],
+
+  "valid_output_rules": [
+    "The public-record column must stay factual.",
+    "The vibe column may interpret atmosphere but must not claim more than the evidence supports.",
+    "Do not convert public safety response into proof of personal targeting.",
+    "Do not convert vibe into verdict.",
+    "Do not convert isolated facts into total-system certainty.",
+    "Always preserve the difference between evidence, interpretation, and emotional atmosphere."
+  ],
+
+  "invalid_output_patterns": [
+    {
+      "pattern": "public safety project proves everyone is hostile",
+      "reason_invalid": "Evidence inflation."
+    },
+    {
+      "pattern": "bad vibe proves coordinated operation",
+      "reason_invalid": "Vibe-to-certainty collapse."
+    },
+    {
+      "pattern": "police presence proves guilt",
+      "reason_invalid": "Presence-to-guilt collapse."
+    },
+    {
+      "pattern": "local instability means every stranger is dangerous",
+      "reason_invalid": "Overgeneralization."
+    }
+  ],
+
+  "clean_table_row_formula": {
+    "formula": "table_row = layer + source_grounded_claim + vibe_translation + evidence_boundary",
+    "expanded_formula": "clean_vibe_analysis = public_record_fact + domain_classification + proof_boundary + lived_effect_translation + DARAD_validation",
+    "one_line_translation": "Name the layer, state the record, translate the feel, and keep the proof boundary locked."
+  },
+
+  "classification_tags": {
+    "recommended_document_tag": "[▣ | ❝❞⟐✓⚠⊣ | evidence: public-record-supported | ⌬✷ | no ⛝]",
+    "tag_translation": "This is an observable public-record and language/context analysis with threat-signal interpretation, restraint, identity/category marking, and no misconduct mark assigned by default."
+  }
+}

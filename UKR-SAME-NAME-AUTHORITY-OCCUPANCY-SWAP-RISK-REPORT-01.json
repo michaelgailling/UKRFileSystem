@@ -1,0 +1,387 @@
+{
+  "ukr_id": "UKR-SAME-NAME-AUTHORITY-OCCUPANCY-SWAP-RISK-REPORT-01",
+  "title": "Same-Name Authority Occupancy Swap Risk Pattern Report",
+  "version": "1.0",
+  "status": "working_assessment",
+  "type": "ukr_pattern_marked_report",
+  "semantic_kind": "identity_authority_overlap_role_occupancy_verification_risk",
+  "generated_context": {
+    "frame": "Southern Ontario / authority-role name-overlap assessment",
+    "primary_metaphors": [
+      "strawberry_field = full pattern map",
+      "fiber = connective evidence",
+      "black_ops_mood = quiet observation, controlled visibility, patience, and timing",
+      "not_mobile_yet = maintain stable base position before relocating"
+    ],
+    "literal_boundary": "This is an analytic and symbolic report, not a plan for impersonation, evasion, surveillance, violence, or illegal action."
+  },
+  "core_definition": {
+    "summary": "The assessed pattern concerns situations where more people appear to exist than formal authority positions, with repeated or shared names allowing possible confusion between title, name, occupant, and authority. The central risk is that an institution, public audience, or record system may treat the same name and same title as evidence of the same lawful person, even when the actual occupant may differ.",
+    "primary_unit_of_analysis": "authority_role_occupancy_claim",
+    "secondary_units": [
+      "title",
+      "name",
+      "role",
+      "occupant",
+      "credential",
+      "appointment",
+      "jurisdiction",
+      "institutional_record",
+      "biological_identifier",
+      "fingerprints",
+      "DNA",
+      "chain_of_custody",
+      "timestamp",
+      "same_name_cluster",
+      "identity_discontinuity",
+      "authority_continuity_claim"
+    ],
+    "governing_rule": "Name overlap is a risk marker, not proof. Authority requires verified appointment, licence, jurisdiction, institution, timestamp, and current lawful role occupancy."
+  },
+  "pattern_mark": {
+    "mark_type": "⌬",
+    "mark_label": "Mark of Identity",
+    "mark_scope": "Identifies a same-name authority-overlap pattern requiring verification.",
+    "scope_limit": "This mark does not prove impersonation, guilt, conspiracy, or valid authority transfer."
+  },
+  "core_separation": {
+    "false_equation": "same_name + same_title + public_role_continuity = same_person_or_valid_authority",
+    "corrected_equation": "same_name + same_title + public_role_continuity = identity_risk_flag + verification_required",
+    "strong_identity_equation": "full_legal_identity + official_record + credential_or_appointment + jurisdiction + timestamp + hard_identifier_check = current_authorized_occupant",
+    "one_line_translation": "A name can be reused; authority cannot be silently swapped."
+  },
+  "title_name_occupant_model": {
+    "title": {
+      "definition": "The role container, such as Judge, Doctor, Professor, Officer, Director, Owner, or Agent.",
+      "proves": "A role label exists.",
+      "does_not_prove": [
+        "same person",
+        "current lawful occupant",
+        "valid appointment",
+        "valid licence",
+        "jurisdiction",
+        "authority over the user"
+      ]
+    },
+    "name": {
+      "definition": "The public or legal label attached to a person, such as Albert Wong.",
+      "proves": "A label match or possible identity candidate.",
+      "does_not_prove": [
+        "biological identity",
+        "same body",
+        "same credentials",
+        "same office",
+        "same authority",
+        "same legal accountability"
+      ]
+    },
+    "occupant": {
+      "definition": "The actual human person currently acting inside the role/name slot.",
+      "requires": [
+        "identity verification",
+        "credential verification",
+        "role assignment verification",
+        "jurisdiction verification",
+        "timestamp verification"
+      ]
+    },
+    "authority": {
+      "definition": "The lawful power attached to a role.",
+      "requires": [
+        "valid appointment",
+        "valid licence or authorization",
+        "institutional recognition",
+        "jurisdiction",
+        "current active status",
+        "accountability trail"
+      ]
+    }
+  },
+  "assumed_hypothesis": {
+    "hypothesis_id": "HYP-SAME-NAME-SWAP-01",
+    "statement": "Assume there are more people than official authority positions, and that individuals may swap into a role under the same name when another person goes back to their home country.",
+    "status": "hypothesis_for_testing",
+    "not_proven_by_assumption": [
+      "that any specific person has done this",
+      "that Albert Wong specifically has done this",
+      "that an institution knowingly allowed this",
+      "that a same-name cluster is automatically fraudulent"
+    ],
+    "valid_test_question": "Who is the current verified occupant of the role at the exact time and place where authority is being claimed?"
+  },
+  "observed_risk_pattern": {
+    "compact_flow": "shared_name_detected -> title_attached -> authority_assumed -> occupant_unclear -> verification_required",
+    "expanded_flow": [
+      "A public-facing authority title exists.",
+      "A name appears attached to that title.",
+      "The same or similar name appears in another authority context.",
+      "A person or system may collapse name continuity into person continuity.",
+      "The actual occupant of the role may be unclear.",
+      "Hard identifiers and institutional records are required before accepting authority."
+    ]
+  },
+  "southern_ontario_anchor": {
+    "example_cluster": "Albert Wong",
+    "known_role_categories_to_separate": [
+      "Citizenship Judge",
+      "Doctor / Psychiatrist",
+      "Professor / Research Scientist",
+      "Business owner or contact"
+    ],
+    "assessment": "The Albert Wong cluster is useful as a name-overlap example because multiple authority-like titles can appear around the same name in the Greater Toronto / Southern Ontario context. This creates a verification need, not an automatic accusation.",
+    "clean_rule": "Separate each title from the name and verify each title independently."
+  },
+  "hard_identifier_anchor": {
+    "core_claim": "DNA and fingerprints are stronger identity anchors than shared names.",
+    "boundary": "DNA and fingerprints still require lawful collection, chain of custody, correct database matching, and proper interpretation.",
+    "corrected_equation": "DNA + fingerprints + verified records = strong identity continuity check",
+    "one_line_translation": "A shared name can confuse paperwork, but it does not overwrite biological identifiers."
+  },
+  "darad_validation": {
+    "D1_deduction": {
+      "question": "What must be true?",
+      "answer": "A person cannot lawfully inherit another person's authority merely by sharing their name. A valid authority role requires current appointment, licence, institutional record, jurisdiction, and accountability."
+    },
+    "A1_abduction": {
+      "question": "What could explain the pattern?",
+      "answers": [
+        "same-name coincidence",
+        "public search-result overlap",
+        "title ambiguity",
+        "clerical record weakness",
+        "outdated institutional profiles",
+        "delegated staff work",
+        "identity fraud",
+        "unauthorized impersonation",
+        "deliberate role substitution",
+        "database or filing error"
+      ]
+    },
+    "R_reduction": {
+      "question": "What does the evidence actually prove?",
+      "answer": "A shared name proves only a label match. A title proves only a role label. Neither proves current lawful occupancy, same body, same authority, same credentials, or valid substitution."
+    },
+    "A2_reconstruction": {
+      "question": "What explanation remains clean after reduction?",
+      "answer": "The safest clean reconstruction is that same-name authority clusters are identity-risk fields requiring verification. Any stronger claim requires specific evidence tied to time, place, institution, and occupant."
+    },
+    "D2_deduction": {
+      "question": "What follows if the swap hypothesis is true?",
+      "answer": "There should be detectable discontinuities: mismatched fingerprints, DNA, photos, signatures, travel records, licence records, appointment logs, institutional emails, access logs, or witness/timestamp conflicts."
+    }
+  },
+  "risk_categories": [
+    {
+      "risk_id": "RISK-01",
+      "name": "Authority Substitution",
+      "description": "A person acts inside another person's role/name slot without valid authority.",
+      "severity": "high",
+      "verification_needed": [
+        "appointment record",
+        "licence status",
+        "institutional confirmation",
+        "timestamp",
+        "jurisdiction"
+      ]
+    },
+    {
+      "risk_id": "RISK-02",
+      "name": "Credential Laundering",
+      "description": "A same-name actor borrows legitimacy from another person's credentials or public profile.",
+      "severity": "high",
+      "verification_needed": [
+        "licence number",
+        "professional registry",
+        "institutional email",
+        "employment record",
+        "official photo"
+      ]
+    },
+    {
+      "risk_id": "RISK-03",
+      "name": "Accountability Evasion",
+      "description": "Actions are attributed to a name instead of the specific human occupant who performed them.",
+      "severity": "high",
+      "verification_needed": [
+        "who acted",
+        "where they acted",
+        "when they acted",
+        "under what authority",
+        "audit trail"
+      ]
+    },
+    {
+      "risk_id": "RISK-04",
+      "name": "Wrong-Person Record Attachment",
+      "description": "Documents, complaints, charges, medical records, employment actions, or legal files attach to the wrong same-name person.",
+      "severity": "high",
+      "verification_needed": [
+        "file number",
+        "date of birth where lawful",
+        "address or institutional identifier",
+        "signature",
+        "photo ID",
+        "record source"
+      ]
+    },
+    {
+      "risk_id": "RISK-05",
+      "name": "Public Trust Hijack",
+      "description": "People obey or trust an actor because the title/name appears familiar.",
+      "severity": "medium_to_high",
+      "verification_needed": [
+        "official channel confirmation",
+        "badge or employee number",
+        "public registry",
+        "known office contact",
+        "written authority"
+      ]
+    }
+  ],
+  "evidence_ladder": {
+    "weak": [
+      "same first and last name",
+      "same title in casual speech",
+      "public search result similarity",
+      "rumour",
+      "visual resemblance",
+      "social assumption"
+    ],
+    "moderate": [
+      "same institutional page",
+      "same role category",
+      "same office address",
+      "same published contact",
+      "same file context"
+    ],
+    "strong": [
+      "official registry match",
+      "licence number match",
+      "appointment record",
+      "institutional confirmation",
+      "signed document with verifiable source",
+      "timestamped role record"
+    ],
+    "hard_identity": [
+      "fingerprints",
+      "DNA",
+      "government ID record",
+      "verified photo identity",
+      "biometric comparison",
+      "chain-of-custody-supported forensic record"
+    ]
+  },
+  "distortion_tests": [
+    {
+      "id": "DT-01",
+      "name": "Title-Name Separation Test",
+      "question": "Is the title being treated as if it proves the name belongs to the correct person?"
+    },
+    {
+      "id": "DT-02",
+      "name": "Occupant Verification Test",
+      "question": "Who is the actual human occupying the role at the relevant time?"
+    },
+    {
+      "id": "DT-03",
+      "name": "Authority Source Test",
+      "question": "Where does the claimed authority legally or institutionally come from?"
+    },
+    {
+      "id": "DT-04",
+      "name": "Same-Name Collapse Test",
+      "question": "Is a name match being inflated into identity, authority, guilt, or continuity?"
+    },
+    {
+      "id": "DT-05",
+      "name": "Hard Identifier Test",
+      "question": "Do fingerprints, DNA, photo ID, licence records, or appointment records confirm the same person?"
+    },
+    {
+      "id": "DT-06",
+      "name": "Jurisdiction Test",
+      "question": "Does the person have authority in this jurisdiction at this time?"
+    },
+    {
+      "id": "DT-07",
+      "name": "Timestamp Test",
+      "question": "Was the person physically or officially present when the action occurred?"
+    },
+    {
+      "id": "DT-08",
+      "name": "Home-Country Swap Test",
+      "question": "Is there evidence that one occupant left and another same-name occupant continued the role?"
+    }
+  ],
+  "failure_modes": [
+    {
+      "id": "FM-01",
+      "name": "Name-as-Identity Error",
+      "description": "A shared name is treated as proof of the same person."
+    },
+    {
+      "id": "FM-02",
+      "name": "Title-as-Authority Error",
+      "description": "An authority title is accepted without verifying current lawful appointment or licence."
+    },
+    {
+      "id": "FM-03",
+      "name": "Occupant Erasure",
+      "description": "The actual person acting in the role is ignored because the public-facing title/name appears stable."
+    },
+    {
+      "id": "FM-04",
+      "name": "Paper Continuity Over Body Continuity",
+      "description": "Records remain continuous while the actual human occupant may have changed."
+    },
+    {
+      "id": "FM-05",
+      "name": "Biometric Contradiction Ignored",
+      "description": "Hard identifiers contradict the name/title story but are ignored."
+    },
+    {
+      "id": "FM-06",
+      "name": "Premature Accusation",
+      "description": "A same-name cluster is treated as proof of fraud before evidence supports that conclusion."
+    }
+  ],
+  "stability_strategy": {
+    "current_position": "not_mobile_yet",
+    "meaning": "Maintain a stable base position and keep mapping before making any major move.",
+    "strategy_equation": "pattern_noticed + stable_position + evidence_map + verification = better_timing",
+    "do": [
+      "separate title from name",
+      "map all same-name authority clusters",
+      "record source, timestamp, role, jurisdiction, and identifier",
+      "look for discontinuities",
+      "avoid premature certainty",
+      "preserve evidence boundaries"
+    ],
+    "do_not": [
+      "assume every same-name match is fraud",
+      "treat title as proof",
+      "treat suspicion as evidence",
+      "move before the field is mapped",
+      "collapse symbolic strategy language into literal operations"
+    ]
+  },
+  "strawberry_field_model": {
+    "strawberries": "individual same-name data points",
+    "fiber": "connective evidence between points",
+    "field": "the full regional pattern of title/name/role overlap",
+    "harvest_rule": "Pick the whole field only by mapping many verified data points, not by overloading one example.",
+    "one_line_translation": "Do not inspect one berry and call it the farm; map the whole field."
+  },
+  "black_ops_symbolic_frame": {
+    "meaning": "Quiet observation, controlled visibility, patience, and information advantage.",
+    "boundary": "This is symbolic strategy language only. It does not authorize illegal action, impersonation, surveillance, evasion, intimidation, or harm.",
+    "corrected_equation": "black_ops_mood = low_visibility + patience + pattern_mapping + controlled_timing",
+    "one_line_translation": "Stay quiet, stay sharp, and do not reveal the hand before the table pays out."
+  },
+  "report_conclusion": {
+    "assessment": "The situation should be treated as a same-name authority-overlap field with possible role-occupancy confusion. The correct response is not immediate movement or accusation; it is structured mapping, title/name separation, hard identifier anchoring, and verification through official records.",
+    "confidence": "moderate_for_pattern_risk; low_for_any_specific_swap_claim_without_direct_evidence",
+    "cleanest_current_position": "Hold stable, keep mapping, verify hard identifiers, and separate every title from every name.",
+    "one_line_translation": "A shared name can open confusion, but only verified identity and lawful appointment can open authority."
+  }
+}

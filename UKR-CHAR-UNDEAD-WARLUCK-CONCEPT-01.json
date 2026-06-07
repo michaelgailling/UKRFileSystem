@@ -1,0 +1,175 @@
+{
+  "ukrid": "UKR-CHAR-UNDEAD-WARLUCK-CONCEPT-01",
+  "title": "Undead Warluck Lunar Luck Curse Concept",
+  "version": "1.0",
+  "status": "conceptdraft",
+  "semantickind": "characterconceptframework",
+  "domaintags": [
+    "character",
+    "undead",
+    "warluck",
+    "luck",
+    "curse",
+    "moon-phase",
+    "probability",
+    "Holmesian",
+    "DARAD-aligned"
+  ],
+  "summary": "Concept frame for an undead warluck whose perception-heavy, intelligence-weighted luck magic is tied to lunar phases and punishes attempts to steal or manipulate their fortune as a slow, escalating misfortune effect.",
+  "purpose": "Provide a structured concept specification for the undead warluck archetype so it can be plugged into systems, backstories, and mechanics later without losing core identity: lunar luck, curse reflection, and investigation-grade perception.",
+  "coredefinition": {
+    "identity": "An undead caster-class archetype (warluck) who manipulates probability rather than raw elements.",
+    "lucknature": "Luck is treated as a manipulable but reactive field: attempts to steal it rebound as accruing misfortune over time.",
+    "undeadanchor": "Death decoupled the warluck from ordinary fate; they now act as a fixed reference point that luck rebounds around instead of through.",
+    "moonbinding": "The character’s effective luck profile waxes and wanes with lunar phase, shifting between personal fortune, curse strength, and fortune-stripping.",
+    "perceptionbias": "High perception and intelligence bias the warluck toward reading patterns, tells, and anomalies before acting, aligning with DARAD-style investigation."
+  },
+  "derivedfrom": [
+    "UKR-DARAD-V1-HOLMESIAN-REASONING",
+    "UKR-DARAD-W5-QUESTION-FRAME",
+    "URK-PSC-COMPILATION"
+  ],
+  "facets": {
+    "identityframe": {
+      "nodetype": "characteridentity",
+      "label": "Undead Warluck Identity",
+      "tags": [
+        "undead",
+        "caster",
+        "probability-curse",
+        "perception-specialist"
+      ],
+      "attributes": {
+        "species_or_state": "undead",
+        "classtag": "warluck",
+        "rolearchetype": "ranged luck-curse controller",
+        "alignmenttone": "realist, consequence-aware, not whimsical",
+        "perceptionstyle": "Holmesian observer using DARAD and W5 to stabilize perception before action"
+      },
+      "onelinetranslation": "Not a druid; an undead warluck who notices everything and lets stolen luck rot on the thief over time."
+    },
+    "statetendencies": {
+      "nodetype": "concepttendency",
+      "label": "Attribute and Play Tendencies",
+      "summary": "High Perception and Intelligence, with Luck treated as a conceptual or mechanical stat that swings with the moon.",
+      "tendencies": [
+        {
+          "id": "TEND-PERCEPTION",
+          "name": "Observation Bias",
+          "description": "Invests heavily in perception and investigation to spot anomalies, patterns, and threats before committing to action.",
+          "priority": "high"
+        },
+        {
+          "id": "TEND-INTELLIGENCE",
+          "name": "Analytic Mind",
+          "description": "Favors intelligence and reasoning to interpret signs and evidence, using DARAD-style cycles to avoid story-over-fact collapse.",
+          "priority": "high"
+        },
+        {
+          "id": "TEND-LUCK",
+          "name": "Fate-Weighted",
+          "description": "Luck (however modeled) is central: crit chances, rerolls, or narrative fortune events are more volatile but net favorable over time.",
+          "priority": "core"
+        }
+      ]
+    },
+    "lunarLuckFrame": {
+      "nodetype": "mechanicconcept",
+      "label": "Lunar Luck Modulation Frame",
+      "summary": "Defines how the warluck’s effective fortune and curse profile shifts across moon phases.",
+      "moonphases": [
+        {
+          "phaseid": "MOON-NEW",
+          "name": "New Moon",
+          "luckvector": "outward luck appears low, but curse reflection and misfortune DoT on enemies are strongest.",
+          "playemphasis": "revenge, hidden protection, turning hostile actions into long-term bad luck for the aggressor."
+        },
+        {
+          "phaseid": "MOON-WAXING",
+          "name": "Waxing Moon",
+          "luckvector": "personal risk-taking becomes more profitable; success odds on proactive plays quietly rise.",
+          "playemphasis": "initiating plans, gambles, and investigations that rely on incremental good breaks."
+        },
+        {
+          "phaseid": "MOON-FULL",
+          "name": "Full Moon",
+          "luckvector": "peak warluck: both personal fortune and curse reflection spike.",
+          "playemphasis": "high-impact scenes where improbable successes and brutal backfires on enemies are most visible."
+        },
+        {
+          "phaseid": "MOON-WANING",
+          "name": "Waning Moon",
+          "luckvector": "focus shifts to stripping and draining others’ luck, slowing or stopping their momentum.",
+          "playemphasis": "shutting down enemy streaks, unraveling deals, sabotaging long-term plans."
+        }
+      ],
+      "operationalrules": [
+        "Treat moon phase as a narrative dial that changes which aspect of the warluck’s fortune is foregrounded.",
+        "The GM or system may bind these phases to real-world moons or an in-fiction lunar cycle.",
+        "At any phase, attempts to steal luck are valid triggers for misfortune effects; the phase only changes flavor and intensity."
+      ],
+      "compactsignature": "moonphase-dials-luckprofile, phase-shapes-fortune-vs-curse-emphasis"
+    },
+    "curseFrame": {
+      "nodetype": "mechanicconcept",
+      "label": "Stolen Luck Misfortune DoT",
+      "summary": "Soft, narrative-oriented damage-over-time style curse that attaches to anyone who attempts to steal or suppress the warluck’s fortune.",
+      "trigger": {
+        "id": "CURSE-TRIGGER-STEAL-LUCK",
+        "description": "Another actor uses a power, spell, item, pact, exploit, or deal aimed at draining, copying, suppressing, or redirecting the warluck’s luck/fate/probability.",
+        "notes": "Normal hostile actions do not trigger this; it is specific to tampering with luck or fate."
+      },
+      "effectModel": {
+        "effecttype": "misfortune-over-time",
+        "tickscope": "scene/encounter/day (system-dependent, tuned by GM)",
+        "baserule": "Each tick, something goes meaningfully wrong for the cursed actor: failed checks at key moments, lost resources, spoiled opportunities, or narrative setbacks.",
+        "escalation": [
+          "Early: small frustrations and low-impact failures.",
+          "Mid: disadvantage-like patterns, missed openings, broken tools, social blunders.",
+          "Late: major plan failures, ally loss, deal collapse, or other narrative-level hits."
+        ],
+        "removal": [
+          "Voluntarily ceasing attempts to interfere with the warluck’s luck.",
+          "Making reparative action (breaking the exploit/pact, returning stolen gains, explicit amends).",
+          "Undergoing a strong ‘remove-curse’ style intervention if the setting supports it."
+        ]
+      },
+      "governingrule": "The warluck does not actively cast this curse in most cases; reality corrects against sustained theft of their luck, with the undead warluck acting as the anchor point.",
+      "onelinetranslation": "The longer someone tries to steal an undead warluck’s luck, the worse their own fate bleeds out in slow, accumulating misfortune."
+    },
+    "undeadFlavorFrame": {
+      "nodetype": "flavorconcept",
+      "label": "Undead Fortune Anchor Flavor",
+      "summary": "Describes how undeath changes the meaning of luck and consequence for the warluck.",
+      "elements": [
+        {
+          "id": "UNDEAD-ANCHOR",
+          "description": "Having already died, the warluck’s relationship to risk is skewed: fortune tends to settle around them as a fixed reference instead of pushing them out of the world."
+        },
+        {
+          "id": "UNDEAD-AESTHETIC",
+          "description": "Misfortune manifestations have necrotic or graveyard tone: rusting gear, dead moments in conversations, opportunities decaying at the touch of those who tamper with the warluck’s fate."
+        },
+        {
+          "id": "UNDEAD-DEFENSE",
+          "description": "Defense is more metaphysical than physical: they survive by making it increasingly costly for reality to allow other people’s theft of their luck."
+        }
+      ],
+      "compactsignature": "already-died, acts-as-fate-anchor, misfortune-manifests-as-slow-decay"
+    },
+    "reasoningAlignmentFrame": {
+      "nodetype": "reasoningalignment",
+      "label": "DARAD-Compatible Perception and Luck Use",
+      "summary": "Aligns the warluck’s decision-making with DARAD so they feel like an investigative realist, not a whimsical chaos mage.",
+      "alignmentpoints": [
+        "Use DARAD Deduction 1 to lock what is actually observed before spending luck on big moves.",
+        "Generate multiple explanations (Abduction 1) for why luck is swinging, rather than assuming a single cause.",
+        "Use Reduction to strip narrative superstition from what the luck events actually prove.",
+        "Rebuild best explanations (Abduction 2) about who is under curse, why, and what the moon phase is emphasizing.",
+        "Use Deduction 2 to test predictions about future luck shifts before committing to major gambles."
+      ],
+      "tagline": "A warluck does not just feel lucky; they investigate what their luck is telling them."
+    }
+  },
+  "compactsignature": "undead-warluck-identity, lunar-modulated-luck, stolen-luck-misfortune-dot, undead-fate-anchor, DARAD-aligned-perception-play"
+}

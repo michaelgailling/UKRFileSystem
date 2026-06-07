@@ -1,0 +1,115 @@
+{
+  "ukrid": "UKR-DARAD-V1-HOLMESIAN-REASONING",
+  "title": "D.A.R.A.D. Holmesian Reasoning Framework",
+  "semantickind": "logicframework",
+  "domaintags": [
+    "reasoning",
+    "logic",
+    "deduction",
+    "abduction",
+    "reduction",
+    "investigation",
+    "holmesian"
+  ],
+  "facets": {
+    "summary": "A five-stage reasoning framework inspired by Holmesian investigation. It evaluates claims by cycling through Deduction, Abduction, Reduction, Abduction, and Deduction to test explanatory fit, eliminate weaker alternatives, and arrive at a more defensible conclusion.",
+    "purpose": "To process information for validity using explicit inferential stages rather than impressionistic judgment.",
+    "keywords": [
+      "D.A.R.A.D.",
+      "Sherlock Holmes",
+      "reasoning",
+      "validity",
+      "hypothesis testing",
+      "elimination"
+    ],
+    "payloadshapesource": "nodelist"
+  },
+  "records": [
+    {
+      "ukrid": "UKR-DARAD-V1-HOLMESIAN-REASONING",
+      "nodetype": "frameworkroot",
+      "label": "D.A.R.A.D. Holmesian Reasoning Framework",
+      "depth": 1,
+      "summary": "A structured reasoning cycle for testing validity through successive inferential passes.",
+      "corequestions": [
+        "What facts are established?",
+        "What explanation best fits the facts?",
+        "What can be reduced, simplified, or eliminated?",
+        "What refined hypothesis survives comparison?",
+        "What conclusion is justified at the end of the cycle?"
+      ]
+    },
+    {
+      "ukrid": "UKR-DARAD-V1-DEDUCTION-1",
+      "nodetype": "stagenode",
+      "label": "Deduction 1 - Derive direct implications",
+      "depth": 2,
+      "parentids": ["UKR-DARAD-V1-HOLMESIAN-REASONING"],
+      "summary": "Start from explicit observations, rules, or accepted premises and derive what must follow if they are true.",
+      "evaluationquestions": [
+        "Which facts are directly observed?",
+        "Which inferences necessarily follow?",
+        "What assumptions are being smuggled in?"
+      ]
+    },
+    {
+      "ukrid": "UKR-DARAD-V1-ABDUCTION-1",
+      "nodetype": "stagenode",
+      "label": "Abduction 1 - Generate best explanations",
+      "depth": 2,
+      "parentids": ["UKR-DARAD-V1-HOLMESIAN-REASONING"],
+      "summary": "Form candidate explanations that could account for the observed facts.",
+      "evaluationquestions": [
+        "Which hypothesis best explains the pattern?",
+        "What rival explanations also fit?",
+        "What evidence would distinguish them?"
+      ]
+    },
+    {
+      "ukrid": "UKR-DARAD-V1-REDUCTION",
+      "nodetype": "stagenode",
+      "label": "Reduction - Eliminate noise and impossibilities",
+      "depth": 2,
+      "parentids": ["UKR-DARAD-V1-HOLMESIAN-REASONING"],
+      "summary": "Reduce the hypothesis space by removing contradictions, unnecessary assumptions, and explanations that fail known constraints.",
+      "evaluationquestions": [
+        "Which explanations conflict with known facts?",
+        "Which details are noise rather than signal?",
+        "What remains after impossible or weak options are removed?"
+      ]
+    },
+    {
+      "ukrid": "UKR-DARAD-V1-ABDUCTION-2",
+      "nodetype": "stagenode",
+      "label": "Abduction 2 - Reconstruct strongest surviving explanation",
+      "depth": 2,
+      "parentids": ["UKR-DARAD-V1-HOLMESIAN-REASONING"],
+      "summary": "Rebuild the best explanation after reduction, using the cleaned evidence set and narrower field of alternatives.",
+      "evaluationquestions": [
+        "What explanation now has the highest evidence-fit?",
+        "What would falsify this refined hypothesis?",
+        "How confident should we be?"
+      ]
+    },
+    {
+      "ukrid": "UKR-DARAD-V1-DEDUCTION-2",
+      "nodetype": "stagenode",
+      "label": "Deduction 2 - Test consequences and conclude",
+      "depth": 2,
+      "parentids": ["UKR-DARAD-V1-HOLMESIAN-REASONING"],
+      "summary": "Derive the expected consequences of the refined explanation and check whether they hold, then state the most justified conclusion.",
+      "evaluationquestions": [
+        "If the refined hypothesis is true, what else should be true?",
+        "Do those consequences match the evidence?",
+        "Is the conclusion proven, probable, or only plausible?"
+      ]
+    }
+  ],
+  "operationalrules": [
+    "Separate observations from interpretations.",
+    "Distinguish necessary inferences from best-fit explanations.",
+    "Track rival hypotheses until they are falsified or outperformed.",
+    "Prefer conclusions with explicit evidence links, confidence labels, and falsifiers.",
+    "Do not confuse a persuasive narrative with a verified conclusion."
+  ]
+}

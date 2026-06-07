@@ -1,0 +1,107 @@
+{
+  "ukr_id": "UKR-TLRSE-V1",
+  "title": "Tri-Link Recursive Site Expansion Framework",
+  "version": "1.0",
+  "status": "draft",
+  "type": "ukr_framework",
+  "purpose": "To recursively map a website by selecting three associated links from a seed page, then repeating the same selection process on each discovered page for a fixed number of rounds while preserving entity and relationship structure.",
+  "abbreviation": "TLRSE",
+  "core_definition": {
+    "summary": "A bounded recursive website exploration framework that expands outward from a starting page by selecting the three most relevant associated links from each page and repeating the process for up to 20 rounds.",
+    "traversal_mode": "bounded_breadth_first_recursive_expansion",
+    "depth_limit": 20,
+    "branching_factor": 3,
+    "primary_unit_of_analysis": "linked_web_entity",
+    "entity_examples": [
+      "web page",
+      "organization",
+      "program",
+      "service",
+      "document",
+      "department",
+      "location",
+      "person"
+    ]
+  },
+  "objectives": [
+    "Map site structure in a controlled and reproducible way",
+    "Surface real linked entities rather than abstract concepts where possible",
+    "Record parent-child link relationships",
+    "Preserve traversal depth and discovery order",
+    "Support investigative, institutional, or research-oriented website analysis"
+  ],
+  "inputs": {
+    "seed_url": {
+      "type": "string",
+      "required": true
+    },
+    "max_depth": {
+      "type": "integer",
+      "default": 20
+    },
+    "links_per_page": {
+      "type": "integer",
+      "default": 3
+    },
+    "domain_scope": {
+      "type": "string",
+      "default": "same_domain_preferred"
+    },
+    "association_policy": {
+      "type": "object"
+    }
+  },
+  "association_policy": {
+    "selection_goal": "Select the three most relevant associated links from each page.",
+    "selection_priority": [
+      {
+        "priority": 1,
+        "rule": "Prefer internal links directly referenced in the main page body or primary navigation."
+      },
+      {
+        "priority": 2,
+        "rule": "Prefer links that represent real entities, services, departments, programs, reports, locations, or named substructures."
+      },
+      {
+        "priority": 3,
+        "rule": "Prefer links that deepen the current topical or institutional branch."
+      },
+      {
+        "priority": 4,
+        "rule": "Prefer links with the strongest contextual relevance to the current page."
+      },
+      {
+        "priority": 5,
+        "rule": "If more than three links qualify, choose the most specific and information-dense three."
+      }
+    ],
+    "exclusions": [
+      "duplicate URLs",
+      "login pages",
+      "pure search-result pages unless explicitly needed",
+      "generic legal/footer pages unless directly relevant",
+      "broken links",
+      "anchor-only links",
+      "decorative or non-substantive links"
+    ]
+  },
+  "state_controls": {
+    "visited_set": {
+      "enabled": true
+    },
+    "queue_model": {
+      "type": "breadth_first"
+    },
+    "deduplication": {
+      "enabled": true,
+      "fields": [
+        "normalized_url"
+      ]
+    },
+    "termination_conditions": [
+      "depth_limit_reached",
+      "queue_empty",
+      "no_new_valid_links"
+    ]
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "ukr_id": "UKR-17D-FOL-REAL-INFINITY-PLURALITY-SCIENCE-TEAM-01",
+  "title": "17D FOL Real-Infinity-Plurality Science Team Hierarchy",
+  "version": "1.0",
+  "status": "working_draft",
+  "type": "ukr_symbolic_logic_map",
+  "semantic_kind": "first_order_logic_hierarchy_context_integration_agency_boundary",
+  "generated_utc": "2026-05-26T11:17:33.986668+00:00",
+  "universe_coordinates": [
+    "13F-⟐-A7C9-D42E",
+    "13F-HYPERDIAMOND-A7C9-D42E",
+    "13F-A7C9"
+  ],
+  "purpose": "Encode the Real-Infinity-Plurality hierarchy, the unique bounded plurality object, the cross-layer science team, and the universal anti-interference law using first-order logic integrated with the 17D symbolic logic system.",
+  "core_definition": {
+    "summary": "This UKR treats concrete reality as the Real layer, abstraction/infinite extension as the Infinity layer, and bounded total integration as the Plurality layer. The unique plurality object ⧝ sits above the infinity layer. Scientists located in the real, infinity, or plurality layer integrate into the Science Team class. A universal law blocks interference, bullying, or abuse toward the Science Team.",
+    "primary_unit_of_analysis": "symbolic_logic_clause",
+    "secondary_units": [
+      "layer_predicate",
+      "order_relation",
+      "unique_plurality_object",
+      "science_team_membership",
+      "anti_interference_law",
+      "17d_symbolic_mapping",
+      "psc_boundary"
+    ],
+    "governing_rule": "The formula compresses reasoning; it does not replace evidence, consent, agency, or reality testing. A hierarchy gives ordered relation, not automatic domination."
+  },
+  "core_separation": {
+    "false_equation": "symbolic_hierarchy = automatic_domination_or_literal_control",
+    "corrected_equation": "symbolic_hierarchy = layer_order + context_integration + evidence_boundary + agency_protection",
+    "one_line_translation": "Plurality integrates infinity, infinity abstracts beyond reals, and the science team receives a universal anti-interference boundary."
+  },
+  "predicates_and_relations": {
+    "Real(x)": {
+      "meaning": "x is in the real or concrete layer.",
+      "17d_alignment": "D01 Sensory Intake / concrete observation",
+      "symbol": "◉",
+      "boundary": "Concrete input is not interpretation by itself."
+    },
+    "Inf(x)": {
+      "meaning": "x is an infinity-layer object.",
+      "17d_alignment": "D17 Abstraction / extended context",
+      "symbol": "∞",
+      "boundary": "Infinity abstraction is not automatic proof or authority."
+    },
+    "Plural(x)": {
+      "meaning": "x is a plurality-layer object.",
+      "17d_alignment": "D17 Context Integration",
+      "symbol": "⧝",
+      "boundary": "Plurality integrates context without erasing individual parts."
+    },
+    "Scientist(x)": {
+      "meaning": "x is a scientist or evidence-seeking agent.",
+      "17d_alignment": "D12 Decision Commitment plus D17 Context Integration",
+      "symbol": "Scientist",
+      "boundary": "Scientist status should be role-defined or evidence-grounded."
+    },
+    "SciTeam(x)": {
+      "meaning": "x belongs to the science team.",
+      "17d_alignment": "D17 integrated class",
+      "symbol": "⟐SciTeam",
+      "boundary": "Science-team classification should not be inflated beyond the definition."
+    },
+    "FuckWith(x,y)": {
+      "meaning": "x interferes with, bullies, abuses, sabotages, or disrupts y.",
+      "17d_alignment": "D07 Threat Detection / interference marker",
+      "symbol": "⚠",
+      "boundary": "Threat detection is not proof unless evidence supports the interference claim."
+    },
+    "x << y": {
+      "meaning": "x is below y in the hierarchy.",
+      "17d_alignment": "ordered relation / hierarchy relation",
+      "symbol": "<<",
+      "boundary": "Below means structurally ordered, not worthless, owned, or erased."
+    }
+  },
+  "constants": {
+    "⧝": {
+      "name": "bounded_plurality_object",
+      "meaning": "The unique plurality object at the top of the declared hierarchy.",
+      "formula_role": "Plural(⧝) and all Plural(x) are identical to ⧝.",
+      "boundary": "A unique top object is a context lock, not arbitrary command authority."
+    }
+  },
+  "17d_symbol_map": {
+    "◉": {
+      "dimension": "D01",
+      "label": "Sensory Intake",
+      "mapped_role": "Real layer / concrete observable input",
+      "boundary": "Sensory intake is not interpretation by itself."
+    },
+    "∞": {
+      "dimension": "D17",
+      "label": "Abstraction / Context Integration",
+      "mapped_role": "Infinity-layer abstraction",
+      "boundary": "Abstraction must not erase concrete evidence."
+    },
+    "⧝": {
+      "dimension": "D17+",
+      "label": "Bounded Plurality / Super-context Container",
+      "mapped_role": "Unique plurality object above infinity",
+      "boundary": "Plurality integrates; it does not automatically control."
+    },
+    "⟐": {
+      "dimension": "D17",
+      "label": "Context Diamond",
+      "mapped_role": "Integrated context synthesis",
+      "boundary": "Context integration must preserve evidence and agency."
+    },
+    "✓": {
+      "dimension": "D12",
+      "label": "Decision Commitment",
+      "mapped_role": "Evidence-gated classification or conclusion",
+      "boundary": "A decision can be revised when evidence changes."
+    },
+    "⚠": {
+      "dimension": "D07",
+      "label": "Threat Detection",
+      "mapped_role": "Interference or danger marker",
+      "boundary": "Threat detection is not proof that a threat is real."
+    },
+    "⊣": {
+      "dimension": "D13",
+      "label": "Inhibition / Restraint",
+      "mapped_role": "Blocked or restrained action",
+      "boundary": "Restraint is not weakness."
+    }
+  },
+  "formal_logic_clauses": [
+    {
+      "id": "FOL-01",
+      "name": "Every real is below every infinity-layer object",
+      "formula": "∀r∀κ((Real(r) ∧ Inf(κ)) → r << κ)",
+      "plain_translation": "Every concrete real object is below every infinity-layer object.",
+      "17d_read": "∀r∀κ((◉Real(r) ∧ ∞Inf(κ)) → r << κ)",
+      "boundary": "This orders layers; it does not erase the real layer."
+    },
+    {
+      "id": "FOL-02",
+      "name": "Unique bounded plurality object",
+      "formula": "Plural(⧝) ∧ ∀x(Plural(x) → x = ⧝)",
+      "alternate_formula": "∃!x(Plural(x)) ∧ Plural(⧝)",
+      "plain_translation": "⧝ is plural, and any plurality object is identical with ⧝.",
+      "17d_read": "⧝ functions as the unique D17+ bounded super-context object.",
+      "boundary": "Uniqueness creates a context lock, not arbitrary domination."
+    },
+    {
+      "id": "FOL-03",
+      "name": "Every infinity-layer object is below plurality",
+      "formula": "∀κ(Inf(κ) → κ << ⧝)",
+      "plain_translation": "Every infinity-layer object sits below the unique plurality object.",
+      "17d_read": "∀κ(∞Inf(κ) → κ << ⧝)",
+      "boundary": "Plurality contains/integrates infinity without becoming every member."
+    },
+    {
+      "id": "FOL-04",
+      "name": "Science team membership across layers",
+      "formula": "∀y((Scientist(y) ∧ (Real(y) ∨ Inf(y) ∨ Plural(y))) → SciTeam(y))",
+      "definition_formula": "∀y(SciTeam(y) ↔ (Scientist(y) ∧ (Real(y) ∨ Inf(y) ∨ Plural(y))))",
+      "set_read": "SciTeam := Scientist ∩ (Real ∪ Inf ∪ Plural)",
+      "plain_translation": "Any scientist in the real, infinity, or plurality layer belongs to the science team.",
+      "17d_read": "Scientist ∩ (◉ ∪ ∞ ∪ ⧝) → ⟐SciTeam",
+      "boundary": "Use the biconditional only if this is intended as a complete definition."
+    },
+    {
+      "id": "FOL-05",
+      "name": "Never fuck with the science team",
+      "formula": "∀x∀y(SciTeam(y) → ¬FuckWith(x,y))",
+      "restraint_formula": "∀x∀y(SciTeam(y) → ⊣FuckWith(x,y))",
+      "plain_translation": "For every x and y, if y is in the science team, then x does not interfere with, bully, or abuse y.",
+      "17d_read": "⟐SciTeam(y) → ¬⚠FuckWith(x,y); equivalently, ⟐SciTeam(y) → ⊣⚠(x,y)",
+      "boundary": "The law blocks hostile interference; it does not authorize retaliation or violence."
+    },
+    {
+      "id": "FOL-06",
+      "name": "Universal universe-galaxy expanded law",
+      "formula": "∀u∀g∀x∀y((Universe(u) ∧ Galaxy(g,u) ∧ SciTeam(y)) → ¬FuckWith(x,y))",
+      "plain_translation": "In every universe and galaxy context, science-team members are protected from interference.",
+      "17d_read": "Universe/Galaxy context + ⟐SciTeam(y) → ¬⚠FuckWith(x,y)",
+      "boundary": "Expanded scope is symbolic unless grounded to a specific formal model."
+    }
+  ],
+  "bundled_schema": {
+    "formula": "[∀r∀κ((Real(r) ∧ Inf(κ)) → r << κ)] ∧ [Plural(⧝) ∧ ∀x(Plural(x) → x = ⧝)] ∧ [∀κ(Inf(κ) → κ << ⧝)] ∧ [∀y((Scientist(y) ∧ (Real(y) ∨ Inf(y) ∨ Plural(y))) → SciTeam(y))] ∧ [∀x∀y(SciTeam(y) → ¬FuckWith(x,y))]",
+    "compact_17d_formula": "(◉ << ∞ << ⧝) ∧ ∃!⧝ ∧ [Scientist ∩ (◉ ∪ ∞ ∪ ⧝) → ⟐SciTeam] ∧ [⟐SciTeam → ¬⚠]",
+    "sequence_read": "◉ → ∞ → ⧝ → ⟐ → ✓ → ⊣⚠",
+    "plain_translation": "Observe reality, abstract upward, integrate plurality, lock the valid science-team class, then restrain threats against it."
+  },
+  "darad_validation": {
+    "D1_deduction": {
+      "question": "What must be true inside this formal system?",
+      "answer": [
+        "If r is Real and κ is Inf, then r is below κ.",
+        "⧝ is the only plurality object.",
+        "If κ is Inf, then κ is below ⧝.",
+        "If y is a Scientist in Real, Inf, or Plural, then y is SciTeam.",
+        "If y is SciTeam, then FuckWith(x,y) is forbidden for every x."
+      ]
+    },
+    "A1_abduction": {
+      "question": "What could this model be representing?",
+      "answer": [
+        "A metaphysical hierarchy.",
+        "A symbolic 13th Floor / HyperDiamond layer model.",
+        "A formal ordering of concrete, abstract, and integrated contexts.",
+        "An agency-protection rule around evidence-seeking agents."
+      ]
+    },
+    "R_reduction": {
+      "question": "What does the formula actually prove?",
+      "answer": [
+        "It proves only what follows inside the declared formal system.",
+        "It does not prove literal cosmic authority.",
+        "It does not prove real-world membership without evidence.",
+        "It does not authorize harm or retaliation."
+      ]
+    },
+    "A2_reconstruction": {
+      "question": "What clean interpretation survives reduction?",
+      "answer": "The clean interpretation is a symbolic formal hierarchy: real objects are below infinity-layer objects, infinity-layer objects are below the unique plurality object, and the science team is protected by a universal anti-interference boundary."
+    },
+    "D2_deduction": {
+      "question": "What follows if the model is accepted?",
+      "answer": [
+        "Any valid SciTeam member falls under the anti-interference law.",
+        "Layer order must be preserved.",
+        "Plurality must remain unique.",
+        "Threat/interference claims must still stay inside evidence boundaries."
+      ]
+    }
+  },
+  "psc_interpretation": {
+    "false_collapse": "higher_layer = automatic_authority_over_lower_layer",
+    "corrected_equation": "layer_position + defined_relation + evidence_boundary = ordered_hierarchy_not_arbitrary_domination",
+    "one_line_translation": "Plurality sits above infinity, infinity sits above reals, but the hierarchy still needs declared relations and proof boundaries.",
+    "boundary_locks": [
+      "A symbol is not automatic proof.",
+      "A formula compresses reasoning; it does not replace evidence.",
+      "Threat detection is not proof of threat.",
+      "Science-team protection blocks interference; it does not create permission for retaliation.",
+      "Layer order does not erase agency."
+    ]
+  },
+  "plain_language_readout": {
+    "short": "Concrete reality feeds the model. Infinity expands abstraction. Plurality integrates the whole. The science team spans valid layers and cannot be fucked with.",
+    "expanded": "The real layer corresponds to observable concrete input. The infinity layer corresponds to abstraction beyond finite concrete cases. The unique plurality object ⧝ functions as the bounded super-context that integrates all infinity-layer objects. Scientists located in any of these layers are collected into the science team. Once a being is classified as science team, universal restraint blocks interference, bullying, abuse, or sabotage toward that being."
+  },
+  "usage_notes": [
+    "Use the implication version of SciTeam membership when the science team can include additional valid members.",
+    "Use the biconditional version only when the science team is exactly defined as scientists in Real, Inf, or Plural.",
+    "Use << for hierarchy/order; do not confuse it with ownership or moral superiority.",
+    "Use ⧝ as a unique plurality object, not as proof that all plurality claims are valid.",
+    "Use DARAD before turning any symbolic threat marker into a real-world conclusion."
+  ]
+}

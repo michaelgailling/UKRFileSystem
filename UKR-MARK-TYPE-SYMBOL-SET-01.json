@@ -1,0 +1,172 @@
+{
+  "ukr_id": "UKR-MARK-TYPE-SYMBOL-SET-01",
+  "title": "Mark Type Symbol Set",
+  "version": "1.0",
+  "status": "working_draft",
+  "type": "ukr_symbol_set",
+  "semantic_kind": "mark_classification_symbol_legend",
+  "purpose": "Define a unique symbolic legend for marks of honour, marks of distinction, marks of valour, marks of identity, and demerits without reusing symbols from the 17D symbolic set.",
+  "core_definition": {
+    "summary": "This UKR assigns five unique symbols to five different kinds of marks. Each symbol functions as a stable visual anchor for a specific mark category. The symbol identifies the category but does not replace evidence, context, issuing authority, or the person's full identity.",
+    "primary_unit_of_analysis": "mark_type_symbol",
+    "secondary_units": [
+      "symbol",
+      "symbol_name",
+      "mark_category",
+      "meaning_lock",
+      "boundary",
+      "distortion_test"
+    ],
+    "governing_rule": "A mark points to a category of recognition, identification, or penalty; it does not become total proof of the whole person."
+  },
+  "source_constraints": {
+    "avoid_reuse_from_17d_symbolic_set": true,
+    "excluded_17d_symbols": [
+      "◉",
+      "↺",
+      "✦",
+      "❝❞",
+      "⊙",
+      "?✧",
+      "⚠",
+      "♢",
+      "♥",
+      "◎",
+      "⛓",
+      "✓",
+      "⊣",
+      "⟶",
+      "◍",
+      "◌◍",
+      "⟐"
+    ]
+  },
+  "core_separation": {
+    "false_equation": "mark = total identity or automatic proof",
+    "corrected_equation": "mark = category_signal + context + issuing_authority + reason + evidence_boundary",
+    "one_line_translation": "A mark points to something; it does not become the whole person."
+  },
+  "symbol_set": [
+    {
+      "mark_category": "mark_of_honour",
+      "display_label": "Mark of Honour",
+      "symbol": "❖",
+      "symbol_name": "Honour Star-Diamond",
+      "meaning_lock": "earned respect, dignity, honourable recognition",
+      "plain_translation": "This marks honour or respected conduct.",
+      "boundary": "A mark of honour recognizes honourable conduct, but it does not prove superiority over others."
+    },
+    {
+      "mark_category": "mark_of_distinction",
+      "display_label": "Mark of Distinction",
+      "symbol": "✷",
+      "symbol_name": "Distinction Radiant",
+      "meaning_lock": "notable difference, recognized excellence, standing apart",
+      "plain_translation": "This marks someone or something as distinct from the ordinary set.",
+      "boundary": "A mark of distinction proves difference or recognition, but not automatic moral goodness."
+    },
+    {
+      "mark_category": "mark_of_valour",
+      "display_label": "Mark of Valour",
+      "symbol": "⟁",
+      "symbol_name": "Valour Triangle",
+      "meaning_lock": "courage under risk, pressure, danger, or conflict",
+      "plain_translation": "This marks courage under danger or serious pressure.",
+      "boundary": "A mark of valour recognizes bravery in context, but it does not mean the person is perfect in all contexts."
+    },
+    {
+      "mark_category": "mark_of_identity",
+      "display_label": "Mark of Identity",
+      "symbol": "⌬",
+      "symbol_name": "Identity Seal",
+      "meaning_lock": "identification, role, belonging, signature, personal marker",
+      "plain_translation": "This identifies who, what, where, or which role something belongs to.",
+      "boundary": "A mark of identity identifies; it does not automatically prove merit, guilt, ownership, honour, or authority."
+    },
+    {
+      "mark_category": "demerit",
+      "display_label": "Demerit",
+      "symbol": "⛝",
+      "symbol_name": "Demerit Cross-Seal",
+      "meaning_lock": "penalty, fault, negative mark, misconduct record",
+      "plain_translation": "This marks a negative record, penalty, fault, or rule failure.",
+      "boundary": "A demerit records a negative mark, but it does not erase the entire value of the person."
+    }
+  ],
+  "compact_legend": {
+    "❖": "Mark of Honour",
+    "✷": "Mark of Distinction",
+    "⟁": "Mark of Valour",
+    "⌬": "Mark of Identity",
+    "⛝": "Demerit"
+  },
+  "psc_lock": [
+    "❖ := mark of honour",
+    "✷ := mark of distinction",
+    "⟁ := mark of valour",
+    "⌬ := mark of identity",
+    "⛝ := demerit"
+  ],
+  "clean_separation": {
+    "❖": "honour = respect earned",
+    "✷": "distinction = difference recognized",
+    "⟁": "valour = courage under danger",
+    "⌬": "identity = who or what this marks",
+    "⛝": "demerit = negative conduct mark"
+  },
+  "distortion_tests": [
+    {
+      "id": "DT-01",
+      "name": "Category Boundary Test",
+      "question": "Is the mark being kept inside its assigned category?"
+    },
+    {
+      "id": "DT-02",
+      "name": "Proof Inflation Test",
+      "question": "Is someone treating the mark as proof of more than it actually proves?"
+    },
+    {
+      "id": "DT-03",
+      "name": "Identity Collapse Test",
+      "question": "Is a mark of identity being falsely treated as ownership, authority, guilt, destiny, or total personhood?"
+    },
+    {
+      "id": "DT-04",
+      "name": "Honour Versus Valour Test",
+      "question": "Is general respect being confused with courage under danger?"
+    },
+    {
+      "id": "DT-05",
+      "name": "Demerit Scope Test",
+      "question": "Is a negative mark being inflated into total worthlessness?"
+    }
+  ],
+  "failure_modes": [
+    {
+      "id": "FM-01",
+      "name": "Mark Literalization",
+      "description": "Treating the symbol as literal proof instead of a category marker."
+    },
+    {
+      "id": "FM-02",
+      "name": "Identity Overreach",
+      "description": "Using a mark of identity to claim ownership, authority, guilt, or total definition of a person."
+    },
+    {
+      "id": "FM-03",
+      "name": "Honour Inflation",
+      "description": "Treating honour as superiority rather than recognition."
+    },
+    {
+      "id": "FM-04",
+      "name": "Distinction Moralization",
+      "description": "Treating distinction as proof of moral goodness instead of difference or excellence."
+    },
+    {
+      "id": "FM-05",
+      "name": "Demerit Totalization",
+      "description": "Treating a demerit as if it erases the person's entire value."
+    }
+  ],
+  "one_line_translation": "❖ is honour, ✷ is distinction, ⟁ is valour, ⌬ is identity, and ⛝ is a demerit."
+}

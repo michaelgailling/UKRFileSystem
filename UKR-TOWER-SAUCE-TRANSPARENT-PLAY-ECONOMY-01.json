@@ -1,0 +1,1128 @@
+{
+  "ukr_id": "UKR-TOWER-SAUCE-TRANSPARENT-PLAY-ECONOMY-01",
+  "title": "Tower Saucer Transparent Play Economy and Amusement Resort Framework",
+  "version": "1.0",
+  "status": "working_draft",
+  "type": "ukr_concept_architecture",
+  "semantic_kind": "transparent_closed_loop_resort_economy",
+  "generated_context": {
+    "inspiration_sources": [
+      "Tower Unite social hub and condo economy",
+      "Final Fantasy VII Gold Saucer amusement economy",
+      "real-world arcade and prize-redemption systems",
+      "hotel/resort loyalty systems",
+      "transparent data-value sharing model",
+      "amusement park district design"
+    ],
+    "core_pitch": "A real-world social resort network where guests play games, visit attractions, generate transparent activity data, earn internal reward currency, spend that currency on goods and experiences, and carry their wallet, preferences, room layout, and identity across multiple tower locations.",
+    "one_line_translation": "The funhouse where your data pays you back."
+  },
+  "core_definition": {
+    "summary": "The Tower Saucer system is a real-world amusement resort and social hub built around a transparent closed-loop economy. Guests generate data by playing minigames, visiting attractions, interacting with branded products, decorating personal spaces, and participating in events. The system rewards guests with internal Units while making data collection visible, reviewable, and part of the experience rather than a hidden extraction layer.",
+    "governing_rule": "Guest enjoyment, consent, transparency, and agency must remain superior to extraction, compulsion, opaque surveillance, or disguised gambling.",
+    "primary_unit_of_analysis": "guest_experience_loop",
+    "secondary_units": [
+      "guest_profile",
+      "units_wallet",
+      "activity_data",
+      "enjoyment_score",
+      "brand_interaction_value",
+      "arcade_ticket_economy",
+      "casino_unit_boundary",
+      "room_layout_profile",
+      "tower_transfer_profile",
+      "location_exclusive_reward",
+      "amusement_district",
+      "data_dashboard"
+    ]
+  },
+  "core_separation": {
+    "false_equation": "data_collection = hidden_exploitation",
+    "corrected_equation": "transparent_data_collection = disclosed_value_generation + guest_dashboard + reward_share + consent_controls",
+    "casino_boundary_equation": "real_money_gambling = prohibited_or_heavily_regulated; units_only_casino = entertainment_layer_with_caps_and_no_cashout",
+    "reward_equation": "guest_value = play + enjoyment + participation + skill + brand_interaction + social_contribution + feedback",
+    "one_line_translation": "If the guest creates value, the guest sees the value trail and receives a transparent reward share."
+  },
+  "system_principles": [
+    {
+      "id": "P-01",
+      "name": "Enjoyment First",
+      "rule": "Maximizing guest enjoyment is the top priority while the guest remains in the tower."
+    },
+    {
+      "id": "P-02",
+      "name": "Transparent Data Value",
+      "rule": "Data collection is not hidden; it is openly disclosed, shown to the guest, and framed as part of the reward economy."
+    },
+    {
+      "id": "P-03",
+      "name": "Closed-Loop Currency",
+      "rule": "Units are internal resort currency and should not function as cash unless the system is prepared for banking, gambling, tax, and money-transmission regulation."
+    },
+    {
+      "id": "P-04",
+      "name": "Agency-Preserving Personalization",
+      "rule": "The system may recommend activities, room layouts, prizes, and experiences, but the guest retains final choice."
+    },
+    {
+      "id": "P-05",
+      "name": "No Hidden Extraction",
+      "rule": "Guests must be able to see what data is collected, how it produces value, and how it affects rewards."
+    },
+    {
+      "id": "P-06",
+      "name": "Portable Home Feeling",
+      "rule": "Wallet, room layout, preferences, inventory, and profile state can travel across tower locations."
+    },
+    {
+      "id": "P-07",
+      "name": "Local Uniqueness",
+      "rule": "Different tower locations may offer unique activities, prizes, collectibles, food, and regional reward loops."
+    },
+    {
+      "id": "P-08",
+      "name": "Entertainment Not Entrapment",
+      "rule": "The tower must not optimize for addiction, regret spending, concealed compulsion, or trapped attention."
+    }
+  ],
+  "core_loop": {
+    "loop_name": "transparent_play_value_loop",
+    "sequence": [
+      "guest_enters_tower",
+      "guest_profile_loads",
+      "wallet_and_inventory_sync",
+      "guest_selects_activity",
+      "activity_generates_experience_and_data",
+      "system_scores_performance_enjoyment_and_value",
+      "guest_receives_units_or_tickets_or_badges",
+      "guest_reviews_data_dashboard",
+      "guest_spends_or_saves_rewards",
+      "guest_customizes_room_or_collects_prizes",
+      "system_updates_preferences_and_background_simulation",
+      "guest_transfers_or_returns_with_persistent_profile"
+    ],
+    "compact_flow": "enter -> play -> generate data -> earn Units -> review dashboard -> spend/redeem/customize -> sync -> return or transfer"
+  },
+  "currencies": {
+    "units": {
+      "type": "primary_internal_currency",
+      "earned_by": [
+        "minigame_performance",
+        "activity_participation",
+        "guest_enjoyment_feedback",
+        "brand_interaction_value",
+        "social_contribution",
+        "event_completion",
+        "location_challenges",
+        "achievement_unlocks"
+      ],
+      "spent_on": [
+        "food",
+        "merchandise",
+        "clothing",
+        "room_furniture",
+        "room_upgrades",
+        "arcade_tokens",
+        "activity_access",
+        "transport_services",
+        "local_souvenirs",
+        "non-cash tower goods"
+      ],
+      "restrictions": [
+        "no_direct_cashout_by_default",
+        "clear_balance_display_required",
+        "earning_rules_visible",
+        "spending_history_visible",
+        "fraud_controls_required"
+      ]
+    },
+    "arcade_tokens": {
+      "type": "activity_entry_currency",
+      "source": "purchased_with_units_or_granted_by_promotions",
+      "used_for": [
+        "arcade_machine_play",
+        "midway_game_attempts",
+        "ticket_redemption_games"
+      ],
+      "boundary": "Tokens are play access, not money."
+    },
+    "tickets": {
+      "type": "arcade_redemption_currency",
+      "earned_by": [
+        "arcade_skill",
+        "midway_performance",
+        "redemption_game_outcomes",
+        "seasonal_arcade_events"
+      ],
+      "spent_on": [
+        "plushies",
+        "toys",
+        "wearables",
+        "collectibles",
+        "room_decor",
+        "limited_arcade_prizes",
+        "sponsor_items"
+      ],
+      "boundary": "Tickets should reward play and skill without becoming cash-equivalent gambling payout."
+    },
+    "casino_units": {
+      "type": "restricted_entertainment_currency",
+      "source": "converted_from_units_or_granted_with_limits",
+      "used_for": [
+        "casino_games",
+        "non-cash casino entertainment",
+        "capped prize loops"
+      ],
+      "restrictions": [
+        "no_real_money_direct_wagering",
+        "no_cashout",
+        "visible_odds",
+        "loss_limits",
+        "age_controls",
+        "jurisdictional_compliance",
+        "separate_from_general_units_if_needed"
+      ]
+    },
+    "prestige_badges": {
+      "type": "non-transferable_status_reward",
+      "earned_by": [
+        "achievements",
+        "milestones",
+        "high-skill clears",
+        "rare discoveries",
+        "location-exclusive completions"
+      ],
+      "spent_on": [],
+      "boundary": "Prestige cannot be purchased; it represents earned participation or achievement."
+    },
+    "local_marks": {
+      "type": "location_specific_currency_or_stamp",
+      "earned_by": [
+        "regional_tower_events",
+        "local_attractions",
+        "tourism_challenges",
+        "site-specific achievements"
+      ],
+      "spent_on": [
+        "local_prizes",
+        "regional_collectibles",
+        "exclusive_food_or_merch",
+        "location-specific room items"
+      ],
+      "example": "Yukon tower guests may earn local marks through gold-panning challenges and redeem them toward Yukon-exclusive prizes."
+    },
+    "brand_credits": {
+      "type": "transparent_sponsor_value_share",
+      "earned_by": [
+        "wearing_branded_items",
+        "using_sponsored_products",
+        "participating_in_brand_challenges",
+        "scanning_product_experiences",
+        "rating_sponsored_items",
+        "opting_into_visible_campaigns"
+      ],
+      "spent_on": [
+        "sponsor_goods",
+        "discounted_merch",
+        "trial products",
+        "brand-specific rewards"
+      ],
+      "boundary": "Brand interaction must be disclosed and opt-in where required."
+    }
+  },
+  "data_model": {
+    "data_policy_summary": "Data collection is a visible feature, not a hidden background extraction. Guests can access their activity logs, reward calculations, brand interactions, and privacy settings during their stay.",
+    "guest_visible_dashboard": [
+      "units_earned",
+      "units_spent",
+      "activity_history",
+      "game_performance",
+      "enjoyment_ratings",
+      "brand_interactions",
+      "sponsor_value_estimates",
+      "arcade_tickets",
+      "casino_unit_history",
+      "prizes_won",
+      "tower_locations_visited",
+      "room_layouts_saved",
+      "transfer_profiles",
+      "privacy_permissions",
+      "export_controls",
+      "delete_or_limit_controls_where_legally_possible"
+    ],
+    "data_categories": [
+      {
+        "category": "activity_data",
+        "examples": [
+          "games_played",
+          "scores",
+          "completion_times",
+          "win_loss_records",
+          "routes_taken",
+          "attractions_visited"
+        ]
+      },
+      {
+        "category": "enjoyment_data",
+        "examples": [
+          "ratings",
+          "repeat_visits",
+          "time_spent",
+          "abandonment_points",
+          "preferred_intensity",
+          "preferred_theme"
+        ]
+      },
+      {
+        "category": "behavioral_preference_data",
+        "examples": [
+          "solo_vs_group_preference",
+          "puzzle_preference",
+          "horror_tolerance",
+          "arcade_preference",
+          "ride_intensity_preference",
+          "shopping_preference"
+        ]
+      },
+      {
+        "category": "brand_interaction_data",
+        "examples": [
+          "branded_items_worn",
+          "sponsored_products_used",
+          "campaign_challenges_completed",
+          "photo_booth_opt_ins",
+          "product_feedback"
+        ]
+      },
+      {
+        "category": "room_and_layout_data",
+        "examples": [
+          "furniture_placement",
+          "lighting_preferences",
+          "comfort_settings",
+          "displayed_trophies",
+          "layout_templates"
+        ]
+      }
+    ],
+    "forbidden_or_restricted_data_patterns": [
+      "hidden_surveillance_without_notice",
+      "undisclosed_biometric_tracking",
+      "selling_identifiable_sensitive_data_without_clear_consent",
+      "using_data_to_create_compulsive_spending_pressure",
+      "concealing_reward_calculation_rules",
+      "making_opt_out_functionally_punitive_without disclosure"
+    ]
+  },
+  "guest_profile_system": {
+    "profile_name": "Tower Passport",
+    "persistent_fields": [
+      "guest_id",
+      "wallet_balance",
+      "inventory",
+      "room_layouts",
+      "furniture_owned",
+      "preferred_activities",
+      "accessibility_settings",
+      "privacy_settings",
+      "achievement_history",
+      "milestone_history",
+      "tower_visit_history",
+      "local_prize_history",
+      "brand_opt_in_status"
+    ],
+    "transfer_features": [
+      "wallet_sync",
+      "inventory_sync",
+      "saved_room_layout_transfer",
+      "same_furniture_arrangement_replication",
+      "preferred_food_or_amenity_stocking",
+      "accessibility_profile_transfer",
+      "favorite_activity_recommendations",
+      "home_tower_identity"
+    ],
+    "core_experience": "The guest can travel to another tower and feel like their personal space, profile, and earned value came with them."
+  },
+  "tower_districts": {
+    "district_model": "gold_saucer_style_squares",
+    "districts": [
+      {
+        "id": "D-01",
+        "name": "Plaza District",
+        "function": "Central social hub, orientation area, guest services, public events, shops, and tower navigation.",
+        "activities": [
+          "meetups",
+          "daily quests",
+          "public leaderboards",
+          "guest onboarding",
+          "profile kiosk",
+          "data dashboard stations"
+        ]
+      },
+      {
+        "id": "D-02",
+        "name": "Arcade District",
+        "function": "Skill games, redemption machines, ticket prizes, rhythm games, claw machines, and sponsor arcade events.",
+        "activities": [
+          "arcade machines",
+          "ticket redemption games",
+          "rhythm challenges",
+          "claw machines",
+          "score attack tournaments"
+        ],
+        "currencies_used": [
+          "arcade_tokens",
+          "tickets"
+        ]
+      },
+      {
+        "id": "D-03",
+        "name": "Casino District",
+        "function": "Units-only entertainment gambling area with strict non-cash boundaries and responsible play controls.",
+        "activities": [
+          "slots_style_games",
+          "card_games",
+          "roulette_style_games",
+          "luck_challenges",
+          "casino_tournaments"
+        ],
+        "currencies_used": [
+          "casino_units"
+        ],
+        "safety_controls": [
+          "no_real_money_wagers",
+          "visible_odds",
+          "spending_caps",
+          "age_gate",
+          "no_cashout",
+          "jurisdiction_review"
+        ]
+      },
+      {
+        "id": "D-04",
+        "name": "Horror District",
+        "function": "Haunted houses, ghost hunts, scare mazes, horror escape rooms, and seasonal fear events.",
+        "activities": [
+          "classic_haunted_house",
+          "interactive_ghost_hunt",
+          "co_op_survival_run",
+          "psychological_horror_maze",
+          "VR_haunt",
+          "lights_out_challenge"
+        ],
+        "data_generated": [
+          "route_choices",
+          "reaction_timing",
+          "quit_points",
+          "team_behavior",
+          "fear_tolerance",
+          "replay_preference"
+        ],
+        "reward_examples": [
+          "bravery_badges",
+          "haunted_furniture",
+          "ghost_lamp",
+          "cursed_mirror",
+          "seasonal_halloween_collectibles"
+        ]
+      },
+      {
+        "id": "D-05",
+        "name": "Midway District",
+        "function": "Carnival-style games, fast play loops, sponsor prizes, and low-barrier casual competition.",
+        "activities": [
+          "ring_toss",
+          "basketball_challenge",
+          "bottle_knockdown",
+          "water_race",
+          "whack_a_mole",
+          "strength_test",
+          "balloon_darts"
+        ],
+        "currencies_used": [
+          "units",
+          "arcade_tokens",
+          "tickets"
+        ]
+      },
+      {
+        "id": "D-06",
+        "name": "Ride District",
+        "function": "Thrill rides, dark rides, simulators, gondolas, indoor coasters, and motion attractions.",
+        "activities": [
+          "dark_ride",
+          "motion_simulator",
+          "VR_coaster",
+          "drop_tower",
+          "sky_rail",
+          "observation_gondola"
+        ],
+        "reward_examples": [
+          "first_ride_bonus",
+          "ride_passport_stamp",
+          "hidden_object_score",
+          "themed_room_decor"
+        ]
+      },
+      {
+        "id": "D-07",
+        "name": "Adventure District",
+        "function": "Escape rooms, puzzle adventures, obstacle courses, climbing challenges, and co-op missions.",
+        "activities": [
+          "escape_room",
+          "heist_vault",
+          "alien_lab",
+          "lost_temple",
+          "submarine_escape",
+          "tower_maintenance_mystery"
+        ],
+        "data_generated": [
+          "problem_solving_style",
+          "hint_usage",
+          "completion_time",
+          "cooperation_score",
+          "persistence"
+        ]
+      },
+      {
+        "id": "D-08",
+        "name": "Show District",
+        "function": "Live performances, tournaments, comedy, magic, esports, trivia finals, and staged events.",
+        "activities": [
+          "stage_show",
+          "cosplay_contest",
+          "esports_final",
+          "trivia_tournament",
+          "audience_voting",
+          "seasonal_performance"
+        ],
+        "reward_examples": [
+          "audience_badges",
+          "performer_units",
+          "show_night_collectibles"
+        ]
+      },
+      {
+        "id": "D-09",
+        "name": "Market District",
+        "function": "Shopping, prize redemption, brand stores, local goods, food, souvenirs, and sponsor experiences.",
+        "activities": [
+          "prize_counter",
+          "sponsor_store",
+          "local_market",
+          "food_vendors",
+          "merch_redemption",
+          "brand_demo"
+        ]
+      },
+      {
+        "id": "D-10",
+        "name": "Residence District",
+        "function": "Guest rooms, condo-like personal spaces, furniture layout, trophy display, comfort settings, and transferable home identity.",
+        "activities": [
+          "room_decoration",
+          "furniture_placement",
+          "trophy_display",
+          "social_hosting",
+          "layout_export",
+          "layout_transfer"
+        ]
+      },
+      {
+        "id": "D-11",
+        "name": "Transit Hub",
+        "function": "Transfers between towers, luggage support, profile migration, transport credits, and continuity services.",
+        "activities": [
+          "tower_transfer_booking",
+          "room_layout_replication",
+          "wallet_sync",
+          "inventory_sync",
+          "travel_reward_conversion"
+        ]
+      }
+    ]
+  },
+  "amusement_attractions": {
+    "haunted_house_model": {
+      "summary": "A high-replay attraction type that combines story, fear, exploration, co-op behavior, and seasonal rewards.",
+      "variants": [
+        "classic_haunted_house",
+        "interactive_ghost_hunt",
+        "co_op_survival_run",
+        "story_mystery_manor",
+        "psychological_horror_maze",
+        "VR_haunt",
+        "lights_out_night_mode"
+      ],
+      "reward_hooks": [
+        "complete_without_quitting",
+        "find_hidden_rooms",
+        "low_scream_high_composure_challenge",
+        "bravery_achievement",
+        "seasonal_horror_collectible",
+        "haunted_room_furniture"
+      ],
+      "disclosure_template": "This attraction tracks route decisions, reaction timing, teamwork behavior, and fear-response choices to improve future horror experiences."
+    },
+    "dark_ride_model": {
+      "summary": "Ride-through attraction with branching scenes, scoring, hidden objects, and regional story themes.",
+      "themes": [
+        "sci_fi_invasion",
+        "pirate_treasure",
+        "fantasy_dragon",
+        "cyberpunk_chase",
+        "yukon_gold_mine",
+        "vampire_crypt",
+        "underworld_myth"
+      ],
+      "reward_hooks": [
+        "hidden_object_scan",
+        "score_attack",
+        "alternate_path_discovery",
+        "story_stamp_collection",
+        "themed_furniture_unlock"
+      ]
+    },
+    "escape_room_model": {
+      "summary": "Skill-based solo or co-op puzzle attraction that rewards completion, speed, low hint use, and teamwork.",
+      "themes": [
+        "cursed_library",
+        "prison_break",
+        "alien_lab",
+        "heist_vault",
+        "sinking_submarine",
+        "haunted_hotel_floor",
+        "lost_temple",
+        "secret_tower_maintenance_level"
+      ],
+      "reward_hooks": [
+        "completion_time_bonus",
+        "no_hint_clear",
+        "hidden_lore_item",
+        "co_op_synergy_badge",
+        "furniture_blueprint_unlock"
+      ]
+    },
+    "seasonal_event_model": {
+      "summary": "Rotating limited-time attractions keep towers alive and encourage repeat visits.",
+      "seasons": [
+        {
+          "season": "Halloween",
+          "activities": [
+            "haunted_carnival",
+            "monster_chase",
+            "ghost_hunting",
+            "cursed_prize_counter"
+          ]
+        },
+        {
+          "season": "Winter",
+          "activities": [
+            "ice_maze",
+            "gift_hunt",
+            "snow_arcade",
+            "indoor_sled_sim"
+          ]
+        },
+        {
+          "season": "Summer",
+          "activities": [
+            "beach_games",
+            "water_attractions",
+            "neon_nights",
+            "festival_midway"
+          ]
+        },
+        {
+          "season": "Spring",
+          "activities": [
+            "floral_scavenger_hunt",
+            "garden_puzzle",
+            "festival_event"
+          ]
+        }
+      ]
+    }
+  },
+  "location_exclusive_system": {
+    "purpose": "Make each tower location worth visiting by tying activities and prizes to local geography, culture, industry, climate, and myth.",
+    "examples": [
+      {
+        "location": "Yukon",
+        "unique_activity": "gold_panning_challenge",
+        "unique_prize": "small_gold_bar_or_gold_flake_vial",
+        "district_fit": [
+          "Adventure District",
+          "Market District",
+          "Ride District"
+        ]
+      },
+      {
+        "location": "Las Vegas",
+        "unique_activity": "neon_arcade_tournament",
+        "unique_prize": "limited_casino_chip_collectible",
+        "district_fit": [
+          "Casino District",
+          "Arcade District",
+          "Show District"
+        ]
+      },
+      {
+        "location": "Toronto",
+        "unique_activity": "skyline_climb_sim",
+        "unique_prize": "city_exclusive_jacket",
+        "district_fit": [
+          "Ride District",
+          "Market District"
+        ]
+      },
+      {
+        "location": "Niagara",
+        "unique_activity": "water_force_challenge",
+        "unique_prize": "glass_waterfall_trophy",
+        "district_fit": [
+          "Ride District",
+          "Midway District"
+        ]
+      },
+      {
+        "location": "Banff",
+        "unique_activity": "mountain_lodge_cryptid_trail",
+        "unique_prize": "carved_bear_souvenir",
+        "district_fit": [
+          "Horror District",
+          "Adventure District"
+        ]
+      },
+      {
+        "location": "Montreal",
+        "unique_activity": "food_history_quest",
+        "unique_prize": "exclusive_cafe_merch",
+        "district_fit": [
+          "Market District",
+          "Show District"
+        ]
+      },
+      {
+        "location": "Vancouver",
+        "unique_activity": "harbor_race",
+        "unique_prize": "coastal_themed_board",
+        "district_fit": [
+          "Ride District",
+          "Adventure District"
+        ]
+      }
+    ],
+    "core_equation": "location_identity + exclusive_activity + transparent_reward = tourism_engine"
+  },
+  "reward_system": {
+    "reward_sources": [
+      "minigame_score",
+      "participation",
+      "completion",
+      "discovery",
+      "co_op_success",
+      "bravery",
+      "endurance",
+      "seasonal_event_completion",
+      "brand_interaction",
+      "feedback_submission",
+      "room_design_contribution",
+      "social_hosting",
+      "leaderboard_placement"
+    ],
+    "reward_types": [
+      "units",
+      "tickets",
+      "brand_credits",
+      "local_marks",
+      "prestige_badges",
+      "furniture_blueprints",
+      "room_decor",
+      "wearables",
+      "plushies",
+      "collectibles",
+      "food_vouchers",
+      "transport_credits",
+      "exclusive_physical_prizes"
+    ],
+    "anti_pay_to_win_rules": [
+      "earned_prestige_cannot_be_bought",
+      "purchased_units_do_not_replace_achievement_progress",
+      "location_exclusive_rewards_require_location_participation",
+      "skill_rewards_track_performance_not_spending",
+      "cosmetic_convenience_is_separated_from_earned_status"
+    ]
+  },
+  "room_and_furniture_system": {
+    "summary": "Guest rooms function as portable personal spaces and trophy displays. Furniture arrangement is entirely controlled by the guest.",
+    "guest_control_rules": [
+      "guest_decides_furniture_layout",
+      "guest_decides_displayed_trophies",
+      "guest_decides_room_theme",
+      "guest_can_save_multiple_layouts",
+      "guest_can_transfer_layout_to_other_towers_where_supported"
+    ],
+    "unlock_sources": [
+      "arcade_prizes",
+      "haunted_house_rewards",
+      "dark_ride_collectibles",
+      "escape_room_blueprints",
+      "location_exclusive_events",
+      "casino_entertainment_rewards",
+      "brand_campaign_rewards",
+      "seasonal_events"
+    ],
+    "example_sets": [
+      {
+        "set_name": "Haunted House Set",
+        "items": [
+          "cursed_mirror",
+          "ghost_lamp",
+          "gothic_bed",
+          "vampire_portrait",
+          "haunted_wallpaper"
+        ]
+      },
+      {
+        "set_name": "Midway Set",
+        "items": [
+          "carnival_lights",
+          "plushie_shelf",
+          "popcorn_cart",
+          "ring_toss_table",
+          "ticket_counter_sign"
+        ]
+      },
+      {
+        "set_name": "Yukon Gold Set",
+        "items": [
+          "gold_display_case",
+          "mining_lamp",
+          "rustic_wood_table",
+          "ore_cart_shelf",
+          "northern_lights_projector"
+        ]
+      },
+      {
+        "set_name": "Space Ride Set",
+        "items": [
+          "neon_wall_panels",
+          "star_projector",
+          "sci_fi_couch",
+          "orbital_window",
+          "zero_gravity_lamp"
+        ]
+      }
+    ]
+  },
+  "brand_product_placement_model": {
+    "summary": "Branded clothing and products worn or used inside the tower can function as product placement or advertising interaction, but must be disclosed and counted toward guest data-generation value.",
+    "examples": [
+      {
+        "guest_action": "wearing_branded_hoodie_in_public_area",
+        "value_type": "exposure_impressions",
+        "possible_reward": "brand_credits_or_units"
+      },
+      {
+        "guest_action": "using_sponsored_gaming_chair",
+        "value_type": "product_interaction",
+        "possible_reward": "trial_bonus_or_discount"
+      },
+      {
+        "guest_action": "scanning_product_qr",
+        "value_type": "direct_engagement",
+        "possible_reward": "brand_credit"
+      },
+      {
+        "guest_action": "posting_from_branded_photo_booth",
+        "value_type": "social_amplification",
+        "possible_reward": "opt_in_campaign_reward"
+      },
+      {
+        "guest_action": "rating_product_experience",
+        "value_type": "market_research_feedback",
+        "possible_reward": "survey_units"
+      }
+    ],
+    "required_disclosures": [
+      "which_brand_is_involved",
+      "what_data_is_collected",
+      "whether_photos_or_video_are_used",
+      "whether_biometric_data_is_used",
+      "whether_data_is_identifiable_or_aggregated",
+      "how_guest_can_opt_out",
+      "how_rewards_change_if_guest_opts_out"
+    ]
+  },
+  "background_simulation": {
+    "purpose": "Maintain economic balance, attraction quality, reward availability, guest flow, and cross-location continuity.",
+    "systems": [
+      "wallet_database",
+      "inventory_database",
+      "room_layout_database",
+      "reward_ledger",
+      "activity_scoring_engine",
+      "enjoyment_model",
+      "brand_value_model",
+      "supply_demand_model",
+      "location_prize_inventory",
+      "fraud_detection",
+      "responsible_play_monitor",
+      "privacy_preference_engine"
+    ],
+    "safe_uses": [
+      "recommend_activities",
+      "balance_reward_rates",
+      "detect_fraud",
+      "prevent_unit_inflation",
+      "restock_prizes",
+      "improve_attraction_design",
+      "support_accessibility",
+      "reduce_wait_times"
+    ],
+    "unsafe_uses": [
+      "manipulate_guest_into_overspending",
+      "hide_probability_or_odds",
+      "punish_privacy_opt_out_without_disclosure",
+      "increase_compulsion_over_enjoyment",
+      "create_regret_spending_loops",
+      "secretly_devalue_wallets"
+    ]
+  },
+  "legal_and_ethics_boundaries": {
+    "general_note": "This framework is conceptual and requires jurisdiction-specific legal review before real-world deployment.",
+    "high_risk_domains": [
+      "gambling_law",
+      "consumer_protection",
+      "privacy_law",
+      "data_broker_regulation",
+      "loyalty_currency_rules",
+      "money_transmission",
+      "taxation",
+      "minor_protection",
+      "advertising_disclosure",
+      "biometric_information",
+      "accessibility_compliance",
+      "prize_and_sweepstakes_law"
+    ],
+    "recommended_controls": [
+      "no_cashout_by_default",
+      "visible_reward_rules",
+      "visible_odds_for_chance_games",
+      "age_gates_for_casino_zones",
+      "spending_limits",
+      "cooldown_options",
+      "guest_data_dashboard",
+      "export_controls",
+      "privacy_controls",
+      "clear_sponsor_disclosure",
+      "third_party_audits",
+      "complaint_and_correction_process",
+      "regulatory_review_before_launch"
+    ]
+  },
+  "failure_modes": [
+    {
+      "id": "FM-01",
+      "name": "Hidden Extraction Drift",
+      "description": "The tower claims transparency but begins collecting or monetizing data in ways guests cannot see or understand.",
+      "countermeasure": "Guest-visible data dashboard, plain-language disclosures, audit logs, and opt-out controls."
+    },
+    {
+      "id": "FM-02",
+      "name": "Disguised Gambling Collapse",
+      "description": "Units, casino games, and valuable prizes combine into a structure regulators or guests experience as gambling with cash-equivalent value.",
+      "countermeasure": "No cashout, separate casino units, visible odds, capped winnings, age controls, and legal review."
+    },
+    {
+      "id": "FM-03",
+      "name": "Fun Turns Into Work",
+      "description": "Guests begin to feel they are laboring for data rewards rather than enjoying a resort.",
+      "countermeasure": "Optimize for satisfaction after leaving, not just activity volume or dwell time."
+    },
+    {
+      "id": "FM-04",
+      "name": "Unit Inflation",
+      "description": "Too many Units are issued, causing prices to rise or rewards to lose meaning.",
+      "countermeasure": "Balanced reward rates, meaningful currency sinks, event caps, and economic simulation."
+    },
+    {
+      "id": "FM-05",
+      "name": "Pay-To-Win Status Corruption",
+      "description": "Purchased currency starts replacing earned achievement, damaging the prestige system.",
+      "countermeasure": "Separate purchased convenience from earned badges, milestones, and exclusive achievements."
+    },
+    {
+      "id": "FM-06",
+      "name": "Brand Creep",
+      "description": "Sponsored products become too intrusive and guests feel like the tower is an ad trap.",
+      "countermeasure": "Disclosure, opt-in campaigns, reward clarity, brand-light zones, and sponsor caps."
+    },
+    {
+      "id": "FM-07",
+      "name": "Personalization Becomes Control",
+      "description": "The system begins steering guests toward operator profit instead of guest enjoyment.",
+      "countermeasure": "Guest agency controls, transparent recommendations, preference editing, and no hidden manipulation."
+    },
+    {
+      "id": "FM-08",
+      "name": "Transfer Identity Fragility",
+      "description": "Guests expect continuity between towers, but missing inventory, room mismatch, or wallet errors break trust.",
+      "countermeasure": "Strong synchronization, transfer previews, rollback logs, and manual guest support."
+    }
+  ],
+  "distortion_tests": [
+    {
+      "id": "DT-01",
+      "name": "Transparency Test",
+      "question": "Can the guest see what data was collected and how it affected rewards?"
+    },
+    {
+      "id": "DT-02",
+      "name": "Enjoyment Test",
+      "question": "Does the system optimize for the guest leaving satisfied rather than merely staying longer or spending more?"
+    },
+    {
+      "id": "DT-03",
+      "name": "Cashout Test",
+      "question": "Can Units become cash or cash-equivalent value in a way that changes the legal category of the system?"
+    },
+    {
+      "id": "DT-04",
+      "name": "Consent Test",
+      "question": "Did the guest knowingly agree to the data use, brand interaction, or activity risk?"
+    },
+    {
+      "id": "DT-05",
+      "name": "Agency Test",
+      "question": "Can the guest refuse, opt out, leave, or choose differently without being unfairly punished?"
+    },
+    {
+      "id": "DT-06",
+      "name": "Reward Integrity Test",
+      "question": "Are rewards tied to clear activity, skill, participation, or disclosed value generation?"
+    },
+    {
+      "id": "DT-07",
+      "name": "Gambling Boundary Test",
+      "question": "Does any casino or chance system create real-money risk or cash-equivalent payout?"
+    },
+    {
+      "id": "DT-08",
+      "name": "Local Value Test",
+      "question": "Does the location-exclusive reward actually reflect the place, or is it generic scarcity dressed as tourism?"
+    }
+  ],
+  "example_guest_journey": {
+    "title": "Standard Stay Loop",
+    "sequence": [
+      {
+        "stage": "check_in",
+        "description": "Guest arrives, loads Tower Passport, sees wallet, privacy settings, room layout, and suggested activities."
+      },
+      {
+        "stage": "orientation",
+        "description": "Guest reviews data dashboard explanation and chooses data-sharing level."
+      },
+      {
+        "stage": "first_activity",
+        "description": "Guest plays a minigame, earns Units based on participation, performance, and feedback."
+      },
+      {
+        "stage": "arcade_visit",
+        "description": "Guest converts some Units into Arcade Tokens, earns Tickets, and redeems a small prize."
+      },
+      {
+        "stage": "haunted_house",
+        "description": "Guest completes a scare maze, earns a bravery badge and haunted furniture blueprint."
+      },
+      {
+        "stage": "market_visit",
+        "description": "Guest spends Units on food and optionally interacts with a disclosed sponsor product."
+      },
+      {
+        "stage": "room_customization",
+        "description": "Guest places newly unlocked haunted furniture in their room and saves the layout."
+      },
+      {
+        "stage": "data_review",
+        "description": "Guest checks what value they generated and how rewards were calculated."
+      },
+      {
+        "stage": "transfer",
+        "description": "Guest books another tower and chooses to replicate their room layout and carry wallet balance forward."
+      }
+    ]
+  },
+  "sample_location_package": {
+    "location_name": "Tower Yukon",
+    "theme": "northern_lights_gold_rush_adventure",
+    "exclusive_district_features": [
+      "haunted_abandoned_mine",
+      "gold_panning_challenge",
+      "northern_lights_observation_ride",
+      "winter_survival_escape_room",
+      "local_market_gold_flake_prize_counter"
+    ],
+    "exclusive_rewards": [
+      "small_gold_bar_grand_prize",
+      "gold_flake_vial",
+      "mining_lamp_furniture",
+      "northern_lights_projector",
+      "Yukon_badge",
+      "abandoned_mine_ghost_plush"
+    ],
+    "local_equation": "Yukon identity + gold challenge + haunted mine + northern lights reward set = location-exclusive tourism loop"
+  },
+  "implementation_layers": {
+    "layer_1_guest_experience": [
+      "check_in",
+      "play",
+      "earn",
+      "review_data",
+      "spend",
+      "customize",
+      "transfer"
+    ],
+    "layer_2_economy": [
+      "units",
+      "tokens",
+      "tickets",
+      "casino_units",
+      "brand_credits",
+      "local_marks",
+      "prestige_badges"
+    ],
+    "layer_3_data": [
+      "activity_log",
+      "reward_ledger",
+      "brand_interaction_log",
+      "enjoyment_feedback",
+      "privacy_settings",
+      "profile_sync"
+    ],
+    "layer_4_simulation": [
+      "economic_balance",
+      "crowd_flow",
+      "reward_inventory",
+      "recommendation_engine",
+      "fraud_detection",
+      "responsible_play_monitor"
+    ],
+    "layer_5_governance": [
+      "legal_review",
+      "privacy_audit",
+      "advertising_disclosure",
+      "casino_controls",
+      "minor_safety",
+      "accessibility",
+      "complaint_resolution"
+    ]
+  },
+  "psc_summary": {
+    "clean_formula": "transparent_tower_value = fun + consent + data_visibility + reward_share + portable_identity + local_exclusivity",
+    "anti_formula": "bad_tower_value = hidden_tracking + compulsion + disguised_gambling + opaque_rewards + loss_of_agency",
+    "final_translation": "A Tower works when it feels like a place guests choose to return to, not a machine that quietly extracts from them."
+  }
+}

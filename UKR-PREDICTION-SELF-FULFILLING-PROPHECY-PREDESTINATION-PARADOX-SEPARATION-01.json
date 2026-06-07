@@ -1,0 +1,262 @@
+{
+  "ukr_id": "UKR-PREDICTION-SELF-FULFILLING-PROPHECY-PREDESTINATION-PARADOX-SEPARATION-01",
+  "title": "Prediction, Self-Fulfilling Prophecy, and Predestination Paradox Separation Pattern",
+  "version": "1.0",
+  "status": "working_draft",
+  "type": "ukr_pattern_marked_report",
+  "semantic_kind": "causality_forecast_feedback_loop_time_loop_separation",
+  "created_for": "concept_boundary_clarity",
+  "purpose": "Separate three related but distinct concepts: prediction, self-fulfilling prophecy, and predestination paradox. Prevent false collapse between ordinary forecasting, belief-driven outcome creation, and closed causal time-loop structures.",
+
+  "core_definition": {
+    "summary": "A prediction is a forecast about what may happen. A self-fulfilling prophecy is a forecast or belief that changes behavior in a way that helps produce the forecasted outcome. A predestination paradox is a closed causal time loop where an event causes actions in the past that make that same event happen.",
+    "governing_rule": "Do not treat every prediction as causation, every belief as destiny, or every causal loop as a normal forecast.",
+    "primary_unit_of_analysis": "outcome_claim",
+    "secondary_units": [
+      "forecast",
+      "belief",
+      "behavior_change",
+      "outcome",
+      "feedback_loop",
+      "time_loop",
+      "causal_origin",
+      "evidence_boundary",
+      "agency_boundary"
+    ]
+  },
+
+  "core_separation": {
+    "false_equation": "prediction = self_fulfilling_prophecy = predestination_paradox",
+    "corrected_equation": "prediction = forecast; self_fulfilling_prophecy = forecast_or_belief + behavior_change + outcome_reinforcement; predestination_paradox = closed_time_loop + event_causes_its_own_causal_conditions",
+    "one_line_translation": "A prediction guesses the outcome; a self-fulfilling prophecy helps make the outcome happen; a predestination paradox loops the outcome back into its own cause."
+  },
+
+  "concepts": {
+    "prediction": {
+      "definition": "A prediction is a forecast, estimate, or claim about what may happen in the future.",
+      "causal_structure": "observation -> forecast -> outcome",
+      "key_feature": "The prediction does not have to cause or influence the outcome.",
+      "plain_example": "Someone says, 'I think it will rain tomorrow.' The statement does not cause the rain.",
+      "equation": "prediction = forecast",
+      "boundary": "A prediction is not proof, causation, destiny, or automatic outcome control."
+    },
+
+    "self_fulfilling_prophecy": {
+      "definition": "A self-fulfilling prophecy is a belief or prediction that influences behavior in a way that helps make the predicted outcome happen.",
+      "causal_structure": "belief_or_forecast -> behavior_change -> outcome -> belief_confirmed",
+      "key_feature": "The belief affects conduct, and conduct helps produce the result.",
+      "plain_example": "Someone believes they will fail a test, stops studying, panics, and then fails.",
+      "equation": "self_fulfilling_prophecy = forecast + behavior_change + outcome_reinforcement",
+      "boundary": "The prophecy is not magic or destiny; it works through behavior, choices, social reaction, pressure, avoidance, or expectation effects."
+    },
+
+    "predestination_paradox": {
+      "definition": "A predestination paradox is a closed time-travel causal loop where an event is caused by actions that only happen because of that same event.",
+      "causal_structure": "future_event -> travel_or_action_in_past -> causes_future_event -> future_event",
+      "key_feature": "The cause and effect form a loop with no clear original starting point.",
+      "plain_example": "A person travels back in time to prevent a disaster, but their actions accidentally cause the disaster they tried to prevent.",
+      "equation": "predestination_paradox = future_past_causal_loop + no_clear_first_cause",
+      "boundary": "A predestination paradox is not just a strong prediction; it requires closed-loop causality, usually through time travel or fictional time mechanics."
+    }
+  },
+
+  "comparison_table": [
+    {
+      "concept": "prediction",
+      "core_meaning": "Forecast about what may happen.",
+      "causal_role": "Passive or observational.",
+      "does_it_help_cause_the_outcome": false,
+      "mechanism": "Estimate based on evidence, pattern, intuition, or reasoning.",
+      "example": "I think it will rain tomorrow.",
+      "clean_equation": "prediction = forecast"
+    },
+    {
+      "concept": "self_fulfilling_prophecy",
+      "core_meaning": "Belief or forecast that helps make itself true.",
+      "causal_role": "Active feedback loop.",
+      "does_it_help_cause_the_outcome": true,
+      "mechanism": "Belief changes behavior; behavior changes outcome.",
+      "example": "I think I will fail, so I stop studying, then fail.",
+      "clean_equation": "self_fulfilling_prophecy = forecast + behavior_change + outcome_reinforcement"
+    },
+    {
+      "concept": "predestination_paradox",
+      "core_meaning": "Closed causal loop where the outcome helps cause itself.",
+      "causal_role": "Circular time-loop causality.",
+      "does_it_help_cause_the_outcome": true,
+      "mechanism": "Future event causes past action; past action causes future event.",
+      "example": "A time traveler tries to prevent a disaster but causes it.",
+      "clean_equation": "predestination_paradox = closed_time_loop + event_causes_its_own_conditions"
+    }
+  ],
+
+  "targeted_false_collapses": [
+    {
+      "collapse": "A prediction automatically causes the outcome.",
+      "correction": "A prediction can be passive. It only becomes causally relevant if it changes behavior, decisions, or conditions."
+    },
+    {
+      "collapse": "A self-fulfilling prophecy is the same as destiny.",
+      "correction": "A self-fulfilling prophecy usually works through behavior and expectation, not unavoidable fate."
+    },
+    {
+      "collapse": "A predestination paradox is just a prediction that came true.",
+      "correction": "A predestination paradox requires a closed causal loop where the future and past create each other."
+    },
+    {
+      "collapse": "Believing something makes it automatically real.",
+      "correction": "Belief only affects reality through action, interpretation, social feedback, avoidance, pressure, or other causal mechanisms."
+    },
+    {
+      "collapse": "Trying to prevent an event always proves predestination.",
+      "correction": "Prevention attempts only become predestination paradoxes if the attempt is already part of the event's causal loop."
+    }
+  ],
+
+  "darad_validation": {
+    "D1_deduction": {
+      "question": "What must be true for each concept?",
+      "result": [
+        "Prediction requires a forecast.",
+        "Self-fulfilling prophecy requires forecast or belief plus behavior/outcome influence.",
+        "Predestination paradox requires closed-loop causality."
+      ]
+    },
+    "A1_abduction": {
+      "question": "What could explain an outcome matching a prior statement?",
+      "result": [
+        "The prediction was accurate but passive.",
+        "The prediction changed behavior and became self-fulfilling.",
+        "In a fictional time-loop context, the event may be a predestination paradox.",
+        "The match may also be coincidence, pattern recognition, or post-hoc interpretation."
+      ]
+    },
+    "R_reduction": {
+      "question": "What does the evidence actually prove?",
+      "result": [
+        "A forecast coming true proves accuracy, not causation by itself.",
+        "Behavior change after the belief supports self-fulfilling prophecy analysis.",
+        "A closed time-loop structure is required before predestination paradox applies."
+      ]
+    },
+    "A2_reconstruction": {
+      "question": "After removing inflated meaning, which classification remains?",
+      "result": [
+        "If there is only a forecast, classify as prediction.",
+        "If the forecast changed behavior and produced the result, classify as self-fulfilling prophecy.",
+        "If future and past cause each other in a loop, classify as predestination paradox."
+      ]
+    },
+    "D2_deduction": {
+      "question": "What final distinction must hold?",
+      "result": "Prediction is not automatically causal. Self-fulfilling prophecy is causal through behavior. Predestination paradox is causal through a closed time loop."
+    }
+  },
+
+  "distortion_tests": [
+    {
+      "id": "DT-01",
+      "name": "Forecast Test",
+      "question": "Is this simply a claim about what may happen?"
+    },
+    {
+      "id": "DT-02",
+      "name": "Behavior Change Test",
+      "question": "Did the belief or prediction change what someone did?"
+    },
+    {
+      "id": "DT-03",
+      "name": "Outcome Reinforcement Test",
+      "question": "Did that changed behavior help produce or confirm the outcome?"
+    },
+    {
+      "id": "DT-04",
+      "name": "Closed Loop Test",
+      "question": "Does the outcome cause the past condition that causes the outcome?"
+    },
+    {
+      "id": "DT-05",
+      "name": "First Cause Test",
+      "question": "Is there a clear origin, or is the cause trapped inside a loop?"
+    },
+    {
+      "id": "DT-06",
+      "name": "Proof Boundary Test",
+      "question": "Is someone treating a guess, belief, or loop story as proof beyond what the evidence supports?"
+    }
+  ],
+
+  "classification_flow": {
+    "compact_flow": "claim detected -> forecast checked -> behavior influence checked -> time-loop checked -> classification assigned",
+    "steps": [
+      {
+        "step": "01_detect_claim",
+        "question": "Is there a statement about an outcome?"
+      },
+      {
+        "step": "02_check_forecast",
+        "question": "Is the statement predicting what may happen?"
+      },
+      {
+        "step": "03_check_behavior_effect",
+        "question": "Did the prediction change behavior or conditions?"
+      },
+      {
+        "step": "04_check_feedback_loop",
+        "question": "Did the changed behavior help produce the predicted outcome?"
+      },
+      {
+        "step": "05_check_time_loop",
+        "question": "Is there closed-loop causality between future and past?"
+      },
+      {
+        "step": "06_assign_category",
+        "question": "Is this prediction, self-fulfilling prophecy, predestination paradox, coincidence, or insufficient evidence?"
+      }
+    ]
+  },
+
+  "failure_modes": [
+    {
+      "id": "FM-01",
+      "name": "Prediction Inflation",
+      "description": "Treating an accurate forecast as if it caused the event."
+    },
+    {
+      "id": "FM-02",
+      "name": "Belief-as-Magic Error",
+      "description": "Treating belief as if it directly changes reality without action or mechanism."
+    },
+    {
+      "id": "FM-03",
+      "name": "Feedback Loop Blindness",
+      "description": "Missing how expectation changed behavior and helped create the result."
+    },
+    {
+      "id": "FM-04",
+      "name": "Time-Loop Overreach",
+      "description": "Calling something a predestination paradox when there is no actual closed causal loop."
+    },
+    {
+      "id": "FM-05",
+      "name": "Post-Hoc Destiny Rewrite",
+      "description": "Looking backward after an event and pretending the result was always inevitable."
+    }
+  ],
+
+  "psc_lock": {
+    "prediction": "A prediction says what might happen.",
+    "self_fulfilling_prophecy": "A self-fulfilling prophecy helps make itself happen through behavior or feedback.",
+    "predestination_paradox": "A predestination paradox is a closed causal loop where trying to change the event is already part of causing it.",
+    "one_line_translation": "Guessing, causing through expectation, and looping through time are three different structures."
+  },
+
+  "taglines": [
+    "A prediction reads the odds.",
+    "A self-fulfilling prophecy changes the play.",
+    "A predestination paradox completes the loop.",
+    "A guess is not proof.",
+    "A belief is not destiny unless behavior or structure makes it causal.",
+    "You did not change the timeline; in a predestination paradox, you completed it."
+  ]
+}

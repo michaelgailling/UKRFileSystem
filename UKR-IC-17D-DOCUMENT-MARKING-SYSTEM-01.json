@@ -1,0 +1,229 @@
+{
+  "ukr_id": "UKR-IC-17D-DOCUMENT-MARKING-SYSTEM-01",
+  "title": "IC-17D Document Marking and Self-Classification System",
+  "version": "1.0",
+  "status": "working_draft",
+  "type": "ukr_document_classification_protocol",
+  "semantic_kind": "imagination_conduct_17d_marking_evidence_boundary_system",
+
+  "integrates": [
+    "UKR-IMAGINATION-CONDUCT-SYMBOL-SEPARATION-01",
+    "PSC-17D-DIMENSION-SYMBOL-SET-01",
+    "UKR-MARK-TYPE-SYMBOL-SET-01",
+    "UKR-17D-FIRST-ORDER-LOGIC-INTEGRATED-SYMBOL-SET-01"
+  ],
+
+  "purpose": "Standardize a document classification system that marks whether a document passage belongs to imagination, observable conduct, symbolic language, evidence, restraint, identity, distinction, honour, valour, or demerit categories without collapsing symbols into proof or private imagination into real-world misconduct.",
+
+  "core_definition": {
+    "summary": "The IC-17D Document Marking System classifies documents using layer markers, 17D cognitive symbols, evidence status, and bounded mark categories. It first separates private imagination from observable conduct, then identifies the cognitive function of a passage, then checks evidence, and only then assigns a scoped mark such as honour, distinction, valour, identity, or demerit.",
+    "primary_unit_of_analysis": "document_passage",
+    "secondary_units": [
+      "document",
+      "section",
+      "paragraph",
+      "sentence",
+      "symbolic_frame",
+      "conduct_claim",
+      "evidence_status",
+      "mark_type",
+      "scope_limit",
+      "classification_readout"
+    ],
+    "governing_rule": "Layer first, cognition second, evidence third, mark last. A symbol compresses meaning but does not create proof. A demerit requires observable conduct plus evidence and context."
+  },
+
+  "core_separation": {
+    "false_equation": "symbolic_or_private_content = observable_conduct_or_misconduct",
+    "corrected_equation": "symbolic_or_private_content + layer_check + evidence_check = bounded_document_classification",
+    "symbolic_false_equation": "☁ = ▣",
+    "symbolic_corrected_equation": "☁ ≠ ▣",
+    "demerit_boundary_equation": "⛝ requires ▣ + evidence + context",
+    "one_line_translation": "Mark what layer the document is operating in before judging what it proves."
+  },
+
+  "master_legend": {
+    "layer_symbols": {
+      "☁": "private imagination / inner content / symbolic mental scene",
+      "▣": "observable conduct / actual behavior / documented action",
+      "☁≠▣": "imagination is not conduct"
+    },
+    "core_17d_symbols": {
+      "◉": "sensory intake / direct input / observation",
+      "↺": "memory recall / past pattern",
+      "✦": "internal imagery / imagined scene",
+      "❝❞": "language framing / wording / narrative container",
+      "⊙": "attention lock / focus target",
+      "?✧": "novelty or curiosity / unresolved question",
+      "⚠": "threat detection / risk signal",
+      "♢": "reward or attraction / value signal",
+      "♥": "affective charge / emotional intensity",
+      "◎": "social evaluation / public judgment",
+      "⛓": "attachment or bond signal",
+      "✓": "decision commitment / evidence-gated conclusion",
+      "⊣": "inhibition / restraint / non-action",
+      "⟶": "planning / sequencing",
+      "◍": "self-model / identity-state model",
+      "◌◍": "other-mind modeling / inferred perspective",
+      "⟐": "context integration / synthesis"
+    },
+    "mark_symbols": {
+      "❖": "mark of honour",
+      "✷": "mark of distinction",
+      "⟁": "mark of valour",
+      "⌬": "mark of identity",
+      "⛝": "demerit; requires observable conduct plus evidence"
+    }
+  },
+
+  "classification_format": {
+    "standard_tag": "[Layer | 17D_Context | Evidence_Status | Mark_Type | Scope]",
+    "example": "[☁▣ | ❝❞⟐✓⊣ | evidence: source-grounded | ✷⌬ | no ⛝]",
+    "field_rules": {
+      "Layer": "Use ☁ for imagination/symbolic/private content, ▣ for observable conduct/documented action, or ☁▣ when the document is both a symbolic design and an actual written artifact.",
+      "17D_Context": "List only the active cognitive symbols needed to classify the passage.",
+      "Evidence_Status": "Name whether evidence is absent, self-reported, quoted, observed, documented, verified, or source-grounded.",
+      "Mark_Type": "Apply ❖, ✷, ⟁, ⌬, or ⛝ only inside the mark's category boundary.",
+      "Scope": "State the limit of the classification so the mark does not become total identity or automatic proof."
+    }
+  },
+
+  "processing_flow": {
+    "compact_flow": "☁/▣ first -> 17D context second -> evidence third -> mark last",
+    "steps": [
+      {
+        "step": "01_layer_check",
+        "question": "Is the passage private imagination ☁, observable conduct ▣, both, mixed, or unclear?"
+      },
+      {
+        "step": "02_symbol_meaning_check",
+        "question": "Which 17D cognitive symbols are active, and are they being kept inside their meaning locks?"
+      },
+      {
+        "step": "03_evidence_check",
+        "question": "What evidence exists, and what does it actually prove?"
+      },
+      {
+        "step": "04_false_collapse_scan",
+        "question": "Is anyone treating imagination as conduct, symbol as proof, feeling as truth, threat detection as proof, or mark as total identity?"
+      },
+      {
+        "step": "05_mark_assignment",
+        "question": "Does the document support honour, distinction, valour, identity, or demerit marking?"
+      },
+      {
+        "step": "06_scope_lock",
+        "question": "What is the narrowest accurate scope of the mark?"
+      },
+      {
+        "step": "07_readout",
+        "question": "What is the plain-language classification?"
+      }
+    ]
+  },
+
+  "valid_marking_rules": {
+    "imagination_rule": "☁ alone may be classified as imagination, fantasy, symbolic scene, inner content, or language frame, but it cannot create a conduct mark by itself.",
+    "conduct_rule": "▣ requires actual behavior, observable act, documented event, speech act, or other external conduct.",
+    "demerit_rule": "⛝ requires ▣ + evidence + context. ☁ ∧ ¬▣ -> ¬⛝.",
+    "identity_rule": "⌬ identifies source, authorship, role, file, category, or system identity; it does not prove guilt, merit, ownership, or authority.",
+    "distinction_rule": "✷ marks notable difference, excellence, or system distinctiveness; it does not prove moral goodness.",
+    "honour_rule": "❖ marks respected conduct or honourable behavior; it does not prove superiority.",
+    "valour_rule": "⟁ marks courage under danger, risk, or pressure; it does not imply perfection.",
+    "restraint_rule": "⊣ marks non-action, inhibition, and boundary-preserving delay; restraint can prevent imagination from becoming harmful conduct.",
+    "context_rule": "⟐ integrates symbols, evidence, language, and boundaries without erasing concrete facts."
+  },
+
+  "distortion_tests": [
+    {
+      "id": "DT-01",
+      "name": "Layer Separation Test",
+      "question": "Is ☁ being falsely treated as ▣?"
+    },
+    {
+      "id": "DT-02",
+      "name": "Evidence Boundary Test",
+      "question": "What does the evidence prove by itself?"
+    },
+    {
+      "id": "DT-03",
+      "name": "Symbol Inflation Test",
+      "question": "Is a symbol being treated as proof instead of a marker?"
+    },
+    {
+      "id": "DT-04",
+      "name": "Demerit Validity Test",
+      "question": "Is ⛝ supported by observable conduct, evidence, and context?"
+    },
+    {
+      "id": "DT-05",
+      "name": "Mark Scope Test",
+      "question": "Is the mark being kept inside its assigned category?"
+    },
+    {
+      "id": "DT-06",
+      "name": "Identity Overreach Test",
+      "question": "Is ⌬ being inflated into ownership, guilt, authority, or total identity?"
+    },
+    {
+      "id": "DT-07",
+      "name": "Context Preservation Test",
+      "question": "Does ⟐ preserve concrete evidence instead of abstracting it away?"
+    }
+  ],
+
+  "failure_modes": [
+    {
+      "id": "FM-01",
+      "name": "Imagination-Conduct Collapse",
+      "description": "Treating private or symbolic content as observable behavior."
+    },
+    {
+      "id": "FM-02",
+      "name": "Symbol-as-Proof Error",
+      "description": "Treating a marker as evidence by itself."
+    },
+    {
+      "id": "FM-03",
+      "name": "Invalid Demerit",
+      "description": "Assigning ⛝ without observable conduct and evidence."
+    },
+    {
+      "id": "FM-04",
+      "name": "Mark Totalization",
+      "description": "Letting a mark become total identity or total judgment."
+    },
+    {
+      "id": "FM-05",
+      "name": "Threat-Proof Inflation",
+      "description": "Treating ⚠ threat detection as proof rather than risk signal."
+    },
+    {
+      "id": "FM-06",
+      "name": "Language-Proof Inflation",
+      "description": "Treating ❝❞ language framing as factual proof."
+    },
+    {
+      "id": "FM-07",
+      "name": "Restraint Erasure",
+      "description": "Ignoring ⊣ restraint so imagination can be falsely blamed as action."
+    }
+  ],
+
+  "compact_signature": [
+    "layer_checked",
+    "17d_context_marked",
+    "evidence_status_checked",
+    "false_collapse_rejected",
+    "mark_category_scoped",
+    "classification_readout_generated"
+  ],
+
+  "taglines": [
+    "Layer first, evidence before mark.",
+    "A symbol marks meaning; it does not manufacture proof.",
+    "A cloud in the mind is not a square in the world.",
+    "No conduct, no demerit.",
+    "Marks classify; they do not totalize."
+  ]
+}

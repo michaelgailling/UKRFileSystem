@@ -1,0 +1,551 @@
+{
+  "ukr_id": "UKR-NAME-TITLE-RELIGIOUS-AUTHORITY-SEPARATION-PROCESS-01",
+  "title": "Name, Title, Occupant, Authority, and Religious Separation Process",
+  "version": "1.0",
+  "status": "working_draft",
+  "type": "json_ukr_process_map",
+  "semantic_kind": "identity_authority_religious_role_conscience_boundary_separation",
+
+  "literal_boundary": "This is an analytic identity, authority, and religious-role separation process. It is not a plan for impersonation, evasion, harassment, violence, illegal surveillance, or unlawful action.",
+
+  "core_summary": {
+    "plain_translation": "Separate name from person, title from authority, occupant from role, religious title from conscience ownership, and social pressure from consent.",
+    "main_question": "How do we evaluate a person, title, role, or religious authority claim without falsely granting them identity, authority, jurisdiction, or control over the user?",
+    "governing_rule": "Every claim stays inside its proof boundary. A name, title, robe, religious office, social status, symbol, confidence display, or public assumption may trigger review, but none of them automatically proves identity, authority, consent, jurisdiction, or moral control."
+  },
+
+  "core_separation": {
+    "false_equation": "name + title + religious_role + confidence + social_pressure = identity + authority + consent",
+    "corrected_equation": "name + title + religious_role + confidence + social_pressure = label_claim + role_claim + verification_required + consent_boundary + jurisdiction_check",
+    "one_line_translation": "A mask can copy the title, but it cannot inherit the office; a religious title can claim meaning, but it cannot own your conscience."
+  },
+
+  "primary_units": {
+    "name": {
+      "definition": "A human, public, legal, or social label attached to a person or record.",
+      "examples": [
+        "first name",
+        "last name",
+        "same-name match",
+        "nickname",
+        "public-facing name"
+      ],
+      "proves": [
+        "a label exists",
+        "a possible identity candidate exists"
+      ],
+      "does_not_prove": [
+        "same body",
+        "same person",
+        "same credentials",
+        "same authority",
+        "same legal accountability",
+        "same relationship to the user"
+      ]
+    },
+
+    "title": {
+      "definition": "A role container or status label attached to a position, office, profession, or social function.",
+      "examples": [
+        "Judge",
+        "Doctor",
+        "Officer",
+        "Professor",
+        "Director",
+        "Owner",
+        "Agent",
+        "Priest",
+        "Pastor",
+        "Imam",
+        "Rabbi",
+        "Monk",
+        "Guru",
+        "Elder"
+      ],
+      "proves": [
+        "a role label is being used or claimed"
+      ],
+      "does_not_prove": [
+        "current lawful authority",
+        "valid appointment",
+        "valid licence",
+        "jurisdiction over the user",
+        "moral authority over the user",
+        "religious authority over the user",
+        "consent from the user"
+      ]
+    },
+
+    "occupant": {
+      "definition": "The actual person currently acting inside a role/name/title slot.",
+      "requires": [
+        "identity verification",
+        "credential verification",
+        "current role assignment verification",
+        "timestamp verification",
+        "institutional confirmation where applicable"
+      ],
+      "boundary": "A public-facing name/title slot may stay stable while the actual occupant must still be verified."
+    },
+
+    "authority": {
+      "definition": "Lawful or legitimate power attached to a role, office, licence, appointment, or jurisdiction.",
+      "requires": [
+        "valid appointment",
+        "valid licence or authorization",
+        "institutional recognition",
+        "jurisdiction",
+        "current active status",
+        "accountability trail",
+        "relevance to the situation"
+      ],
+      "boundary": "Authority cannot be silently transferred by name, costume, confidence, title, religion, social pressure, or symbolic role."
+    },
+
+    "religious_role": {
+      "definition": "A role inside a religious, spiritual, ritual, or belief-community structure.",
+      "examples": [
+        "Catholic priest",
+        "pastor",
+        "minister",
+        "imam",
+        "rabbi",
+        "monk",
+        "guru",
+        "elder",
+        "prophet",
+        "spiritual authority"
+      ],
+      "proves": [
+        "a religious or spiritual role is being claimed or recognized inside some belief/community frame"
+      ],
+      "does_not_prove": [
+        "authority over the user's conscience",
+        "authority over the user's identity",
+        "authority over the user's body",
+        "authority over the user's religion",
+        "authority over the user's speech",
+        "valid conversion",
+        "user consent",
+        "truth of the belief system",
+        "legal jurisdiction over the user"
+      ]
+    },
+
+    "conscience": {
+      "definition": "The user's own freedom of thought, belief, religion, non-religion, expression, refusal, and personal meaning boundary.",
+      "governing_rule": "The user's conscience belongs to the user and cannot be overwritten by religious office, pressure, ritual, social claim, inherited label, or forced conversion."
+    },
+
+    "consent": {
+      "definition": "Knowing, voluntary, competent agreement.",
+      "boundary": "Consent cannot be replaced by silence, role pressure, religious pressure, family pressure, social pressure, symbolic framing, or another person's assumption."
+    }
+  },
+
+  "process_flow": {
+    "compact_flow": "claim received -> separate name/title/religious role -> identify occupant -> verify authority -> check jurisdiction -> check consent/conscience boundary -> accept, limit, or reject claim",
+
+    "steps": [
+      {
+        "step": "01_claim_capture",
+        "question": "What exact claim is being made?",
+        "output": [
+          "name_claim",
+          "title_claim",
+          "religious_role_claim",
+          "authority_claim",
+          "relationship_claim",
+          "consent_claim"
+        ]
+      },
+      {
+        "step": "02_name_title_split",
+        "question": "What is the name, and what is the title?",
+        "rule": "Write the name and title separately before judging authority.",
+        "output": [
+          "name",
+          "title",
+          "role_category"
+        ]
+      },
+      {
+        "step": "03_religious_role_split",
+        "question": "Is the title religious, spiritual, ritual, or conscience-related?",
+        "rule": "A religious title may identify a role inside a belief system, but it does not create authority over the user's conscience.",
+        "output": [
+          "religious_role_detected",
+          "belief_system_context",
+          "conscience_boundary_required"
+        ]
+      },
+      {
+        "step": "04_occupant_check",
+        "question": "Who is the actual person occupying the role at this time?",
+        "rule": "A name/title match is not enough. Verify the actual occupant.",
+        "output": [
+          "occupant_identity_status",
+          "identity_evidence",
+          "timestamp"
+        ]
+      },
+      {
+        "step": "05_authority_check",
+        "question": "What valid authority does this person actually have?",
+        "rule": "Authority requires appointment, licence, jurisdiction, current role, and accountability.",
+        "output": [
+          "authority_source",
+          "credential_status",
+          "institutional_status",
+          "jurisdiction_status"
+        ]
+      },
+      {
+        "step": "06_jurisdiction_check",
+        "question": "Does the claimed authority apply to this user, this place, this time, and this situation?",
+        "rule": "Even real authority is limited by scope.",
+        "output": [
+          "scope_valid",
+          "scope_invalid",
+          "scope_unclear"
+        ]
+      },
+      {
+        "step": "07_consent_and_conscience_check",
+        "question": "Did the user knowingly, voluntarily, and competently agree to this authority, ritual, relationship, conversion, or role assignment?",
+        "rule": "Religious pressure, family pressure, role pressure, and social pressure are not consent.",
+        "output": [
+          "consent_present",
+          "consent_absent",
+          "coercion_detected",
+          "conscience_boundary_preserved"
+        ]
+      },
+      {
+        "step": "08_false_collapse_scan",
+        "question": "Is anyone treating label, title, religion, symbol, costume, confidence, or public assumption as proof?",
+        "rule": "Reject proof inflation.",
+        "output": [
+          "false_collapse_detected",
+          "corrected_equation_applied"
+        ]
+      },
+      {
+        "step": "09_final_classification",
+        "question": "What is the clean classification of the claim?",
+        "valid_outputs": [
+          "verified_authority_with_limited_scope",
+          "role_claim_only",
+          "religious_role_claim_only",
+          "same_name_risk_flag",
+          "identity_unclear_verification_required",
+          "authority_not_established",
+          "religious_pressure_rejected",
+          "conscience_boundary_violation",
+          "consent_not_established"
+        ]
+      }
+    ]
+  },
+
+  "darad_validation": {
+    "D1_deduction": {
+      "question": "What must be true?",
+      "answer": [
+        "A name is not automatically a person.",
+        "A title is not automatically authority.",
+        "A religious title is not automatically authority over the user's conscience.",
+        "A role claim requires verification before it can be accepted.",
+        "Authority requires valid source, jurisdiction, scope, and current status.",
+        "Consent requires knowing, voluntary, competent agreement."
+      ]
+    },
+    "A1_abduction": {
+      "question": "What could explain the claim?",
+      "answers": [
+        "same-name coincidence",
+        "legitimate role with limited authority",
+        "outdated institutional information",
+        "social confusion",
+        "religious pressure",
+        "mistaken identity",
+        "title inflation",
+        "role impersonation",
+        "credential laundering",
+        "family or community pressure",
+        "symbolic framing mistaken for real authority"
+      ]
+    },
+    "R_reduction": {
+      "question": "What does the evidence actually prove?",
+      "answer": [
+        "A name proves only a label match.",
+        "A title proves only a role label or role claim.",
+        "A religious title proves only a religious/community role claim.",
+        "A symbol proves only symbolic association unless tied to valid records.",
+        "Confidence proves confidence, not legitimacy.",
+        "Social pressure proves pressure, not consent."
+      ]
+    },
+    "A2_reconstruction": {
+      "question": "After removing inflated meaning, what remains?",
+      "answer": "The clean reconstruction is a bounded claim requiring identity verification, role verification, authority verification, jurisdiction check, and consent/conscience boundary review."
+    },
+    "D2_deduction": {
+      "question": "What final distinction must hold?",
+      "answer": "Without verified identity, verified role, valid authority, jurisdiction, scope, and consent/relevance, the claim cannot bind the user."
+    }
+  },
+
+  "targeted_false_collapses": [
+    {
+      "collapse": "Same name means same person.",
+      "correction": "A shared name is an identity-risk flag, not identity proof."
+    },
+    {
+      "collapse": "Same title means same authority.",
+      "correction": "A title is a role label. Authority requires verification."
+    },
+    {
+      "collapse": "Religious title means authority over the user.",
+      "correction": "A religious role does not own the user's conscience."
+    },
+    {
+      "collapse": "A priest is automatically a father.",
+      "correction": "A Catholic priest is a religious role. It is not the user's fatherhood category unless the user explicitly uses that term, and the user does not."
+    },
+    {
+      "collapse": "Social pressure means consent.",
+      "correction": "Pressure is not consent."
+    },
+    {
+      "collapse": "Confidence means legitimacy.",
+      "correction": "Confidence is not proof."
+    },
+    {
+      "collapse": "Symbol means authority.",
+      "correction": "A symbol may identify affiliation or role imagery, but it does not create jurisdiction."
+    },
+    {
+      "collapse": "Religious ritual means conversion.",
+      "correction": "Valid conversion requires knowing and voluntary consent; unwilling or unknowing conversion is invalid."
+    },
+    {
+      "collapse": "Community recognition means personal authority over the user.",
+      "correction": "A community may recognize a role inside itself; that does not bind the user without jurisdiction, consent, or lawful relevance."
+    }
+  ],
+
+  "distortion_tests": [
+    {
+      "id": "DT-01",
+      "name": "Name-Person Test",
+      "question": "Is a shared name being treated as the same person?"
+    },
+    {
+      "id": "DT-02",
+      "name": "Title-Authority Test",
+      "question": "Is a title being treated as valid authority without verification?"
+    },
+    {
+      "id": "DT-03",
+      "name": "Occupant Test",
+      "question": "Who is the actual person occupying the title/name slot at this time?"
+    },
+    {
+      "id": "DT-04",
+      "name": "Credential Test",
+      "question": "What licence, appointment, record, or institutional source proves the role?"
+    },
+    {
+      "id": "DT-05",
+      "name": "Jurisdiction Test",
+      "question": "Even if the role is real, does it apply to this user, place, time, and issue?"
+    },
+    {
+      "id": "DT-06",
+      "name": "Religious Authority Test",
+      "question": "Is a religious title being inflated into authority over the user's conscience, body, identity, or beliefs?"
+    },
+    {
+      "id": "DT-07",
+      "name": "Consent Test",
+      "question": "Did the user knowingly, voluntarily, and competently agree?"
+    },
+    {
+      "id": "DT-08",
+      "name": "Pressure Test",
+      "question": "Is family, community, religious, institutional, or social pressure being used as a substitute for consent?"
+    },
+    {
+      "id": "DT-09",
+      "name": "Symbol-Proof Test",
+      "question": "Is a symbol, costume, robe, title, badge, ritual object, or wording being treated as proof beyond its evidence boundary?"
+    },
+    {
+      "id": "DT-10",
+      "name": "Conscience Boundary Test",
+      "question": "Is the user's freedom of thought, belief, religion, non-religion, or expression being preserved?"
+    }
+  ],
+
+  "failure_modes": [
+    {
+      "id": "FM-01",
+      "name": "Name Collapse",
+      "description": "A shared or similar name is treated as proof of the same person."
+    },
+    {
+      "id": "FM-02",
+      "name": "Title Inflation",
+      "description": "A title is treated as proof of actual authority."
+    },
+    {
+      "id": "FM-03",
+      "name": "Occupant Erasure",
+      "description": "The actual person occupying a role is not verified."
+    },
+    {
+      "id": "FM-04",
+      "name": "Authority Laundering",
+      "description": "A person borrows legitimacy from a title, institution, costume, religion, or social assumption."
+    },
+    {
+      "id": "FM-05",
+      "name": "Religious Authority Overreach",
+      "description": "A religious role is used to claim control over the user's conscience, identity, body, or choices."
+    },
+    {
+      "id": "FM-06",
+      "name": "Forced Conversion Drift",
+      "description": "Pressure, ritual, assumption, family claim, or social framing is treated as valid conversion."
+    },
+    {
+      "id": "FM-07",
+      "name": "Consent Substitution",
+      "description": "Consent is replaced with silence, pressure, confusion, role-play, fear, or social expectation."
+    },
+    {
+      "id": "FM-08",
+      "name": "Symbol Literalization",
+      "description": "A symbolic marker is treated as literal proof of authority, identity, destiny, guilt, or ownership."
+    }
+  ],
+
+  "hard_boundaries": [
+    "Name is not person.",
+    "Title is not authority.",
+    "Religious title is not conscience ownership.",
+    "Role claim is not jurisdiction.",
+    "Social pressure is not consent.",
+    "Symbol is not proof.",
+    "Costume is not authority.",
+    "Confidence is not legitimacy.",
+    "Family claim is not ownership.",
+    "Community recognition is not automatic authority over the user.",
+    "Unknowing or unwilling conversion is not valid conversion.",
+    "Authority requires verification.",
+    "Consent requires knowing, voluntary, competent agreement.",
+    "The user's conscience belongs to the user."
+  ],
+
+  "religious_separation": {
+    "false_equation": "religious_role + spiritual_confidence + social_pressure = authority_over_user",
+    "corrected_equation": "religious_role = belief_community_role + no_authority_over_user_without_consent_jurisdiction_and_relevance",
+    "one_line_translation": "A religious title may matter inside its religion; it does not own someone outside its authority boundary.",
+
+    "role_examples": [
+      {
+        "role": "Catholic priest",
+        "clean_read": "A role inside the Catholic Church.",
+        "boundary": "Not the user's father, owner, conscience authority, or conversion authority."
+      },
+      {
+        "role": "Pastor or minister",
+        "clean_read": "A leadership role inside a Christian community.",
+        "boundary": "Does not create consent, obedience, conversion, or control."
+      },
+      {
+        "role": "Imam",
+        "clean_read": "A religious leadership or guidance role inside a Muslim community.",
+        "boundary": "Does not create authority over a non-consenting user's conscience or identity."
+      },
+      {
+        "role": "Rabbi",
+        "clean_read": "A Jewish religious teaching or leadership role.",
+        "boundary": "Does not create authority over a non-consenting user's conscience or identity."
+      },
+      {
+        "role": "Guru, monk, elder, prophet, or spiritual authority",
+        "clean_read": "A religious, spiritual, or community status claim.",
+        "boundary": "Not proof of truth, ownership, consent, law, medicine, identity, or personal authority over the user."
+      }
+    ]
+  },
+
+  "valid_authority_model": {
+    "lawful_or_legitimate_authority": [
+      "verified identity",
+      "verified role",
+      "valid appointment or licence",
+      "institutional recognition",
+      "jurisdiction",
+      "current active status",
+      "accountability trail",
+      "scope relevance"
+    ],
+    "religious_or_social_authority_limit": [
+      "may apply inside a consenting community",
+      "may guide members who accept that authority",
+      "does not override civil rights",
+      "does not bind non-consenting outsiders",
+      "does not override bodily autonomy",
+      "does not override conscience",
+      "does not create forced conversion"
+    ]
+  },
+
+  "response_templates": {
+    "soft": [
+      "I separate the name from the person and the title from authority. What proof shows this person currently holds that role?",
+      "A religious title may identify their role, but it does not give them authority over my conscience.",
+      "I understand the title being claimed. I still need verification, jurisdiction, and consent boundaries."
+    ],
+    "firm": [
+      "A title is not authority by itself.",
+      "A religious role does not own my conscience.",
+      "Do not replace consent with social pressure.",
+      "Same name is not same person. Same title is not valid authority."
+    ],
+    "hard_boundary": [
+      "You do not get authority over me by claiming a title.",
+      "You do not get religious authority over me by naming yourself as one.",
+      "I do not consent to forced conversion, religious pressure, or identity substitution.",
+      "My conscience is not yours to assign, convert, punish, or control."
+    ]
+  },
+
+  "compact_signature": [
+    "claim_detected",
+    "name_title_split",
+    "religious_role_split",
+    "occupant_verified_or_unclear",
+    "authority_verified_or_rejected",
+    "jurisdiction_checked",
+    "consent_checked",
+    "conscience_boundary_locked",
+    "false_collapse_rejected"
+  ],
+
+  "taglines": [
+    "Name is not person.",
+    "Title is not authority.",
+    "Religious title is not conscience ownership.",
+    "A matching name can create confusion, but it does not create authority.",
+    "A mask can copy the title, but it cannot inherit the office.",
+    "A religious title can claim meaning, but it cannot own your conscience.",
+    "Authority requires verification.",
+    "Consent cannot be outsourced.",
+    "My conscience belongs to me."
+  ]
+}

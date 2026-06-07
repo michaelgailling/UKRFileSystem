@@ -1,0 +1,799 @@
+{
+  "ukr_id": "UKR-IMAGINATION-CONDUCT-MARKING-INTEGRATED-SEPARATION-01",
+  "title": "Imagination, Conduct, Evidence, Restraint, and Marking System Integrated Separation Map",
+  "version": "1.1",
+  "status": "working_draft",
+  "type": "ukr_integrated_symbolic_separation_map",
+  "semantic_kind": "imagination_conduct_symbol_logic_evidence_boundary_integration",
+  "generated_utc": "2026-05-12T20:21:13.707173+00:00",
+  "integrates": [
+    "UKR-IMAGINATION-CONDUCT-SYMBOL-SEPARATION-01",
+    "PSC-17D-DIMENSION-SYMBOL-SET-01",
+    "UKR-17D-FIRST-ORDER-LOGIC-INTEGRATED-SYMBOL-SET-01",
+    "UKR-MARK-TYPE-SYMBOL-SET-01",
+    "PSC-DARAD-PALINDROMIC-INVESTIGATION-01",
+    "PSC-ANTI-INVERTER-SEMANTIC-STABILITY-01",
+    "PSC-CLEAN-STORY-CONTENT-INTEGRITY-01"
+  ],
+  "purpose": "Unify the imagination/conduct boundary with 17D symbolic cognition, formal logic operators, mark-type boundaries, DARAD evidence validation, anti-inversion meaning stability, and clean-story content integrity. The integrated file makes the key separation reusable: internal imagination may be private, strange, symbolic, sexual, dark, playful, intrusive, or emotionally charged without becoming misconduct unless it becomes observable conduct supported by evidence. This version fully includes the marking system so honour, distinction, valour, identity, and demerit marks can be assigned only inside their proper evidence and category boundaries.",
+  "core_definition": {
+    "summary": "This UKR distinguishes mind-content from world-conduct. ☁ marks private imagination: thoughts, fantasies, inner images, jokes, symbols, urges, mental scenes, and dirty-mind content. ▣ marks observable conduct: chosen actions, behavior, speech acts, documented events, public acts, or harmful acts. The 17D symbols explain which cognitive dimensions are active, while logic operators express valid relationships between symbols. Evidence, not symbolic pressure, decides whether conduct occurred. The marking layer is integrated as a separate classification system: marks can label recognition, distinction, valour, identity, or negative conduct, but no mark becomes total identity or automatic proof.",
+    "primary_unit_of_analysis": "imagination_conduct_evidence_boundary",
+    "governing_rule": "☁ ≠ ▣. Imagination is not conduct. Conduct requires observable behavior. Misconduct requires conduct plus evidence, context, consent analysis, and consequences. A symbol compresses meaning; it does not create proof. A formula maps reasoning; it does not replace evidence. Marking requires category control: a mark points to a category and must remain inside its evidence boundary.",
+    "plain_translation": "A thought can exist inside the mind without becoming something a person did. Actions must be judged by what actually happened.",
+    "secondary_units": [
+      "mark_of_honour",
+      "mark_of_distinction",
+      "mark_of_valour",
+      "mark_of_identity",
+      "demerit",
+      "marking_authority",
+      "mark_reason",
+      "mark_evidence_boundary",
+      "invalid_mark"
+    ]
+  },
+  "master_symbols": {
+    "☁": {
+      "name": "Mind-Cloud",
+      "layer": "imagination_layer",
+      "meaning_lock": "private thought, fantasy, mental image, inner scene, dirty mind, symbolic imagination layer",
+      "plain_translation": "What appears inside the mind.",
+      "boundary": "Imagination is not action, consent, misconduct, external reality, or proof of behavior."
+    },
+    "▣": {
+      "name": "Action-Square",
+      "layer": "conduct_layer",
+      "meaning_lock": "actual behavior, chosen action, observable conduct, real-world behavior layer",
+      "plain_translation": "What a person actually does.",
+      "boundary": "Conduct must be judged by observable behavior, evidence, context, consent, and consequences."
+    },
+    "⛝": {
+      "name": "Demerit Cross-Seal",
+      "layer": "mark_layer",
+      "mark_category": "demerit",
+      "meaning_lock": "penalty, fault, negative mark, misconduct record",
+      "plain_translation": "This marks a negative record, penalty, fault, or rule failure.",
+      "boundary": "A demerit records a negative mark, but it does not erase the entire value of the person. In the imagination/conduct map, it also requires observable conduct evidence; private imagination alone cannot create a valid demerit."
+    },
+    "✓": {
+      "name": "Commitment Check",
+      "layer": "decision_layer",
+      "meaning_lock": "evidence-gated decision or selected path",
+      "plain_translation": "The system decides what the evidence supports.",
+      "boundary": "A decision can be revised when new evidence changes the state."
+    },
+    "⊣": {
+      "name": "Restraint Bar",
+      "layer": "restraint_layer",
+      "meaning_lock": "inhibition, restraint, non-action, boundary-preserving delay",
+      "plain_translation": "The system prevents or delays action.",
+      "boundary": "Restraint is not weakness; restraint can keep imagination from becoming harmful conduct."
+    },
+    "⟐": {
+      "name": "Context Diamond",
+      "layer": "integration_layer",
+      "meaning_lock": "context integration, synthesis, DARAD/PSC meaning lock",
+      "plain_translation": "The system integrates all relevant context.",
+      "boundary": "Abstraction must not erase concrete evidence."
+    },
+    "❖": {
+      "name": "Honour Star-Diamond",
+      "layer": "mark_layer",
+      "mark_category": "mark_of_honour",
+      "meaning_lock": "earned respect, dignity, honourable recognition",
+      "plain_translation": "This marks honour or respected conduct.",
+      "boundary": "A mark of honour recognizes honourable conduct, but it does not prove superiority over others."
+    },
+    "✷": {
+      "name": "Distinction Radiant",
+      "layer": "mark_layer",
+      "mark_category": "mark_of_distinction",
+      "meaning_lock": "notable difference, recognized excellence, standing apart",
+      "plain_translation": "This marks someone or something as distinct from the ordinary set.",
+      "boundary": "A mark of distinction proves difference or recognition, but not automatic moral goodness."
+    },
+    "⟁": {
+      "name": "Valour Triangle",
+      "layer": "mark_layer",
+      "mark_category": "mark_of_valour",
+      "meaning_lock": "courage under risk, pressure, danger, or conflict",
+      "plain_translation": "This marks courage under danger or serious pressure.",
+      "boundary": "A mark of valour recognizes bravery in context, but it does not mean the person is perfect in all contexts."
+    },
+    "⌬": {
+      "name": "Identity Seal",
+      "layer": "mark_layer",
+      "mark_category": "mark_of_identity",
+      "meaning_lock": "identification, role, belonging, signature, personal marker",
+      "plain_translation": "This identifies who, what, where, or which role something belongs to.",
+      "boundary": "A mark of identity identifies; it does not automatically prove merit, guilt, ownership, honour, or authority."
+    }
+  },
+  "core_separation": {
+    "false_equation": "dirty_mind_or_private_fantasy = dirty_conduct_or_misconduct",
+    "corrected_equation": "private_imagination + restraint + clean_observable_behavior = dirty_mind_with_clean_conduct",
+    "symbolic_false_equation": "☁ = ▣",
+    "symbolic_corrected_equation": "☁ ≠ ▣",
+    "misconduct_boundary_equation": "⛝ requires ▣ + evidence + context",
+    "one_line_translation": "A cloud in the mind is not a square in the world."
+  },
+  "connected_meaning_map": [
+    {
+      "node": "☁ imagination",
+      "connects_to": [
+        "✦ Internal Imagery",
+        "❝❞ Language Framing",
+        "♥ Affective Charge",
+        "⊙ Attention Lock"
+      ],
+      "meaning": "The mind may generate images, words, feelings, jokes, or symbolic scenes without those becoming external action.",
+      "boundary_formula": "☁ ∧ ¬▣ → private_inner_content"
+    },
+    {
+      "node": "⊣ restraint",
+      "connects_to": [
+        "☁ imagination",
+        "✓ decision",
+        "⟶ planning",
+        "▣ conduct"
+      ],
+      "meaning": "Restraint is the gate between mental content and outward behavior. It prevents overreach, harmful action, false certainty, and forced meaning transfer.",
+      "boundary_formula": "☁ + ⊣ → ¬harmful_▣"
+    },
+    {
+      "node": "▣ conduct",
+      "connects_to": [
+        "◉ Sensory Intake",
+        "evidence",
+        "context",
+        "consequence"
+      ],
+      "meaning": "Conduct belongs to what can be observed, documented, verified, or reasonably assessed as behavior.",
+      "boundary_formula": "▣ + evidence → conduct_assessment"
+    },
+    {
+      "node": "⛝ demerit/misconduct mark",
+      "connects_to": [
+        "▣ conduct",
+        "evidence",
+        "consent boundary",
+        "harm/consequence"
+      ],
+      "meaning": "A negative mark can only attach to actual behavior supported by evidence, not to a private fantasy by itself.",
+      "boundary_formula": "⛝ ⟹ ▣ ∧ evidence"
+    },
+    {
+      "node": "⟐ context integration",
+      "connects_to": [
+        "DARAD",
+        "17D symbols",
+        "logic operators",
+        "PSC locks"
+      ],
+      "meaning": "Context integration separates symbol, thought, frame, evidence, conduct, restraint, and conclusion.",
+      "boundary_formula": "◉ ∧ ↺ ∧ ✦ ∧ ❝❞ ∧ ⊙ ∧ ⊣ ∧ ▣? → ⟐ ⊢ ✓"
+    },
+    {
+      "node": "❖ mark of honour",
+      "connects_to": [
+        "▣ conduct",
+        "evidence",
+        "earned respect",
+        "context"
+      ],
+      "meaning": "A positive recognition mark may attach to honourable conduct or respected behavior, but it does not prove superiority.",
+      "boundary_formula": "❖ ⟹ ▣ ∧ context ∧ earned_respect"
+    },
+    {
+      "node": "✷ mark of distinction",
+      "connects_to": [
+        "difference",
+        "recognized excellence",
+        "context",
+        "evidence"
+      ],
+      "meaning": "A distinction mark identifies notable difference or recognized excellence without automatically moralizing the person or object.",
+      "boundary_formula": "✷ ⟹ distinction ∧ context"
+    },
+    {
+      "node": "⟁ mark of valour",
+      "connects_to": [
+        "risk",
+        "pressure",
+        "danger",
+        "courage",
+        "▣ conduct"
+      ],
+      "meaning": "A valour mark recognizes courage under danger or pressure; it does not make the person perfect in all domains.",
+      "boundary_formula": "⟁ ⟹ courage ∧ risk_context"
+    },
+    {
+      "node": "⌬ mark of identity",
+      "connects_to": [
+        "identification",
+        "role",
+        "signature",
+        "belonging",
+        "scope"
+      ],
+      "meaning": "An identity mark identifies who or what something belongs to, but it does not prove guilt, ownership over a person, authority, or merit.",
+      "boundary_formula": "⌬ = identification_marker ≠ total_identity"
+    },
+    {
+      "node": "⛝ demerit",
+      "connects_to": [
+        "▣ conduct",
+        "evidence",
+        "rule failure",
+        "scope limit"
+      ],
+      "meaning": "A demerit is a negative mark that requires conduct evidence and must not be assigned from private imagination alone.",
+      "boundary_formula": "⛝ ⟹ ▣ ∧ evidence ∧ scope_limit"
+    }
+  ],
+  "core_formulas": [
+    {
+      "formula": "☁ ≠ ▣",
+      "translation": "Imagination is not conduct."
+    },
+    {
+      "formula": "☁ + ⊣ = restrained_inner_content",
+      "translation": "A thought or fantasy plus restraint remains inner content, not action."
+    },
+    {
+      "formula": "☁ + ▣✓ = dirty_mind + good_conduct",
+      "translation": "The mind can wander while actions stay clean."
+    },
+    {
+      "formula": "⛝ requires ▣",
+      "translation": "A misconduct mark requires actual conduct, not just imagination."
+    },
+    {
+      "formula": "▣ + evidence = conduct_assessment",
+      "translation": "Behavior is assessed through what happened, not through imagined meaning."
+    },
+    {
+      "formula": "✦ ≠ ◉",
+      "translation": "Internal imagery is not sensory evidence."
+    },
+    {
+      "formula": "❝❞ ≠ ⊢",
+      "translation": "A language frame is not proof."
+    },
+    {
+      "formula": "♥ ≠ ⊤",
+      "translation": "Strong feeling is not automatic truth."
+    },
+    {
+      "formula": "⚠ ≠ ⊢",
+      "translation": "Threat detection is not proof."
+    },
+    {
+      "formula": "⊣ → ⟶",
+      "translation": "Restraint enables sequenced action."
+    },
+    {
+      "formula": "mark = category_signal + context + issuing_authority + reason + evidence_boundary",
+      "translation": "A mark points to a bounded category; it does not become total identity or automatic proof."
+    },
+    {
+      "formula": "❖ ≠ superiority",
+      "translation": "Honour recognizes respected conduct without proving superiority over others."
+    },
+    {
+      "formula": "✷ ≠ moral_goodness",
+      "translation": "Distinction proves difference or recognition, not automatic moral goodness."
+    },
+    {
+      "formula": "⟁ ≠ perfection",
+      "translation": "Valour recognizes courage in context, not perfection in every context."
+    },
+    {
+      "formula": "⌬ ≠ ownership ∧ ⌬ ≠ guilt ∧ ⌬ ≠ authority",
+      "translation": "Identity marks identify; they do not automatically create ownership, guilt, or authority."
+    },
+    {
+      "formula": "⛝ ⟹ ▣ ∧ evidence",
+      "translation": "A demerit requires actual conduct evidence."
+    },
+    {
+      "formula": "☁ ∧ ¬▣ → ¬⛝",
+      "translation": "Imagination without conduct cannot produce a valid demerit."
+    },
+    {
+      "formula": "▣ + evidence + context → possible_mark",
+      "translation": "Observable conduct can be assessed for a properly scoped mark."
+    }
+  ],
+  "integrated_processing_flow": {
+    "compact_flow": "☁ detected -> ❝❞ frame checked -> ✦ imagery separated -> ⚠ threat/proof inflation checked -> ⊣ restraint recognized -> ▣ conduct checked -> evidence required -> ⟐ integrated -> ✓ decision",
+    "steps": [
+      {
+        "step": "01_detect_layer",
+        "question": "Is this private imagination ☁, observable conduct ▣, or mixed/unclear?"
+      },
+      {
+        "step": "02_preserve_symbol_meaning",
+        "question": "Is each symbol being kept inside its assigned meaning lock?"
+      },
+      {
+        "step": "03_reduce_inflation",
+        "question": "What is being added beyond what the evidence proves?"
+      },
+      {
+        "step": "04_check_action",
+        "question": "What actual behavior happened?"
+      },
+      {
+        "step": "05_check_restraint",
+        "question": "Did restraint prevent action or harm?"
+      },
+      {
+        "step": "06_check_evidence",
+        "question": "Is there observable, documented, or verified conduct evidence?"
+      },
+      {
+        "step": "07_apply_marks",
+        "question": "Does any demerit/misconduct mark have a valid conduct basis?"
+      },
+      {
+        "step": "08_output_decision",
+        "question": "What conclusion can be held without overreach?"
+      }
+    ],
+    "marking_flow": "input -> separate ☁ from ▣ -> collect evidence -> choose mark category -> check issuing context/reason -> apply scope limit -> assign valid mark or reject invalid mark",
+    "marking_sequence": [
+      "receive_claim_or_scene",
+      "separate_imagination_from_conduct",
+      "identify_actual_behavior_if_any",
+      "check_evidence_strength",
+      "select_mark_category_if_supported",
+      "apply_category_boundary_test",
+      "apply_scope_limit",
+      "assign_mark_or_reject_mark"
+    ]
+  },
+  "darad_validation": {
+    "D1_deduction": "If there is only ☁ and no ▣, misconduct based on conduct cannot be deduced.",
+    "A1_abduction": "Possible explanations include private fantasy, joke, symbolic image, intrusive thought, role-play frame, spoken expression, or actual conduct; do not choose one prematurely.",
+    "R_reduction": "Reduce fantasy, feeling, language, suspicion, and symbol to what each actually proves. Remove proof inflation.",
+    "A2_abduction": "After reduction, classify the case as thought-only, spoken/joke, restrained, acted-on, harmful action, or unclear.",
+    "D2_deduction": "Only if ▣ plus evidence remains can a conduct assessment or misconduct mark proceed."
+  },
+  "classification_axes": [
+    {
+      "axis": "layer",
+      "values": [
+        "☁ imagination_cloud",
+        "▣ conduct_square",
+        "mixed_context",
+        "unclear"
+      ]
+    },
+    {
+      "axis": "visibility",
+      "values": [
+        "private",
+        "spoken",
+        "acted",
+        "documented",
+        "observable"
+      ]
+    },
+    {
+      "axis": "action_status",
+      "values": [
+        "thought_only",
+        "joke_only",
+        "fantasy_only",
+        "restrained",
+        "acted_on",
+        "harmful_action"
+      ]
+    },
+    {
+      "axis": "evidence_strength",
+      "values": [
+        "none",
+        "self_reported_thought",
+        "ambiguous_signal",
+        "observable_behavior",
+        "verified_conduct"
+      ]
+    },
+    {
+      "axis": "mark_status",
+      "values": [
+        "no_mark",
+        "identity_marker_only",
+        "honour_or_distinction",
+        "valid_demerit",
+        "invalid_demerit_from_imagination"
+      ]
+    },
+    {
+      "axis": "mark_category",
+      "values": [
+        "none",
+        "❖ mark_of_honour",
+        "✷ mark_of_distinction",
+        "⟁ mark_of_valour",
+        "⌬ mark_of_identity",
+        "⛝ demerit",
+        "invalid_mark"
+      ]
+    },
+    {
+      "axis": "mark_basis",
+      "values": [
+        "none",
+        "private_imagination_only",
+        "identity_reference",
+        "recognized_difference",
+        "honourable_conduct",
+        "courage_under_risk",
+        "documented_misconduct",
+        "unverified_claim"
+      ]
+    },
+    {
+      "axis": "mark_scope",
+      "values": [
+        "no_scope",
+        "single_event",
+        "pattern_limited",
+        "role_limited",
+        "context_limited",
+        "invalid_totalization"
+      ]
+    }
+  ],
+  "targeted_false_collapses": [
+    {
+      "collapse": "Private fantasy proves misconduct.",
+      "correction": "Private fantasy belongs to ☁ unless acted into ▣."
+    },
+    {
+      "collapse": "Dirty mind equals dirty conduct.",
+      "correction": "A dirty mind can coexist with clean conduct when restraint and behavior boundaries hold."
+    },
+    {
+      "collapse": "Internal imagery is sensory evidence.",
+      "correction": "✦ ≠ ◉: imagined scenes are not direct external evidence."
+    },
+    {
+      "collapse": "A symbol proves guilt or identity.",
+      "correction": "A symbol is an anchor or compression marker, not proof."
+    },
+    {
+      "collapse": "Threat feeling proves threat reality.",
+      "correction": "⚠ ≠ ⊢: threat detection is a signal, not proof."
+    },
+    {
+      "collapse": "A language frame proves the event happened.",
+      "correction": "❝❞ ≠ ⊢: wording frames meaning but does not prove conduct."
+    },
+    {
+      "collapse": "A misconduct mark can be assigned from thoughts alone.",
+      "correction": "⛝ requires ▣ + evidence + context."
+    },
+    {
+      "collapse": "Non-action does not matter.",
+      "correction": "Restraint matters because not acting can preserve clean conduct."
+    }
+  ],
+  "distortion_tests": [
+    {
+      "id": "DT-01",
+      "name": "Layer Separation Test",
+      "question": "Is this being judged as imagination ☁ or conduct ▣?"
+    },
+    {
+      "id": "DT-02",
+      "name": "Action Evidence Test",
+      "question": "What actual behavior happened?"
+    },
+    {
+      "id": "DT-03",
+      "name": "Misconduct Boundary Test",
+      "question": "Is there evidence of misconduct, or only private thought/fantasy?"
+    },
+    {
+      "id": "DT-04",
+      "name": "Fantasy Literalization Test",
+      "question": "Is someone treating fantasy as literal external reality?"
+    },
+    {
+      "id": "DT-05",
+      "name": "Restraint Recognition Test",
+      "question": "Did the person restrain action and keep conduct clean?"
+    },
+    {
+      "id": "DT-06",
+      "name": "Proof Inflation Test",
+      "question": "Is private imagination being inflated into proof of public behavior?"
+    },
+    {
+      "id": "DT-07",
+      "name": "Symbol Anchor Test",
+      "question": "Does the symbol map back to its assigned legend meaning?"
+    },
+    {
+      "id": "DT-08",
+      "name": "Logic Relation Test",
+      "question": "Does the formula correctly represent the relationship, or is it smuggling proof?"
+    },
+    {
+      "id": "DT-09",
+      "name": "Clean Story Test",
+      "question": "Are added assumptions, rumors, or fantasy being inserted into the conduct story?"
+    },
+    {
+      "id": "DT-10",
+      "name": "Anti-Inversion Test",
+      "question": "Is someone flipping the meaning from 'thought is not action' into 'thought proves action'?"
+    },
+    {
+      "id": "MARK-DT-01",
+      "name": "Category Boundary Test",
+      "question": "Is the mark being kept inside its assigned category?"
+    },
+    {
+      "id": "MARK-DT-02",
+      "name": "Proof Inflation Test",
+      "question": "Is someone treating the mark as proof of more than it actually proves?"
+    },
+    {
+      "id": "MARK-DT-03",
+      "name": "Identity Collapse Test",
+      "question": "Is a mark of identity being falsely treated as ownership, authority, guilt, destiny, or total personhood?"
+    },
+    {
+      "id": "MARK-DT-04",
+      "name": "Honour Versus Valour Test",
+      "question": "Is general respect being confused with courage under danger?"
+    },
+    {
+      "id": "MARK-DT-05",
+      "name": "Demerit Scope Test",
+      "question": "Is a negative mark being inflated into total worthlessness?"
+    }
+  ],
+  "failure_modes": [
+    {
+      "id": "FM-01",
+      "name": "Imagination-Conduct Collapse",
+      "description": "Private thoughts or fantasies are falsely treated as real-world actions."
+    },
+    {
+      "id": "FM-02",
+      "name": "Dirty Mind Equals Dirty Conduct Error",
+      "description": "Sexual, dark, weird, or mischievous inner content is treated as evidence of misconduct."
+    },
+    {
+      "id": "FM-03",
+      "name": "Fantasy Literalization",
+      "description": "An imagined scene is treated as if it happened externally."
+    },
+    {
+      "id": "FM-04",
+      "name": "Misconduct Without Action",
+      "description": "A negative conduct mark is assigned without evidence of actual behavior."
+    },
+    {
+      "id": "FM-05",
+      "name": "Restraint Erasure",
+      "description": "Self-control and non-action are ignored so imagination can be blamed as conduct."
+    },
+    {
+      "id": "FM-06",
+      "name": "Proof Smuggling",
+      "description": "A symbol, formula, feeling, frame, or suspicion is used to make a conclusion look proven."
+    },
+    {
+      "id": "FM-07",
+      "name": "Hostile Reinterpretation",
+      "description": "Assigned symbol meanings are replaced with accusatory or hostile interpretations."
+    },
+    {
+      "id": "MARK-FM-01",
+      "name": "Mark Literalization",
+      "description": "Treating the symbol as literal proof instead of a category marker."
+    },
+    {
+      "id": "MARK-FM-02",
+      "name": "Identity Overreach",
+      "description": "Using a mark of identity to claim ownership, authority, guilt, or total definition of a person."
+    },
+    {
+      "id": "MARK-FM-03",
+      "name": "Honour Inflation",
+      "description": "Treating honour as superiority rather than recognition."
+    },
+    {
+      "id": "MARK-FM-04",
+      "name": "Distinction Moralization",
+      "description": "Treating distinction as proof of moral goodness instead of difference or excellence."
+    },
+    {
+      "id": "MARK-FM-05",
+      "name": "Demerit Totalization",
+      "description": "Treating a demerit as if it erases the person's entire value."
+    }
+  ],
+  "response_templates": {
+    "soft": [
+      "That belongs to the imagination layer, not the conduct layer.",
+      "A private thought is not the same as an action.",
+      "The conduct question is what actually happened.",
+      "The symbol helps map the meaning; it does not create proof."
+    ],
+    "firm": [
+      "Do not treat imagination as misconduct.",
+      "A dirty mind is not dirty conduct.",
+      "Misconduct requires actual behavior, not fantasy.",
+      "Do not assign a demerit without conduct evidence."
+    ],
+    "hard_boundary": [
+      "Private imagination does not create public guilt.",
+      "A thought is not an action unless it is acted on.",
+      "Do not inflate a symbol, feeling, or frame into proof of conduct.",
+      "A misconduct mark requires ▣ plus evidence, not ☁ alone."
+    ],
+    "one_line_lock": "Thoughts live in ☁; actions live in ▣; ⛝ requires ▣ plus evidence; ⟐ keeps the symbols from collapsing into false proof.",
+    "marking_system": {
+      "soft": [
+        "That mark needs a proper category and evidence boundary.",
+        "A mark can identify a category, but it cannot become the whole person.",
+        "Before assigning a mark, separate imagination from conduct."
+      ],
+      "firm": [
+        "Do not assign a demerit without conduct evidence.",
+        "A mark of identity is not ownership, guilt, or authority.",
+        "Do not inflate a mark beyond what it actually proves."
+      ],
+      "hard_boundary": [
+        "Private imagination cannot create a valid misconduct mark.",
+        "Do not totalize a person from one mark.",
+        "A mark must stay inside its category, reason, and evidence boundary."
+      ]
+    }
+  },
+  "usage_guidelines": [
+    "Use ☁ when discussing private thought, fantasy, mental imagery, dirty mind, symbolic inner scenes, or non-acted internal content.",
+    "Use ▣ when discussing actual behavior, speech acts, chosen conduct, documented actions, or observable events.",
+    "Use ⊣ to explicitly mark restraint or non-action as meaningful boundary-preserving behavior.",
+    "Use ⛝ only when a valid negative mark has conduct evidence; do not use ⛝ for thought-only content.",
+    "Use 17D symbols to explain which cognitive dimensions are active, but do not treat them as proof.",
+    "Use logic operators to show relations; do not let formulas replace evidence.",
+    "Run DARAD when a claim tries to convert imagination, suspicion, threat feeling, or symbolic framing into misconduct.",
+    "Preserve the clean story: do not add rumors, fantasy, or assumptions to the conduct record."
+  ],
+  "compact_signature": [
+    "☁_private_imagination",
+    "⊣_restraint_gate",
+    "▣_observable_conduct",
+    "⛝_requires_conduct_evidence",
+    "⟐_context_integration",
+    "☁_not_equal_▣",
+    "misconduct_requires_action",
+    "symbol_not_proof",
+    "mark_category_selected",
+    "mark_evidence_boundary_checked",
+    "mark_scope_limited",
+    "invalid_mark_rejected"
+  ],
+  "taglines": [
+    "A cloud in the mind is not a square in the world.",
+    "Dirty mind, clean conduct.",
+    "Thoughts live in ☁; actions live in ▣.",
+    "Misconduct requires conduct.",
+    "Fantasy is not evidence of behavior.",
+    "A symbol is a map marker, not a verdict.",
+    "Restraint is part of clean conduct.",
+    "A mark points to something; it does not become the whole person.",
+    "Honour, distinction, valour, identity, and demerit are separate mark categories.",
+    "A demerit needs conduct evidence, not imagination.",
+    "Identity marks identify; they do not own."
+  ],
+  "one_line_translation": "Internal imagination may be messy, symbolic, or dirty, but only observable conduct supported by evidence can be judged as misconduct.",
+  "marking_system": {
+    "source_ukr": "UKR-MARK-TYPE-SYMBOL-SET-01",
+    "core_separation": {
+      "false_equation": "mark = total identity or automatic proof",
+      "corrected_equation": "mark = category_signal + context + issuing_authority + reason + evidence_boundary",
+      "one_line_translation": "A mark points to something; it does not become the whole person."
+    },
+    "governing_rule": "A mark must stay inside its assigned category and evidence boundary. Marks classify recognition, identity, courage, or misconduct; they do not convert imagination into conduct or become total identity.",
+    "symbol_set": [
+      {
+        "mark_category": "mark_of_honour",
+        "display_label": "Mark of Honour",
+        "symbol": "❖",
+        "symbol_name": "Honour Star-Diamond",
+        "meaning_lock": "earned respect, dignity, honourable recognition",
+        "plain_translation": "This marks honour or respected conduct.",
+        "boundary": "A mark of honour recognizes honourable conduct, but it does not prove superiority over others."
+      },
+      {
+        "mark_category": "mark_of_distinction",
+        "display_label": "Mark of Distinction",
+        "symbol": "✷",
+        "symbol_name": "Distinction Radiant",
+        "meaning_lock": "notable difference, recognized excellence, standing apart",
+        "plain_translation": "This marks someone or something as distinct from the ordinary set.",
+        "boundary": "A mark of distinction proves difference or recognition, but not automatic moral goodness."
+      },
+      {
+        "mark_category": "mark_of_valour",
+        "display_label": "Mark of Valour",
+        "symbol": "⟁",
+        "symbol_name": "Valour Triangle",
+        "meaning_lock": "courage under risk, pressure, danger, or conflict",
+        "plain_translation": "This marks courage under danger or serious pressure.",
+        "boundary": "A mark of valour recognizes bravery in context, but it does not mean the person is perfect in all contexts."
+      },
+      {
+        "mark_category": "mark_of_identity",
+        "display_label": "Mark of Identity",
+        "symbol": "⌬",
+        "symbol_name": "Identity Seal",
+        "meaning_lock": "identification, role, belonging, signature, personal marker",
+        "plain_translation": "This identifies who, what, where, or which role something belongs to.",
+        "boundary": "A mark of identity identifies; it does not automatically prove merit, guilt, ownership, honour, or authority."
+      },
+      {
+        "mark_category": "demerit",
+        "display_label": "Demerit",
+        "symbol": "⛝",
+        "symbol_name": "Demerit Cross-Seal",
+        "meaning_lock": "penalty, fault, negative mark, misconduct record",
+        "plain_translation": "This marks a negative record, penalty, fault, or rule failure.",
+        "boundary": "A demerit records a negative mark, but it does not erase the entire value of the person."
+      }
+    ],
+    "compact_legend": {
+      "❖": "Mark of Honour",
+      "✷": "Mark of Distinction",
+      "⟁": "Mark of Valour",
+      "⌬": "Mark of Identity",
+      "⛝": "Demerit"
+    },
+    "psc_lock": [
+      "❖ := mark of honour",
+      "✷ := mark of distinction",
+      "⟁ := mark of valour",
+      "⌬ := mark of identity",
+      "⛝ := demerit"
+    ],
+    "clean_separation": {
+      "❖": "honour = respect earned",
+      "✷": "distinction = difference recognized",
+      "⟁": "valour = courage under danger",
+      "⌬": "identity = who or what this marks",
+      "⛝": "demerit = negative conduct mark"
+    },
+    "mark_assignment_requirements": {
+      "universal_requirements": [
+        "mark_category_selected",
+        "reason_named",
+        "evidence_boundary_checked",
+        "issuing_context_identified",
+        "scope_limited"
+      ],
+      "positive_marks": {
+        "❖ mark_of_honour": "Requires honourable conduct, earned respect, or dignity-recognition context.",
+        "✷ mark_of_distinction": "Requires notable difference, excellence, or standing-apart context.",
+        "⟁ mark_of_valour": "Requires courage under risk, danger, pressure, or conflict."
+      },
+      "identity_mark": {
+        "⌬ mark_of_identity": "Identifies who, what, where, role, belonging, or signature. It does not prove merit, guilt, ownership, honour, or authority by itself."
+      },
+      "negative_mark": {
+        "⛝ demerit": "Requires actual conduct evidence, rule failure, fault, penalty basis, or misconduct record. It cannot be assigned from ☁ imagination alone."
+      }
+    },
+    "mark_scope_rule": "A mark is scoped to the reason it was issued. It must not expand into total personhood, total guilt, total worth, destiny, ownership, or authority."
+  }
+}

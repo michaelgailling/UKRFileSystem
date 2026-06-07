@@ -1,0 +1,319 @@
+{
+  "ukr_id": "UKR-MARXIST-LENINIST-PROPAGANDA-FILTER-FUNSIES-01",
+  "title": "Marxist-Leninist Propaganda Filter for Rhetorical Reframing",
+  "version": "1.0",
+  "status": "working_draft",
+  "type": "ukr_rhetorical_filter",
+  "semantic_kind": "satirical_ideological_reframing_layer",
+  "created_for": "playful_text_transformation",
+  "purpose": "Transform ordinary statements into exaggerated Marxist-Leninist propaganda-style rhetoric for humor, satire, fictional dialogue, aesthetic framing, or symbolic analysis without treating the output as factual proof.",
+  "core_definition": {
+    "summary": "This UKR converts ordinary complaints, observations, plans, and judgments into class-struggle rhetoric using Marxist-Leninist stylistic markers such as comrade framing, bourgeois contradiction, capitalist extraction, revolutionary discipline, and collective demand language.",
+    "governing_rule": "The filter changes rhetorical style, not truth value.",
+    "primary_unit_of_analysis": "input_statement",
+    "secondary_units": [
+      "ordinary_problem",
+      "class_frame",
+      "capitalist_actor",
+      "worker_or_people_subject",
+      "contradiction",
+      "extraction_pattern",
+      "reactionary_element",
+      "revolutionary_solution",
+      "satirical_intensity"
+    ]
+  },
+  "core_separation": {
+    "false_equation": "propaganda_style = factual_truth",
+    "corrected_equation": "propaganda_style = rhetorical_costume + ideological_frame + comedic_exaggeration + evidence_boundary",
+    "one_line_translation": "The filter makes the sentence sound revolutionary; it does not make it automatically true."
+  },
+  "input_schema": {
+    "statement": {
+      "type": "string",
+      "required": true,
+      "description": "The ordinary sentence, complaint, claim, or situation to transform."
+    },
+    "tone_intensity": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "default": 3,
+      "description": "Controls how dramatic the propaganda style becomes."
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "satirical",
+        "dry",
+        "full_agitprop",
+        "bureaucratic_party_memo",
+        "poster_slogan",
+        "psc_analysis"
+      ],
+      "default": "satirical"
+    },
+    "target_domain": {
+      "type": "string",
+      "enum": [
+        "general",
+        "workplace",
+        "landlord",
+        "technology",
+        "dating",
+        "food",
+        "money",
+        "gaming",
+        "bureaucracy",
+        "social_conflict"
+      ],
+      "default": "general"
+    }
+  },
+  "transformation_pipeline": [
+    {
+      "step": 1,
+      "name": "detect_plain_meaning",
+      "instruction": "Identify what the input statement literally says before ideological reframing."
+    },
+    {
+      "step": 2,
+      "name": "classify_problem_type",
+      "instruction": "Classify the statement as inconvenience, exploitation, incompetence, contradiction, social conflict, bureaucratic waste, scarcity, deception, or resistance."
+    },
+    {
+      "step": 3,
+      "name": "assign_class_frame",
+      "instruction": "Map the problem onto a playful Marxist-Leninist rhetorical frame."
+    },
+    {
+      "step": 4,
+      "name": "select_villain_language",
+      "instruction": "Choose a rhetorical antagonist such as bourgeois decadence, capitalist extraction, petty-bourgeois confusion, reactionary obstruction, or imperialist nonsense."
+    },
+    {
+      "step": 5,
+      "name": "assign_collective_subject",
+      "instruction": "Frame the speaker as comrade, worker, tenant, player, citizen, or member of the people."
+    },
+    {
+      "step": 6,
+      "name": "produce_revolutionary_solution",
+      "instruction": "Convert the desired practical outcome into a dramatic revolutionary demand."
+    },
+    {
+      "step": 7,
+      "name": "apply_safety_boundary",
+      "instruction": "Preserve satire and avoid presenting rhetorical exaggeration as factual proof, instruction to harm, or real political command."
+    }
+  ],
+  "rhetorical_mapping_table": {
+    "expensive_item": {
+      "frame": "capitalist_extraction",
+      "sample_output": "The people demand access without parasitic markup."
+    },
+    "bad_manager": {
+      "frame": "petty_bourgeois_incompetence",
+      "sample_output": "The managerial layer reveals its bureaucratic decay."
+    },
+    "annoying_landlord": {
+      "frame": "landlordism",
+      "sample_output": "The rentier seeks tribute while the tenant seeks shelter."
+    },
+    "broken_app": {
+      "frame": "alienated_digital_labor",
+      "sample_output": "The software bears the scars of capitalist design decay."
+    },
+    "unnecessary_meeting": {
+      "frame": "bureaucratic_time_extraction",
+      "sample_output": "The worker's time must not be sacrificed to scheduling theater."
+    },
+    "scam_or_manipulation": {
+      "frame": "imperialist_deception_campaign",
+      "sample_output": "The masses will not be deceived by this fraudulent spectacle."
+    },
+    "refusal_boundary": {
+      "frame": "revolutionary_discipline",
+      "sample_output": "The comrade rejects coercion and preserves disciplined autonomy."
+    },
+    "getting_paid": {
+      "frame": "reclamation_of_surplus_value",
+      "sample_output": "Compensation is not charity; it is the return of extracted value."
+    },
+    "fun_activity": {
+      "frame": "morale_building_cultural_production",
+      "sample_output": "Recreation strengthens the spirit of the people."
+    }
+  },
+  "style_tokens": {
+    "address_terms": [
+      "Comrade",
+      "Worker",
+      "Citizen",
+      "Fellow traveler",
+      "Member of the people"
+    ],
+    "enemy_terms": [
+      "bourgeois decadence",
+      "capitalist extraction",
+      "petty-bourgeois confusion",
+      "reactionary nonsense",
+      "imperialist spectacle",
+      "managerial parasitism",
+      "rentier logic",
+      "bureaucratic decay"
+    ],
+    "solution_terms": [
+      "the people demand",
+      "history will not forgive",
+      "we reject",
+      "we seize",
+      "we restore",
+      "we organize",
+      "we advance",
+      "we abolish the contradiction"
+    ],
+    "dramatic_closers": [
+      "The contradiction has been exposed.",
+      "The masses will not be deceived.",
+      "History moves forward.",
+      "The people require action, not excuses.",
+      "The old order trembles before basic competence."
+    ]
+  },
+  "output_modes": {
+    "satirical": {
+      "description": "Funny, exaggerated, but still readable.",
+      "template": "Comrade, this is not merely {{plain_problem}}. It is {{enemy_frame}} revealing itself through {{contradiction}}. The people demand {{solution}}, not {{bad_alternative}}."
+    },
+    "dry": {
+      "description": "Matter-of-fact ideological reframing with minimal theatricality.",
+      "template": "This situation reflects {{enemy_frame}}. The practical correction is {{solution}}."
+    },
+    "full_agitprop": {
+      "description": "Maximum poster-speech mode.",
+      "template": "Comrade! The so-called {{plain_problem}} is nothing less than {{enemy_frame}}! The people shall reject {{bad_alternative}}, reclaim {{solution}}, and march beyond this decaying contradiction!"
+    },
+    "bureaucratic_party_memo": {
+      "description": "Formal committee-report style.",
+      "template": "After review, the committee identifies {{plain_problem}} as a manifestation of {{enemy_frame}}. Corrective action requires {{solution}} and the disciplined rejection of {{bad_alternative}}."
+    },
+    "poster_slogan": {
+      "description": "Short slogan output.",
+      "template": "{{solution}} for the people! Down with {{enemy_frame}}!"
+    },
+    "psc_analysis": {
+      "description": "PSC-style symbolic breakdown.",
+      "template": "False equation: {{false_equation}}. Corrected equation: {{corrected_equation}}. One-line translation: {{one_line_translation}}"
+    }
+  },
+  "psc_analysis_template": {
+    "false_equation": "{{ordinary_problem}} = isolated_personal_issue",
+    "corrected_equation": "{{ordinary_problem}} = material_condition + incentive_structure + power_relation + practical_solution_needed",
+    "one_line_translation": "The problem is not magic; check the incentives, power, and material consequences."
+  },
+  "darad_validation": {
+    "D1_deduction": {
+      "question": "What does the input literally claim?",
+      "output": "literal_statement"
+    },
+    "A1_abduction": {
+      "question": "What playful Marxist-Leninist frames could explain or dramatize it?",
+      "output": "candidate_frames"
+    },
+    "R_reduction": {
+      "question": "What meaning is rhetorical exaggeration rather than evidence?",
+      "output": "satire_boundary"
+    },
+    "A2_abduction": {
+      "question": "Which frame best fits the domain and humor level?",
+      "output": "selected_frame"
+    },
+    "D2_deduction": {
+      "question": "What final output preserves satire without pretending to prove more than it does?",
+      "output": "filtered_statement"
+    }
+  },
+  "distortion_tests": [
+    {
+      "id": "DT-01",
+      "name": "Truth-Value Test",
+      "question": "Is the output being mistaken for proof instead of rhetoric?"
+    },
+    {
+      "id": "DT-02",
+      "name": "Satire Boundary Test",
+      "question": "Is the tone clearly playful, fictional, or analytical rather than a real command?"
+    },
+    {
+      "id": "DT-03",
+      "name": "Violence Escalation Test",
+      "question": "Does the output avoid calling for real-world harm, intimidation, or coercion?"
+    },
+    {
+      "id": "DT-04",
+      "name": "Evidence Preservation Test",
+      "question": "Does the filter preserve the difference between actual evidence and ideological framing?"
+    },
+    {
+      "id": "DT-05",
+      "name": "Agency Test",
+      "question": "Does the output avoid pretending the speaker must obey the filter's ideology?"
+    }
+  ],
+  "hard_boundaries": [
+    "Do not treat the filtered output as factual proof.",
+    "Do not use the filter to incite real-world violence.",
+    "Do not convert satire into a real command.",
+    "Do not erase the user's original meaning.",
+    "Do not replace evidence with ideological certainty.",
+    "Do not target protected groups or private individuals for harassment.",
+    "Do not claim revolutionary authority over real people."
+  ],
+  "example_inputs_outputs": [
+    {
+      "input": "My coffee is too expensive.",
+      "mode": "satirical",
+      "output": "Comrade, this is not merely expensive coffee. It is capitalist extraction revealing itself through the sacred bean. The people demand caffeine without parasitic markup."
+    },
+    {
+      "input": "This app sucks.",
+      "mode": "full_agitprop",
+      "output": "Comrade! This application is not broken by accident. It is the digital face of capitalist decay: hostile design, alienated labor, and features no worker requested. The people demand usable software!"
+    },
+    {
+      "input": "I do not want to attend that meeting.",
+      "mode": "bureaucratic_party_memo",
+      "output": "After review, the committee identifies this meeting as bureaucratic time extraction. Corrective action requires preserving the worker's productive hours and rejecting petty-bourgeois scheduling theater."
+    },
+    {
+      "input": "My landlord is annoying.",
+      "mode": "satirical",
+      "output": "Comrade, this is not mere annoyance. This is landlordism revealing its parasitic class character. The tenant seeks shelter; the rentier seeks tribute."
+    }
+  ],
+  "functional_pseudocode": {
+    "function_name": "apply_marxist_leninist_filter",
+    "steps": [
+      "receive input_statement",
+      "extract plain_problem",
+      "detect target_domain",
+      "classify problem_type",
+      "map problem_type to ideological_frame",
+      "select output_mode template",
+      "fill template fields",
+      "run distortion_tests",
+      "return filtered_output"
+    ]
+  },
+  "compact_signature": [
+    "statement_received",
+    "plain_meaning_detected",
+    "problem_classified",
+    "class_frame_assigned",
+    "rhetoric_generated",
+    "satire_boundary_locked",
+    "filtered_output_returned"
+  ],
+  "one_line_translation": "Turn everyday nonsense into revolutionary-sounding theater while keeping the evidence boundary intact."
+}

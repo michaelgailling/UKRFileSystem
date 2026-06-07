@@ -1,0 +1,92 @@
+{
+  "ukrid": "UKR-SCIENTIFIC-METHOD-BASIC-STEPBYSTEP-01",
+  "title": "Scientific Method - Simple Step-by-Step Explanation",
+  "version": "1.0",
+  "status": "workingdraft",
+  "semantickind": "education.science.basic",
+  "domaintags": [
+    "scientific-method",
+    "reasoning",
+    "education",
+    "step-by-step"
+  ],
+  "summary": "Plain-language, low-reading-level explanation of the scientific method as a repeatable way to answer questions by testing ideas instead of guessing.",
+  "coredefinition": {
+    "bigidea": "The scientific method is a repeatable set of steps: you notice something, ask a question, guess an answer, test it, look at what happened, and then explain and share what you learned.",
+    "purpose": "Help learners with less than high school education understand and use the scientific method in everyday life."
+  },
+  "steps": [
+    {
+      "stepid": "STEP-01-OBSERVE",
+      "label": "Notice something (Observation)",
+      "order": 1,
+      "plain_explanation": "You start by paying attention to the world around you. You might see, hear, or feel something and think, 'That’s odd' or 'I wonder why that happens.'",
+      "example": "You see that one plant near the window grows taller than a plant in the middle of the room."
+    },
+    {
+      "stepid": "STEP-02-QUESTION",
+      "label": "Ask a clear question",
+      "order": 2,
+      "plain_explanation": "Turn what you noticed into a simple, clear question you can try to answer. Good questions are specific, not vague.",
+      "example": "Question: 'Does more sunlight make plants grow taller?'"
+    },
+    {
+      "stepid": "STEP-03-RESEARCH",
+      "label": "Do a bit of research",
+      "order": 3,
+      "plain_explanation": "Before you guess, you can look up simple information in books, websites, or by asking someone who knows more. This gives you better ideas for your guess.",
+      "example": "You read that plants use light to make food, so light might affect how they grow."
+    },
+    {
+      "stepid": "STEP-04-HYPOTHESIS",
+      "label": "Make a smart guess (Hypothesis)",
+      "order": 4,
+      "plain_explanation": "A hypothesis is a smart guess about the answer to your question. It should be something you can test, often written as 'If..., then...' so it predicts what will happen.",
+      "example": "Hypothesis: 'If a plant gets more sunlight, then it will grow taller than a plant in shade.'"
+    },
+    {
+      "stepid": "STEP-05-EXPERIMENT",
+      "label": "Test your guess (Experiment)",
+      "order": 5,
+      "plain_explanation": "You run an experiment to see if your guess holds up. You change just one main thing and keep everything else the same so you can see what really makes the difference.",
+      "example": "Put one plant on a sunny windowsill and another in a shady place. Use the same plant type, same soil, same pot size, same water, and same room. Measure how tall each plant is over a few weeks."
+    },
+    {
+      "stepid": "STEP-06-DATA",
+      "label": "Collect what happened (Data)",
+      "order": 6,
+      "plain_explanation": "While the experiment runs, you carefully record what you see so you do not rely only on memory. You can write numbers in a table, draw pictures, or make simple charts.",
+      "example": "You write down the height of both plants every three days and note which one looks healthier."
+    },
+    {
+      "stepid": "STEP-07-ANALYZE",
+      "label": "Look at the results (Analyze)",
+      "order": 7,
+      "plain_explanation": "You look at all the data together and ask what story it tells. You compare the groups to see if your guess seems right or not.",
+      "example": "After three weeks, you see the sunny plant is taller in almost every measurement."
+    },
+    {
+      "stepid": "STEP-08-CONCLUDE",
+      "label": "Explain your answer (Conclusion)",
+      "order": 8,
+      "plain_explanation": "You decide what your experiment showed. You say whether your hypothesis was supported or not and explain it in plain words.",
+      "example_supported": "‘The plant in sunlight grew taller, so my results support the idea that more sunlight helps plants grow taller.’",
+      "example_not_supported": "‘Both plants grew about the same, so my results do not support my idea that more sunlight makes plants taller.’",
+      "note": "Both outcomes are useful. The goal is to find the truth, not to prove yourself right."
+    },
+    {
+      "stepid": "STEP-09-SHARE-REPEAT",
+      "label": "Share and try again",
+      "order": 9,
+      "plain_explanation": "You share what you found so others can learn and maybe repeat your test. If something is unclear or you get new ideas, you can change your question or hypothesis and run a new experiment.",
+      "example": "You tell a friend or class about your plant test and then decide to try again with a different amount of water instead of light."
+    }
+  ],
+  "everyday_examples": [
+    "Which paper towel brand soaks up more water?",
+    "Does music help me remember more words?",
+    "Does watering plants every day versus every three days change how they grow?"
+  ],
+  "usage_note": "For teaching, you can walk a learner through these steps using a very simple home experiment (for example, plant growth, paper towel strength, or how well different soaps clean). Keep language short, concrete, and focused on what can be seen, done, and measured.",
+  "compactsignature": "observe-question-research-hypothesis-experiment-data-analyze-conclude-share"
+}

@@ -1,0 +1,281 @@
+{
+  "ukr_osint_functional_imitation": {
+    "version": 1,
+    "purpose": "Package realistic, lawful OSINT-imitable analyst capabilities modeled on the functional patterns described in ukr_surveillance_systems.json.",
+    "scope": {
+      "allowed": [
+        "public_web_collection",
+        "official_api_collection",
+        "public_document_and_media_indexing",
+        "selector_search",
+        "metadata_extraction",
+        "entity_resolution_from_public_data",
+        "graph_analysis",
+        "timeline_analysis",
+        "watchlists_and_alerting",
+        "exportable_case_workflows"
+      ],
+      "not_replicated": [
+        "backbone_packet_capture",
+        "session_reassembly_from_intercepted_traffic",
+        "provider_side_compelled_access",
+        "non_public_account_content_retrieval",
+        "covert_collection",
+        "bulk_telecom_interception"
+      ]
+    },
+    "systems": [
+      {
+        "name": "OSINT_SEARCHSTACK",
+        "imitates": [
+          "XKEYSCORE"
+        ],
+        "type": "distributed_public_source_search_and_analytics_layer",
+        "collection_layer": {
+          "position_in_stack": "public_web_and_platform_surface",
+          "collection_methods": [
+            "web_crawling",
+            "rss_and_news_feed_ingestion",
+            "official_platform_apis",
+            "public_document_collection",
+            "public_repository_collection"
+          ],
+          "capture_mode": "rolling_public_content_ingestion",
+          "content_scope": [
+            "web_pages",
+            "news_articles",
+            "forum_posts",
+            "social_posts",
+            "public_documents",
+            "public_media_metadata"
+          ]
+        },
+        "data_processing": {
+          "entity_extraction": [
+            "email_addresses",
+            "usernames",
+            "phone_numbers",
+            "domains",
+            "ip_addresses_when_publicly_exposed",
+            "organizations",
+            "locations",
+            "languages"
+          ],
+          "indexing": {
+            "indexed_fields": [
+              "selectors",
+              "document_metadata",
+              "full_text",
+              "timestamps",
+              "source_platform",
+              "language",
+              "file_type",
+              "region_tags"
+            ],
+            "query_scope": "federated_across_public_sources"
+          },
+          "storage_model": {
+            "content_storage": "searchable_document_store",
+            "metadata_storage": "structured_indices_and_entity_tables"
+          }
+        },
+        "query_model": {
+          "selector_types": {
+            "strong_selectors": [
+              "email_address",
+              "username",
+              "phone_number",
+              "domain",
+              "public_ip_address"
+            ],
+            "soft_selectors": [
+              "free_text_keywords",
+              "language",
+              "file_type",
+              "geographic_region",
+              "organization_name"
+            ]
+          },
+          "query_capabilities": [
+            "free_text_search",
+            "selector_search",
+            "time_window_filtering",
+            "source_filtering",
+            "language_filtering",
+            "pivot_from_metadata_to_public_content"
+          ],
+          "realtime_features": [
+            "scheduled_query_alerting",
+            "watchlist_monitoring_for_new_public_hits"
+          ]
+        },
+        "analyst_workflow": [
+          "define_or_import_public_selectors_and_keywords",
+          "run_metadata_queries_to_discover_public_patterns",
+          "pivot_to_original_public_content",
+          "refine_selectors_based_on_results",
+          "export_hits_to_case_management_or_reporting_tools"
+        ]
+      },
+      {
+        "name": "OSINT_TARGETED_PROVIDER_SURFACE",
+        "imitates": [
+          "PRISM"
+        ],
+        "type": "provider_surface_public_data_acquisition_pipeline",
+        "collection_layer": {
+          "position_in_stack": "public_application_layer",
+          "collection_methods": [
+            "official_platform_apis",
+            "public_profile_collection",
+            "public_post_and_comment_collection",
+            "public_file_and_media_collection"
+          ],
+          "providers_example": [
+            "public_google_services",
+            "public_microsoft_services",
+            "public_meta_surfaces",
+            "public_github_content",
+            "public_forum_and_community_platforms"
+          ],
+          "data_types": [
+            "public_posts",
+            "public_comments",
+            "public_documents",
+            "public_photos_and_videos",
+            "public_social_graph_signals",
+            "public_profile_metadata"
+          ]
+        },
+        "tasking_pipeline": {
+          "selector_definition": [
+            "target_accounts",
+            "usernames",
+            "email_addresses_when_public",
+            "domains",
+            "organization_names"
+          ],
+          "tasking_flow": [
+            "analyst_defines_selectors_and_collection_justification",
+            "selectors_are_validated_against_allowed_public_sources",
+            "collectors_query_public_interfaces_or_apis",
+            "matching_content_is_normalized_and_ingested",
+            "data_is_forwarded_to_search_graph_and_timeline_views"
+          ]
+        },
+        "data_processing": {
+          "routing_components": [
+            "text_index",
+            "media_metadata_extractor",
+            "graph_builder",
+            "timeline_builder"
+          ],
+          "target_databases": [
+            "document_index",
+            "graph_store",
+            "timeline_store",
+            "media_metadata_store"
+          ],
+          "unification": {
+            "goal": "aggregate_public_data_from_multiple platforms and sources into unified analytical views",
+            "analytical_views": [
+              "social_network_graphs",
+              "activity_timelines",
+              "cross_platform_identity_clusters",
+              "content_and_interaction_patterns"
+            ]
+          }
+        },
+        "query_model": {
+          "selector_scope": [
+            "specific_public_accounts",
+            "specific_public_identities",
+            "narrowly_defined_targets_with_open_source_footprints"
+          ],
+          "capabilities": [
+            "retrieve_full_public_content_for_target_selectors",
+            "run_temporal_analysis",
+            "link_identities_across_public_platforms",
+            "visualize_target_networks_and_activity"
+          ]
+        },
+        "analyst_workflow": [
+          "identify_target_and_legitimate_purpose",
+          "define_and_submit_public_selectors",
+          "review_ingested_public_content_and_metadata",
+          "conduct_network_and_behavior_analysis",
+          "produce_reports_or case_summaries"
+        ]
+      },
+      {
+        "name": "OSINT_BULK_MONITOR",
+        "imitates": [
+          "TEMPORA",
+          "ECHELON"
+        ],
+        "type": "bulk_public_stream_monitoring_and_dictionary_filtering",
+        "collection_layer": {
+          "position_in_stack": "public_streams_and_open_feeds",
+          "collection_methods": [
+            "news_stream_ingestion",
+            "social_keyword_streams",
+            "rss_monitoring",
+            "public_event_monitoring"
+          ],
+          "capture_mode": "continuous_public_feed_collection",
+          "scope": [
+            "high_volume_public_posts",
+            "news_updates",
+            "public_advisories",
+            "open_event_chatter"
+          ]
+        },
+        "dictionary_system": {
+          "components": "watchlist_and_rule_engines",
+          "programmed_selectors": [
+            "keywords_and_phrases",
+            "codewords",
+            "handles",
+            "domains",
+            "phone_numbers_when_public",
+            "other_public_identifier_patterns"
+          ],
+          "processing_flow": [
+            "incoming_public_content_streamed_through_rule_engines",
+            "automatic_keyword_and_selector_matching",
+            "matching_content_flagged_and_stored",
+            "flagged_hits_routed_to_review_queues_or_alert_channels"
+          ]
+        },
+        "advanced_processing": {
+          "media_processing": [
+            "ocr_for_public_images_and_pdfs",
+            "basic_image_metadata_extraction"
+          ],
+          "text_processing": [
+            "language_identification",
+            "entity_extraction",
+            "basic_categorization",
+            "topic_tagging"
+          ]
+        },
+        "query_model": {
+          "paradigm": "preconfigured_watchlists_plus_ad_hoc_public_search",
+          "capabilities": [
+            "mass_keyword_scan_of_ingested_public_streams",
+            "selector_based_routing_to_analysts",
+            "retention_of_matching_public_hits",
+            "trend_and_spike_detection"
+          ]
+        },
+        "analyst_workflow": [
+          "define_watchlists_and_selector_dictionaries",
+          "deploy_monitors_on_public_streams",
+          "receive_flagged_public_hits",
+          "prioritize_and_review_matches",
+          "correlate_with_other_public_sources"
+        ]
+      }
+    ]
+  }
+}
